@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".pitPreGameInfo">
+
+    <RadioGroup
+        android:layout_width="186dp"
+        android:layout_height="239dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/whatTypeOfAutoDoThayHave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/scraphead_blue"
+            android:text="What type of auto do you have?"
+            android:textAlignment="center"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/shuttleAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="shuttleAutoClick"
+            android:text="Shuttle Auto"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/basketAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="basketAutoClick"
+            android:text="Basket Auto"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/chamberAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="chamberAutoClick"
+            android:text="Chamber Auto"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="237dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/doHaveAutotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/scraphead_blue"
+            android:text="Do you have a auto?"
+            android:textAlignment="center"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/autoYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="pitYesClick"
+            android:text="Yes"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/autoNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="pitNoClick"
+            android:text="No"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="235dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136">
+
+        <TextView
+            android:id="@+id/doHaveAutotext"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/scraphead_blue"
+            android:text="Is your bot made for high or low task?"
+            android:textAlignment="center"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/highTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="highTaskclick"
+            android:text="High Task"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/lowTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="lowTaskclick"
+            android:text="Low Task"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pitPreGameInfoBack"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:onClick="back"
+        android:rotationX="2"
+        android:rotationY="-2"
+        android:text="Back"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="253dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601">
+
+        <TextView
+            android:id="@+id/botTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/scraphead_blue"
+            android:text="What type is your bot?"
+            android:textAlignment="center"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/shuttleBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="shuttleBotclick"
+            android:text="Shuttle Bot"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/basketBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="basketBotclick"
+            android:text="Basket Bot"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/chamberBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="chamberBotclick"
+            android:text="Chamber Bot"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/pitTeamNumber"
+        android:layout_width="212dp"
+        android:layout_height="62dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:hint="Team Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textColorHint="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"
+        tools:textColorHint="@color/scraphead_yellow" />
+
+    <Button
+        android:id="@+id/pitPreGameInfoNext"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="Next"
+        android:rotationX="2"
+        android:rotationY="-2"
+        android:text="Next"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

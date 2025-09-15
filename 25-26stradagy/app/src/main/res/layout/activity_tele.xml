@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tele"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Tele">
+
+    <RadioGroup
+        android:id="@+id/endAscentGroup"
+        android:layout_width="295dp"
+        android:layout_height="388dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/scraphead_blue"
+            android:text="Tele Ascent"
+            android:textAlignment="center"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="48sp"
+            tools:textColor="@color/scraphead_yellow" />
+
+        <RadioButton
+            android:id="@+id/teleNoPark"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="TeleClickNoPark"
+            android:text="No park"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/telePark"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="TeleClickPark"
+            android:text="Park"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/telelevel1"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="TeleClickLvlOne"
+            android:text="Level 1"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/endlevel2"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="TeleClicklvl2"
+            android:text="Level 2"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/endLevel3"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:onClick="TeleClicklvl3"
+            android:text="Level 3"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/spesamenHCSubtractionButton"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelehighChamberDecrease"
+        android:text="-"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spesamenHCZeroText"
+        app:layout_constraintEnd_toStartOf="@+id/spesamenHCZeroText"
+        app:layout_constraintTop_toTopOf="@+id/spesamenHCZeroText"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <Button
+        android:id="@+id/spesamenHCAddButton"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelehighChamberIncrease"
+        android:text="+"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spesamenHCZeroText"
+        app:layout_constraintStart_toEndOf="@+id/spesamenHCZeroText"
+        app:layout_constraintTop_toTopOf="@+id/spesamenHCZeroText"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/spesamenHighChamberText"
+        android:layout_width="158dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:text="High Chamber"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spesamenLCZeroText"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="@+id/spesamenLCZeroText"
+        app:layout_constraintTop_toBottomOf="@+id/spesamenLCZeroText" />
+
+    <TextView
+        android:id="@+id/spesamenHCZeroText"
+        android:layout_width="28dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spesamenHighChamberText"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="@+id/spesamenHighChamberText"
+        app:layout_constraintTop_toBottomOf="@+id/spesamenHighChamberText" />
+
+    <Button
+        android:id="@+id/spesamenLCSubtractionButton"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelelowChamberDecrease"
+        android:text="-"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spesamenLCZeroText"
+        app:layout_constraintEnd_toStartOf="@+id/spesamenLCZeroText"
+        app:layout_constraintTop_toTopOf="@+id/spesamenLCZeroText"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <Button
+        android:id="@+id/spesamenLowChamberIncrease"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelelowChamberIncrease"
+        android:text="+"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spesamenLCZeroText"
+        app:layout_constraintStart_toEndOf="@+id/spesamenLCZeroText"
+        app:layout_constraintTop_toTopOf="@+id/spesamenLCZeroText"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/spesamenLCZeroText"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spesamenlowChamberTexT"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/spesamenlowChamberTexT"
+        app:layout_constraintTop_toBottomOf="@+id/spesamenlowChamberTexT" />
+
+    <TextView
+        android:id="@+id/spesamenlowChamberTexT"
+        android:layout_width="143dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Low Chamber"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <Button
+        android:id="@+id/spesamenHighBasketSubtract"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelehighBasketDecrease"
+        android:text="-"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teleHighBasketCount"
+        app:layout_constraintEnd_toStartOf="@+id/teleHighBasketCount"
+        app:layout_constraintTop_toTopOf="@+id/teleHighBasketCount"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <Button
+        android:id="@+id/spesamenHighBasketAdd"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelehighBasketIncrease"
+        android:text="+"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teleHighBasketCount"
+        app:layout_constraintStart_toEndOf="@+id/teleHighBasketCount"
+        app:layout_constraintTop_toTopOf="@+id/teleHighBasketCount"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/teleHighBasketCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spesamenHighBasketText"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/spesamenHighBasketText"
+        app:layout_constraintTop_toBottomOf="@+id/spesamenHighBasketText" />
+
+    <Button
+        android:id="@+id/spesamenLowBasketSubtract"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelelowBasketDecrease"
+        android:text="-"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintEnd_toStartOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintTop_toTopOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <TextView
+        android:id="@+id/spesamenHighBasketText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="High Basket"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintTop_toBottomOf="@+id/spesamenLowBasketCount" />
+
+    <Button
+        android:id="@+id/spesamenLowBasketAdd"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TelelowBasketIncrease"
+        android:text="+"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintStart_toEndOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintTop_toTopOf="@+id/spesamenLowBasketCount"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/spesamenLowBasketCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/sampleLowBasketText3"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/sampleLowBasketText3"
+        app:layout_constraintTop_toBottomOf="@+id/sampleLowBasketText3" />
+
+    <TextView
+        android:id="@+id/sampleLowBasketText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Low Basket"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintTop_toBottomOf="@+id/sampleNetZoneCount3" />
+
+    <Button
+        android:id="@+id/spesamenNetSubtract"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TeleNetZoneDecrease"
+        android:text="-"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintEnd_toStartOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+        android:id="@+id/spesamenNetAdd"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="TeleNetZoneIncrease"
+        android:text="+"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintStart_toEndOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount3"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <TextView
+        android:id="@+id/spesamenNetZoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Net Zone"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sampleNetZoneCount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spesamenNetZoneText"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/spesamenNetZoneText"
+        app:layout_constraintTop_toBottomOf="@+id/spesamenNetZoneText" />
+
+    <Button
+        android:id="@+id/spesamenNextButton"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="toend"
+        android:text="Next"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TelespesamenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tele"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backSpesamen"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="backAuto"
+        android:text="Back"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
