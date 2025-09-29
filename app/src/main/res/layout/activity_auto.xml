@@ -7,17 +7,411 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="620dp"
+        android:text="clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="408dp"
+        android:text="overflow"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="21dp"
+        android:layout_height="45dp"
+        android:background="#F2EDED"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="320dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup7"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="320dp"
+        android:text="G"
+        android:textColor="#8BC34A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="13dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toStartOf="@+id/textView36"
+        app:layout_constraintTop_toTopOf="@+id/textView39"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="204dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView37"
+        app:layout_constraintEnd_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toTopOf="@+id/textView37"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="348dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView41"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="13dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toStartOf="@+id/textView37"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="13dp"
+        android:text="G"
+        android:textColor="#8BC34A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView36"
+        app:layout_constraintEnd_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toTopOf="@+id/textView36"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_editor_absoluteX="82dp" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="13dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toTopOf="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="13dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintEnd_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="@+id/textView34"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="13dp"
+        android:text="G"
+        android:textColor="#8BC34A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView35"
+        app:layout_constraintEnd_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toTopOf="@+id/textView35"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="18dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="13dp"
+        android:text="G"
+        android:textColor="#8BC34A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup7"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup15"
+        app:layout_constraintEnd_toStartOf="@+id/textView44"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup15"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup15"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup15"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup16"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup16"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup16">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup16"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup10"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup10"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup10">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup10"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup17"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup17"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup17">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup17"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup9"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup9"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup9">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup9"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup5"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup5"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup5">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup8"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup8"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup8">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup8"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup18"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup18"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup18"
+        android:layout_width="30dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
     <RadioGroup
         android:id="@+id/endAscentGroup"
         android:layout_width="264dp"
         android:layout_height="304dp"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628">
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_editor_absoluteX="204dp">
 
         <TextView
             android:id="@+id/textView13"
@@ -28,6 +422,8 @@
             android:textAlignment="center"
             android:textColor="@color/scraphead_yellow"
             android:textSize="38sp"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="392dp"
             tools:textColor="@color/scraphead_yellow" />
 
         <RadioButton
@@ -39,7 +435,9 @@
             android:onClick="ClickNoPark"
             android:text="No park"
             android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="443dp" />
 
         <RadioButton
             android:id="@+id/AutoPark"
@@ -69,7 +467,7 @@
         android:id="@+id/specimenLCSubtractionButton"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="44dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="lowChamberDecrease"
         android:text="-"
@@ -78,7 +476,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/specimenLCZeroText"
         app:layout_constraintEnd_toStartOf="@+id/specimenLCZeroText"
         app:layout_constraintTop_toTopOf="@+id/specimenLCZeroText"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <TextView
         android:id="@+id/specimenlowChamberText4"
@@ -88,18 +486,14 @@
         android:text="Low Chamber"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
         android:id="@+id/specimenLowChamberIncrease4"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="44dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="lowChamberIncrease"
         android:text="+"
@@ -108,19 +502,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/specimenLCZeroText"
         app:layout_constraintStart_toEndOf="@+id/specimenLCZeroText"
         app:layout_constraintTop_toTopOf="@+id/specimenLCZeroText"
-        app:layout_constraintVertical_bias="0.538" />
+        app:layout_constraintVertical_bias="0.357" />
 
     <TextView
         android:id="@+id/specimenLCZeroText"
         android:layout_width="30dp"
         android:layout_height="38dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/specimenlowChamberText4"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="@+id/specimenlowChamberText4"
         app:layout_constraintTop_toBottomOf="@+id/specimenlowChamberText4" />
 
@@ -128,13 +522,13 @@
         android:id="@+id/specimenHighChamberText4"
         android:layout_width="158dp"
         android:layout_height="38dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:text="High Chamber"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/specimenLCZeroText"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="@+id/specimenLCZeroText"
         app:layout_constraintTop_toBottomOf="@+id/specimenLCZeroText" />
 
@@ -142,7 +536,7 @@
         android:id="@+id/specimenHCSubtractionButton4"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="highChamberDecrease"
         android:text="-"
@@ -151,18 +545,18 @@
         app:layout_constraintBottom_toBottomOf="@+id/specimenHCZeroText"
         app:layout_constraintEnd_toStartOf="@+id/specimenHCZeroText"
         app:layout_constraintTop_toTopOf="@+id/specimenHCZeroText"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintVertical_bias="0.473" />
 
     <TextView
         android:id="@+id/specimenHCZeroText"
         android:layout_width="40dp"
         android:layout_height="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/specimenHighChamberText4"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.669"
         app:layout_constraintStart_toStartOf="@+id/specimenHighChamberText4"
         app:layout_constraintTop_toBottomOf="@+id/specimenHighChamberText4" />
 
@@ -170,7 +564,7 @@
         android:id="@+id/specimenHCAddButton4"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="32dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="highChamberIncrease"
         android:text="+"
@@ -179,12 +573,12 @@
         app:layout_constraintBottom_toBottomOf="@+id/specimenHCZeroText"
         app:layout_constraintStart_toEndOf="@+id/specimenHCZeroText"
         app:layout_constraintTop_toTopOf="@+id/specimenHCZeroText"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.315" />
 
     <Button
         android:id="@+id/backActivity"
-        android:layout_width="107dp"
-        android:layout_height="58dp"
+        android:layout_width="104dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/scraphead_blue"
@@ -213,25 +607,22 @@
         android:id="@+id/sampleNetZoneText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:text="shots"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
 
     <TextView
         android:id="@+id/sampleLowBasketText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Low Basket"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/sampleNetZoneCount"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/sampleNetZoneCount"
         app:layout_constraintTop_toBottomOf="@+id/sampleNetZoneCount" />
 
@@ -239,12 +630,12 @@
         android:id="@+id/sampleHighBasketText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:text="High Basket"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/sampleLowBasketCount"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintStart_toStartOf="@+id/sampleLowBasketCount"
         app:layout_constraintTop_toBottomOf="@+id/sampleLowBasketCount" />
 
@@ -252,12 +643,12 @@
         android:id="@+id/sampleNetZoneCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/sampleNetZoneText"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/sampleNetZoneText"
         app:layout_constraintTop_toBottomOf="@+id/sampleNetZoneText" />
 
@@ -265,12 +656,12 @@
         android:id="@+id/sampleLowBasketCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/sampleLowBasketText"
-        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/sampleLowBasketText"
         app:layout_constraintTop_toBottomOf="@+id/sampleLowBasketText" />
 
@@ -278,11 +669,12 @@
         android:id="@+id/sampleHighBasketCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/sampleHighBasketText"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="@+id/sampleHighBasketText"
         app:layout_constraintTop_toBottomOf="@+id/sampleHighBasketText" />
 
@@ -290,7 +682,7 @@
         android:id="@+id/sampleNetSubtract"
         android:layout_width="59dp"
         android:layout_height="67dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="192dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="netZoneDecrease"
         android:text="-"
@@ -299,13 +691,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount"
         app:layout_constraintEnd_toStartOf="@+id/sampleNetZoneCount"
         app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount"
-        app:layout_constraintVertical_bias="0.565" />
+        app:layout_constraintVertical_bias="0.35" />
 
     <Button
         android:id="@+id/sampleNetAdd"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="88dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="netZoneIncrease"
         android:text="+"
@@ -314,13 +706,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount"
         app:layout_constraintStart_toEndOf="@+id/sampleNetZoneCount"
         app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/sampleLowBasketAdd"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="8dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="lowBasketIncrease"
         android:text="+"
@@ -329,13 +721,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/sampleLowBasketCount"
         app:layout_constraintStart_toEndOf="@+id/sampleLowBasketCount"
         app:layout_constraintTop_toTopOf="@+id/sampleLowBasketCount"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.641" />
 
     <Button
         android:id="@+id/sampleLowBasketSubtract"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="96dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="lowBasketDecrease"
         android:text="-"
@@ -344,13 +736,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/sampleLowBasketCount"
         app:layout_constraintEnd_toStartOf="@+id/sampleLowBasketCount"
         app:layout_constraintTop_toTopOf="@+id/sampleLowBasketCount"
-        app:layout_constraintVertical_bias="0.487" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <Button
         android:id="@+id/sampleHighBasketSubtract"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="48dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="highBasketDecrease"
         android:text="-"
@@ -359,13 +751,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/sampleHighBasketCount"
         app:layout_constraintEnd_toStartOf="@+id/sampleHighBasketCount"
         app:layout_constraintTop_toTopOf="@+id/sampleHighBasketCount"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/sampleHighBasketAdd"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="60dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="highBasketIncrease"
         android:text="+"
@@ -374,7 +766,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/sampleHighBasketCount"
         app:layout_constraintStart_toEndOf="@+id/sampleHighBasketCount"
         app:layout_constraintTop_toTopOf="@+id/sampleHighBasketCount"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/sampleSampleText"
@@ -393,25 +785,66 @@
         android:id="@+id/button"
         android:layout_width="229dp"
         android:layout_height="71dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="180dp"
+        android:layout_marginEnd="444dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="No_Auto"
         android:text="no auto"
         android:textColor="@color/scraphead_yellow"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="2dp"
-        android:layout_height="2dp"
-        android:layout_marginStart="496dp"
-        android:layout_marginTop="44dp"
-        android:rotationX="117"
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="217dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="92dp"
+        android:text="do thay have auto"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="156dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="no park"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="barly in parking zone"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="full in parking zone"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="on top of other bot"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
