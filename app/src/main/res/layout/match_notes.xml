@@ -194,14 +194,14 @@
 
     <CheckBox
         android:id="@+id/matchNotesSix"
-        android:layout_width="309dp"
+        android:layout_width="289dp"
         android:layout_height="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@color/scraphead_blue"
         android:onClick="MakesAGoodAlliancePartener"
         android:scaleX="1.2"
         android:scaleY="1.2"
-        android:text="Compatible alliance partner?"
+        android:text="Compatible Partner?"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/matchNotesfive"
@@ -228,7 +228,7 @@
 
     <CheckBox
         android:id="@+id/matchNotesFour"
-        android:layout_width="284dp"
+        android:layout_width="289dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@color/scraphead_blue"
@@ -333,9 +333,10 @@
         android:id="@+id/endCommitBox"
         android:layout_width="187dp"
         android:layout_height="59dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@color/scraphead_blue"
         android:hint="Comments"
+        android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
         android:textColorHint="@color/scraphead_yellow"
         android:textSize="34sp"
