@@ -23,7 +23,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="380dp"
         android:layout_marginEnd="408dp"
-        android:text="overflow"
+        android:text="Overflow"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
@@ -815,8 +815,8 @@
         <RadioButton
             android:id="@+id/radioButton7"
             android:layout_width="match_parent"
-            android:layout_height="69dp"
-            android:text="no park"
+            android:layout_height="79dp"
+            android:text="Didn't Park"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
@@ -824,15 +824,15 @@
             android:id="@+id/radioButton8"
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:text="barly in parking zone"
+            android:text="Barely Parked"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton9"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text="full in parking zone"
+            android:layout_height="79dp"
+            android:text="Fully Parked"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
@@ -840,7 +840,7 @@
             android:id="@+id/radioButton10"
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:text="on top of other bot"
+            android:text="Parked With Other Bot"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
     </RadioGroup>
