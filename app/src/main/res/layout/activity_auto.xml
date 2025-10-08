@@ -7,6 +7,47 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
+    <RadioGroup
+        android:layout_width="156dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="Didn't Park"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="Barely Parked"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="Fully Parked"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="Parked With Other Bot"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp" />
+    </RadioGroup>
+
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
@@ -785,46 +826,5 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:layout_width="156dp"
-        android:layout_height="316dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/radioButton7"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:text="Didn't Park"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton8"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:text="Barely Parked"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton9"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:text="Fully Parked"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton10"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:text="Parked With Other Bot"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
