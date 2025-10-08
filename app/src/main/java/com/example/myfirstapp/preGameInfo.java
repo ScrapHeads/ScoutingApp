@@ -16,9 +16,8 @@ import android.util.Log;
 
 
 public class preGameInfo extends AppCompatActivity {
-    RadioButton red, blue, sample, noPreload, postionOne, postionTwo;
+    RadioButton red, blue, sample, noPreload, postionOne, postionTwo, specimen;
     TextView scoutName, matchNumber, teamNumber;
-    switch specimen;
     byte botpostion;
     String botAlliance, botPreload;
 
@@ -30,13 +29,13 @@ public class preGameInfo extends AppCompatActivity {
         this.setRequestedOrientation(ActivityInfo. SCREEN_ORIENTATION_LANDSCAPE);
         red = findViewById(R.id.mainRedButton);
         blue = findViewById(R.id.mainBlueButton);
-        specimen = findViewById(R.id.mainSpecimen);
+        //specimen = findViewById(R.id.mainSpecimen);
         //noPreload = findViewById(R.id.mainNoPreload);
         //postionOne = findViewById(R.id.mainPostionOne);
         //postionTwo = findViewById(R.id.mainPostionTwo);
-        scoutName = findViewById(R.id.mainScoutName);
-        matchNumber = findViewById(R.id.mainMatchNumber);
-        teamNumber = findViewById(R.id.mainTeamNumber);
+        //scoutName = findViewById(R.id.mainScoutName);
+        //matchNumber = findViewById(R.id.mainMatchNumber);
+        //teamNumber = findViewById(R.id.mainTeamNumber);
         setPrevious();
     }
 
