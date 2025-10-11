@@ -62,8 +62,8 @@
         android:id="@+id/textView11"
         android:layout_width="113dp"
         android:layout_height="45dp"
-        android:layout_marginTop="380dp"
-        android:layout_marginEnd="408dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="484dp"
         android:text="Overflow"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
@@ -106,26 +106,15 @@
 
     <TextView
         android:id="@+id/textView43"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="320dp"
+        android:layout_width="22dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="710dp"
         android:text="P"
         android:textColor="#673AB7"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup7" />
-
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="320dp"
-        android:text="G"
-        android:textColor="#8BC34A"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView35"
@@ -142,8 +131,8 @@
         android:id="@+id/textView34"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
         android:text="G"
         android:textColor="#8BC34A"
         android:textSize="24sp"
@@ -176,7 +165,7 @@
         android:id="@+id/textView40"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="8dp"
         android:text="P"
         android:textColor="#673AB7"
         android:textSize="24sp"
@@ -187,7 +176,7 @@
         android:id="@+id/textView39"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="8dp"
         android:text="P"
         android:textColor="#673AB7"
         android:textSize="24sp"
@@ -209,7 +198,7 @@
         android:id="@+id/textView42"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="349dp"
+        android:layout_marginEnd="456dp"
         android:text="P"
         android:textColor="#673AB7"
         android:textSize="24sp"
@@ -237,16 +226,26 @@
         app:layout_constraintEnd_toStartOf="@+id/textView42"
         app:layout_constraintTop_toTopOf="@+id/textView35" />
 
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="22dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="710dp"
+        android:text="G"
+        android:textColor="#8BC34A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <RadioGroup
         android:id="@+id/radioGroup7"
         android:layout_width="30dp"
         android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup15"
-        app:layout_constraintEnd_toStartOf="@+id/textView44"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup15"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup15"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
             android:id="@+id/radioButton5"
@@ -819,7 +818,7 @@
         android:id="@+id/switch1"
         android:layout_width="217dp"
         android:layout_height="44dp"
-        android:layout_marginStart="372dp"
+        android:layout_marginStart="456dp"
         android:layout_marginTop="92dp"
         android:text="Do They Have Auto?"
         android:textColor="@color/scraphead_yellow"

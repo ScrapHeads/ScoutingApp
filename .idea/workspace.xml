@@ -183,7 +183,7 @@
       <command value="MainActivity" />
     </option>
   </component>
-  <component name="RunManager" selected="Android App.MainActivity">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
       <module name="MyFIrstApp.app" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
@@ -364,12 +364,12 @@
       <map>
         <entry key="com.example.myfirstapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1759957701774" />
+            <CheckInfo lastCheckTimestamp="1760199042961" />
           </value>
         </entry>
         <entry key="com.example.myfirstapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1759957701774" />
+            <CheckInfo lastCheckTimestamp="1760199042962" />
           </value>
         </entry>
       </map>

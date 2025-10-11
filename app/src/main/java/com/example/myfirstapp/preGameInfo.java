@@ -33,9 +33,9 @@ public class preGameInfo extends AppCompatActivity {
         //noPreload = findViewById(R.id.mainNoPreload);
         //postionOne = findViewById(R.id.mainPostionOne);
         //postionTwo = findViewById(R.id.mainPostionTwo);
-        //scoutName = findViewById(R.id.mainScoutName);
-        //matchNumber = findViewById(R.id.mainMatchNumber);
-        //teamNumber = findViewById(R.id.mainTeamNumber);
+        scoutName = findViewById(R.id.mainScoutName);
+        matchNumber = findViewById(R.id.mainMatchNumber);
+        teamNumber = findViewById(R.id.mainTeamNumber);
         setPrevious();
     }
 

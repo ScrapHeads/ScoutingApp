@@ -6,35 +6,135 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
+    <EditText
+        android:id="@+id/mainMatchNumber"
+        android:layout_width="195dp"
+        android:layout_height="39dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:hint="mach number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textColorHint="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainScoutName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mainScoutName"
+        app:layout_constraintTop_toBottomOf="@+id/mainScoutName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColorHint="@color/scraphead_yellow" />
+
+    <EditText
+        android:id="@+id/mainTeamNumber"
+        android:layout_width="194dp"
+        android:layout_height="38dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:hint="Team Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textColorHint="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainMatchNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mainMatchNumber"
+        app:layout_constraintTop_toBottomOf="@+id/mainMatchNumber"
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColorHint="@color/scraphead_yellow" />
+
     <RadioGroup
-        android:layout_width="346dp"
-        android:layout_height="119dp"
+        android:layout_width="349dp"
+        android:layout_height="154dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="340dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/scraphead_blue"
+            android:text="Alliance color"
+            android:textAlignment="center"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+
         <RadioButton
             android:id="@+id/mainRedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Red Button" />
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:text="Red Button"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/mainBlueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Blue Button" />
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:text="Blue Button"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp" />
+
     </RadioGroup>
 
     <EditText
         android:id="@+id/mainScoutName"
+        android:layout_width="193dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:hint="NAME"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textColorHint="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        tools:textColorHint="@color/scraphead_yellow" />
+
+    <Button
+        android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="72dp"
-        android:ems="10"
-        android:inputType="text|textPassword|textAutoCorrect"
+        android:layout_marginTop="28dp"
+        android:onClick="back"
+        android:rotationX="2"
+        android:rotationY="-2"
+        android:text="Back"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="toSample"
+        android:rotationX="2"
+        android:rotationY="-2"
+        android:text="Next"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
