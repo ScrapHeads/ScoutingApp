@@ -1,8 +1,5 @@
 package com.example.myfirstapp;
 
-import android.util.Log;
-import android.view.View;
-
 public class RecordsActivity {
     public static class Info {
 
@@ -23,6 +20,8 @@ public class RecordsActivity {
         public static byte autoHighBasketText = 0;
         static String AutoAscent = "";
         public static boolean noAuto= false;
+        public static byte overflowtxtauto;
+        static String parkedAuto ="";
 
         //Tele activty
         public static byte teleSpecimenLowChamber = 0;
@@ -31,6 +30,7 @@ public class RecordsActivity {
         public static byte teleLowBasketText = 0;
         public static byte teleHighBasketText = 0;
         static String teleAscent = "";
+        public static byte overflowtxtTely =0;
 
         //Match notes
         public static byte skillLvl = 0;

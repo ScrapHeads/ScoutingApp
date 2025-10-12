@@ -17,8 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Tele<pri> extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, LevleTwo,LevleThree;
-    TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText;
-    byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0;
+    TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt;
+    byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0;
     String teleBotAscent;
 
     @Override
@@ -26,6 +26,7 @@ public class Tele<pri> extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tele);
         this.setRequestedOrientation(ActivityInfo. SCREEN_ORIENTATION_LANDSCAPE);
+        overflowtxt = findViewById(R.id.overflowText);
         teleNetZoneText = findViewById(R.id.sampleNetZoneCount3);
         teleLowBasketText = findViewById(R.id.spesamenLowBasketCount);
         teleHighBasketText = findViewById(R.id.teleHighBasketCount);
@@ -58,7 +59,8 @@ public class Tele<pri> extends AppCompatActivity {
         teleHiChamberText.setText(previous.getStringExtra("teleHiChamberText"));                  Log.d("tApre","AutoHiChamberText from getStringExtra");
         teleHiChamberText.setText(String.valueOf(RecordsActivity.Info.teleHighChamber));                Log.d("tApre","teleHiChamberText setText teleHighChamber");
         teleloChamberText.setText(previous.getStringExtra("teleloChamberText"));                  Log.d("tApre","got teleloChamberText from getStringExtra");
-        teleloChamberText.setText(String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));         Log.d("tAloChamber","set pre teleloChamberText = "+teleloChamberText.getText().toString()); Log.d("tAloChamber", "set pre records teleLowChamberText"+String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));
+        teleloChamberText.setText(String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));Log.d("tAloChamber","set pre teleloChamberText = "+teleloChamberText.getText().toString()); Log.d("tAloChamber", "set pre records teleLowChamberText"+String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));
+        overflowtxt.setText(String.valueOf(RecordsActivity.Info.overflowtxtTely));
 
         if (teleBotAscent == "park"){
             noPark.setChecked(false);
@@ -103,6 +105,16 @@ public class Tele<pri> extends AppCompatActivity {
             if (teleNetZone > 0) {
                 findViewById(R.id.spesamenNetSubtract).setVisibility(VISIBLE);
             }
+            Overflow= Byte.parseByte(overflowtxt.getText().toString());
+            if (Overflow==0){
+                findViewById(R.id.overflowMin).setVisibility(GONE);
+            }
+            Overflow=Byte.parseByte(overflowtxt.getText().toString());
+            if (Overflow > 0){
+                findViewById(R.id.overflowMin).setVisibility(VISIBLE);
+            }
+
+
             teleloChamber = Byte.parseByte(teleloChamberText.getText().toString());
             if (teleloChamber == 0){
                 findViewById(R.id.spesamenLCSubtractionButton).setVisibility(INVISIBLE);
@@ -148,6 +160,8 @@ public class Tele<pri> extends AppCompatActivity {
         AUTOsave.putExtra("teleHiChamberText",teleHiChamberText.getText().toString());
         RecordsActivity.Info.teleSpecimenLowChamber = Byte.parseByte(teleloChamberText.getText().toString());   Log.d("tAloChamber", "save teleLoChamberText = "+(teleloChamberText.getText().toString())); Log.d("save tAloChamber", "teleLoChamberRecords = "+String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));
         AUTOsave.putExtra("teleloChamberText",teleloChamberText.getText().toString());
+        RecordsActivity.Info.overflowtxtTely=Byte.parseByte(overflowtxt.getText().toString());
+        AUTOsave.putExtra("Tellyoverflow", overflowtxt.getText().toString());
     }
 
     public void backAuto(View view) {
@@ -165,6 +179,26 @@ public class Tele<pri> extends AppCompatActivity {
             findViewById(R.id.spesamenNetSubtract).setVisibility(VISIBLE);
         }
     }
+    public void overflowIncreas(View view){
+        Overflow++;
+        overflowtxt.setText(String.valueOf(Overflow));
+        if ( Overflow>0){
+            findViewById(R.id.overflowMin).setVisibility(VISIBLE);
+        }
+    }
+    public void overflowDecres(View view){
+        if (Overflow >0){
+            Overflow--;
+            overflowtxt.setText(String.valueOf(Overflow));
+        }
+        if (Overflow<=0){
+            findViewById(R.id.overflowMin).setVisibility(GONE);
+        }
+
+    }
+
+
+
     public void TeleNetZoneDecrease(View view) {
         if (teleNetZone > 0) {
             teleNetZone--;

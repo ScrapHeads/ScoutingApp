@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:buttonTint="@color/scraphead_yellow"
-            android:text="Red Button"
+            android:text="Red"
             android:textColor="@color/scraphead_blue"
             android:textSize="20sp" />
 
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:buttonTint="@color/scraphead_yellow"
-            android:text="Blue Button"
+            android:text="Blue"
             android:textColor="@color/scraphead_blue"
             android:textSize="20sp" />
 

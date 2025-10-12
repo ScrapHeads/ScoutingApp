@@ -16,16 +16,17 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AutoActivity<pri> extends AppCompatActivity {
-    RadioButton park, noPark, LevleOne;
-    TextView autoNetZoneText, autoLowBasketText, autoHighBasketText,AutoHiChamberText,AutoloChamberText;
-    byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber=0,AutoloChamber=0, autoTeamPer=0;
-    String autoBotAscent;
+    RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers;
+    TextView autoNetZoneText, autoLowBasketText, autoHighBasketText,AutoHiChamberText,AutoloChamberText, overflowtxt;
+    byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber=0,AutoloChamber=0, autoTeamPer=0, overflow=0;
+    String autoBotAscent,parked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto);
         this.setRequestedOrientation(ActivityInfo. SCREEN_ORIENTATION_LANDSCAPE);
+        overflowtxt=findViewById(R.id.textView10);
         autoNetZoneText = findViewById(R.id.sampleNetZoneCount);
         autoLowBasketText = findViewById(R.id.sampleLowBasketCount);
         autoHighBasketText = findViewById(R.id.sampleHighBasketCount);
@@ -34,6 +35,10 @@ public class AutoActivity<pri> extends AppCompatActivity {
         park =findViewById(R.id.AutoPark);
         noPark = findViewById(R.id.endNoPark);
         LevleOne = findViewById(R.id.endLevel1);
+        noparked =findViewById(R.id.park1);
+        barlyparked=findViewById(R.id.bparled);
+        fullparked=findViewById(R.id.fullpared);
+        parkedwithothers=findViewById(R.id.parkedwithothers);
         RecordsActivity.Info.noAuto=false;
         setPrevious();
 }
@@ -75,6 +80,9 @@ public class AutoActivity<pri> extends AppCompatActivity {
         AutoloChamberText.setText(String.valueOf(RecordsActivity.Info.autoLowChamberText));
         autoBotAscent=previous.getStringExtra("autoBotAscent");                                   Log.d("AASet Previous","autoBotAscent = "+autoBotAscent); Log.d("AASet Previous", "AutoAscent"+String.valueOf(RecordsActivity.Info.AutoAscent));
         autoBotAscent=RecordsActivity.Info.AutoAscent;
+        overflowtxt.setText(String.valueOf(RecordsActivity.Info.overflowtxtauto));
+        parked=RecordsActivity.Info.parkedAuto;
+
         if (autoBotAscent=="noPark") {
             park.setChecked(false);
             LevleOne.setChecked(false);
@@ -90,6 +98,44 @@ public class AutoActivity<pri> extends AppCompatActivity {
             park.setChecked(false);
             LevleOne.setChecked(true);
         }
+        if (parked=="noparked"){
+            barlyparked.setChecked(false);
+            fullparked.setChecked(false);
+            parkedwithothers.setChecked(false);
+            noparked.setChecked(true);
+        }
+        if (parked=="barlyparked"){
+            fullparked.setChecked(false);
+            parkedwithothers.setChecked(false);
+            noparked.setChecked(false);
+            barlyparked.setChecked(true);
+        }
+        if (parked=="fullparked"){
+            barlyparked.setChecked(false);
+            parkedwithothers.setChecked(false);
+            noparked.setChecked(false);
+            fullparked.setChecked(true);
+        }
+        if (parked=="parkedwithothers"){
+            barlyparked.setChecked(false);
+            fullparked.setChecked(false);
+            noparked.setChecked(false);
+            parkedwithothers.setChecked(true);
+        }
+
+        overflow=Byte.parseByte(overflowtxt.getText().toString());
+        if (overflow==0){
+            findViewById(R.id.button5).setVisibility(GONE);
+        }
+        overflow=Byte.parseByte(overflowtxt.getText().toString());
+        if (overflow>0){
+            findViewById(R.id.button5).setVisibility(VISIBLE);
+        }
+
+
+
+
+
         autoNetZone = Byte.parseByte(autoNetZoneText.getText().toString());
         if (autoNetZone == 0){                                                                           Log.d("AASet Previous", String.valueOf(autoNetZone));
             findViewById(R.id.sampleNetSubtract).setVisibility(INVISIBLE);                              Log.d("AASet Previous", "INVISIBLE");
@@ -150,6 +196,10 @@ public class AutoActivity<pri> extends AppCompatActivity {
         AUTOsave.putExtra("AutoHiChamberText",AutoHiChamberText.getText().toString());
         RecordsActivity.Info.autoLowChamberText = Byte.parseByte(AutoloChamberText.getText().toString());   Log.d("AAput","AutoloChamberText" + AutoloChamberText.getText().toString()); Log.d("AAput", String.valueOf(RecordsActivity.Info.autoLowChamberText));
         AUTOsave.putExtra("AutoloChamberText",AutoloChamberText.getText().toString());                Log.d("BackClick","End Save Data");
+        RecordsActivity.Info.overflowtxtauto=Byte.parseByte(overflowtxt.getText().toString());
+        AUTOsave.putExtra("autooverflow",overflowtxt.getText().toString());
+        RecordsActivity.Info.parkedAuto =parked;
+        AUTOsave.putExtra("parkedAuto",String.valueOf(parked));
 
     }
 
@@ -277,6 +327,50 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
         autoBotAscent="LevleOne";  Log.d("LevleOne", String.valueOf(autoBotAscent));
         Log.d("LevleOne", String.valueOf(autoBotAscent));
+    }
+    public void overflowIncreas(View view){
+        overflow++;
+        overflowtxt.setText(String.valueOf(overflow));
+        if (overflow>0){
+            findViewById(R.id.button5).setVisibility(VISIBLE);
+        }
+    }
+    public void overflowDecres(View view){
+        if (overflow>0){
+            overflow--;
+            overflowtxt.setText(String.valueOf(overflow));
+        }
+        if (overflow<=0){
+            findViewById(R.id.button5).setVisibility(GONE);
+        }
+    }
+    public void clickdidnotparked(View view){
+        barlyparked.setChecked(false);
+        fullparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(true);
+        parked="noparked";
+    }
+    public void clickbarlyparked(View view){
+        fullparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(false);
+        barlyparked.setChecked(true);
+        parked="barlyparked";
+    }
+    public void clickfullparked(View view){
+        barlyparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(false);
+        fullparked.setChecked(true);
+        parked="fullparked";
+    }
+    public void clickparkedwithothers(View view){
+        barlyparked.setChecked(false);
+        fullparked.setChecked(false);
+        noparked.setChecked(false);
+        parkedwithothers.setChecked(true);
+        parked="parkedwithothers";
     }
 
 
