@@ -16,10 +16,10 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Tele<pri> extends AppCompatActivity {
-    RadioButton park, noPark, LevleOne, LevleTwo,LevleThree;
+    RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers;
     TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt;
     byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0;
-    String teleBotAscent;
+    String teleBotAscent, parked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,10 @@ public class Tele<pri> extends AppCompatActivity {
         LevleOne = findViewById(R.id.telelevel1);
         LevleTwo = findViewById(R.id.endlevel2);
         LevleThree = findViewById(R.id.endLevel3);
+        noparked =findViewById(R.id.telypark1);
+        barlyparked=findViewById(R.id.telybparled);
+        fullparked=findViewById(R.id.telyfullpared);
+        parkedwithothers=findViewById(R.id.telyparkedwithothers);
         setPrevious();                                      Log.d("tApre","get I");
     }
 
@@ -61,6 +65,7 @@ public class Tele<pri> extends AppCompatActivity {
         teleloChamberText.setText(previous.getStringExtra("teleloChamberText"));                  Log.d("tApre","got teleloChamberText from getStringExtra");
         teleloChamberText.setText(String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));Log.d("tAloChamber","set pre teleloChamberText = "+teleloChamberText.getText().toString()); Log.d("tAloChamber", "set pre records teleLowChamberText"+String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));
         overflowtxt.setText(String.valueOf(RecordsActivity.Info.overflowtxtTely));
+        parked=RecordsActivity.Info.telyparked;
 
         if (teleBotAscent == "park"){
             noPark.setChecked(false);
@@ -143,6 +148,30 @@ public class Tele<pri> extends AppCompatActivity {
             if (teleHighBasket > 0) {
                 findViewById(R.id.spesamenHighBasketSubtract).setVisibility(VISIBLE);                                Log.d("AASet Previous", "VISIBLE");
             }
+        if (parked=="noparked"){
+            barlyparked.setChecked(false);
+            fullparked.setChecked(false);
+            parkedwithothers.setChecked(false);
+            noparked.setChecked(true);
+        }
+        if (parked=="barlyparked"){
+            fullparked.setChecked(false);
+            parkedwithothers.setChecked(false);
+            noparked.setChecked(false);
+            barlyparked.setChecked(true);
+        }
+        if (parked=="fullparked"){
+            barlyparked.setChecked(false);
+            parkedwithothers.setChecked(false);
+            noparked.setChecked(false);
+            fullparked.setChecked(true);
+        }
+        if (parked=="parkedwithothers"){
+            barlyparked.setChecked(false);
+            fullparked.setChecked(false);
+            noparked.setChecked(false);
+            parkedwithothers.setChecked(true);
+        }
         }
 
 
@@ -162,6 +191,8 @@ public class Tele<pri> extends AppCompatActivity {
         AUTOsave.putExtra("teleloChamberText",teleloChamberText.getText().toString());
         RecordsActivity.Info.overflowtxtTely=Byte.parseByte(overflowtxt.getText().toString());
         AUTOsave.putExtra("Tellyoverflow", overflowtxt.getText().toString());
+        RecordsActivity.Info.telyparked =parked;
+        AUTOsave.putExtra("tellyparked",String.valueOf(parked));
     }
 
     public void backAuto(View view) {
@@ -327,5 +358,33 @@ public class Tele<pri> extends AppCompatActivity {
         LevleTwo.setChecked(false);
         LevleThree.setChecked(true);
         teleBotAscent="LvlThree";
+    }
+    public void clickdidnotparked(View view){
+        barlyparked.setChecked(false);
+        fullparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(true);
+        parked="noparked";
+    }
+    public void clickbarlyparked(View view){
+        fullparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(false);
+        barlyparked.setChecked(true);
+        parked="barlyparked";
+    }
+    public void clickfullparked(View view){
+        barlyparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(false);
+        fullparked.setChecked(true);
+        parked="fullparked";
+    }
+    public void clickparkedwithothers(View view){
+        barlyparked.setChecked(false);
+        fullparked.setChecked(false);
+        noparked.setChecked(false);
+        parkedwithothers.setChecked(true);
+        parked="parkedwithothers";
     }
 }

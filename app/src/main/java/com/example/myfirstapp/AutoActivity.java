@@ -35,10 +35,10 @@ public class AutoActivity<pri> extends AppCompatActivity {
         park =findViewById(R.id.AutoPark);
         noPark = findViewById(R.id.endNoPark);
         LevleOne = findViewById(R.id.endLevel1);
-        noparked =findViewById(R.id.park1);
-        barlyparked=findViewById(R.id.bparled);
-        fullparked=findViewById(R.id.fullpared);
-        parkedwithothers=findViewById(R.id.parkedwithothers);
+        noparked =findViewById(R.id.autopark1);
+        barlyparked=findViewById(R.id.autobparled);
+        fullparked=findViewById(R.id.autofullpared);
+        parkedwithothers=findViewById(R.id.AUTOparkedwithothers);
         RecordsActivity.Info.noAuto=false;
         setPrevious();
 }

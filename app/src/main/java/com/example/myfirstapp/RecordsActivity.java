@@ -31,6 +31,7 @@ public class RecordsActivity {
         public static byte teleHighBasketText = 0;
         static String teleAscent = "";
         public static byte overflowtxtTely =0;
+        static String telyparked="";
 
         //Match notes
         public static byte skillLvl = 0;

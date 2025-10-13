@@ -17,33 +17,37 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/park1"
+            android:id="@+id/telypark1"
             android:layout_width="match_parent"
             android:layout_height="79dp"
+            android:onClick="clickdidnotparked"
             android:text="Didn't Park"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/bparled"
+            android:id="@+id/telybparled"
             android:layout_width="match_parent"
             android:layout_height="79dp"
+            android:onClick="clickbarlyparked"
             android:text="Barely Parked"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/fullpared"
+            android:id="@+id/telyfullpared"
             android:layout_width="match_parent"
             android:layout_height="79dp"
+            android:onClick="clickfullparked"
             android:text="Fully Parked"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/parkedwithothers"
+            android:id="@+id/telyparkedwithothers"
             android:layout_width="match_parent"
             android:layout_height="79dp"
+            android:onClick="clickparkedwithothers"
             android:text="Parked With Other Bot"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
@@ -63,8 +67,8 @@
 
     <TextView
         android:id="@+id/overflowText"
-        android:layout_width="21dp"
-        android:layout_height="45dp"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="34sp"
@@ -85,14 +89,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/overflowText"
         app:layout_constraintStart_toEndOf="@+id/overflowText"
         app:layout_constraintTop_toTopOf="@+id/overflowText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="113dp"
         android:layout_height="45dp"
-        android:layout_marginTop="304dp"
-        android:layout_marginEnd="492dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="532dp"
         android:text="Overflow"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
