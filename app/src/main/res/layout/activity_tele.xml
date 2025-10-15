@@ -53,18 +53,6 @@
             android:textSize="20sp" />
     </RadioGroup>
 
-    <Button
-        android:id="@+id/overflowMin"
-        android:layout_width="44dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="12dp"
-        android:onClick="overflowDecres"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/overflowText"
-        app:layout_constraintEnd_toStartOf="@+id/overflowText"
-        app:layout_constraintTop_toTopOf="@+id/overflowText"
-        app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/overflowText"
         android:layout_width="53dp"
@@ -74,17 +62,33 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.383"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintVertical_bias="0.845" />
+
+    <Button
+        android:id="@+id/overflowMin"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="overflowDecres"
+        android:rotationX="-17"
+        android:rotationY="-360"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/overflowText"
+        app:layout_constraintEnd_toStartOf="@+id/overflowText"
+        app:layout_constraintTop_toTopOf="@+id/overflowText"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/overflowbuttenAdd"
         android:layout_width="44dp"
         android:layout_height="40dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="12dp"
         android:onClick="overflowIncreas"
+        android:rotationX="-17"
+        android:rotationY="-360"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="@+id/overflowText"
         app:layout_constraintStart_toEndOf="@+id/overflowText"
@@ -108,10 +112,10 @@
         android:id="@+id/radioGroup7"
         android:layout_width="30dp"
         android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup15"
-        app:layout_constraintEnd_toStartOf="@+id/textView44"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup15"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup15">
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="460dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
             android:id="@+id/radioButton5"
@@ -394,7 +398,7 @@
         android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.462">
@@ -415,7 +419,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="264dp"
         android:layout_marginEnd="612dp"
         android:text="clear"
         app:layout_constraintEnd_toEndOf="parent"
