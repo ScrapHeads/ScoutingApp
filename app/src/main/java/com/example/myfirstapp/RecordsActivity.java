@@ -11,6 +11,7 @@ public class RecordsActivity {
         static String preload = "";
         static String alliance = "";
         public static byte fieldPosition = 0;
+        static String fieldPositionNuw="";
 
         //Auto activity
         public static byte autoLowChamberText = 0;
@@ -22,6 +23,7 @@ public class RecordsActivity {
         public static boolean noAuto= false;
         public static byte overflowtxtauto;
         static String parkedAuto ="";
+        static String ppggpppgp = "";
 
         //Tele activty
         public static byte teleSpecimenLowChamber = 0;

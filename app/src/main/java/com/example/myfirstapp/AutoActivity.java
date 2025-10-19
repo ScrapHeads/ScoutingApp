@@ -16,10 +16,10 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AutoActivity<pri> extends AppCompatActivity {
-    RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers;
+    RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers,ppg,gpp,pgp;
     TextView autoNetZoneText, autoLowBasketText, autoHighBasketText,AutoHiChamberText,AutoloChamberText, overflowtxt;
     byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber=0,AutoloChamber=0, autoTeamPer=0, overflow=0;
-    String autoBotAscent,parked;
+    String autoBotAscent,parked,pgpppggpp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,9 @@ public class AutoActivity<pri> extends AppCompatActivity {
         barlyparked=findViewById(R.id.autobparled);
         fullparked=findViewById(R.id.autofullpared);
         parkedwithothers=findViewById(R.id.AUTOparkedwithothers);
+        ppg =findViewById(R.id.ppg);
+        gpp =findViewById(R.id.gpp);
+        pgp =findViewById(R.id.pgp);
         RecordsActivity.Info.noAuto=false;
         setPrevious();
 }
@@ -82,6 +85,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         autoBotAscent=RecordsActivity.Info.AutoAscent;
         overflowtxt.setText(String.valueOf(RecordsActivity.Info.overflowtxtauto));
         parked=RecordsActivity.Info.parkedAuto;
+        pgpppggpp=RecordsActivity.Info.ppggpppgp;
 
         if (autoBotAscent=="noPark") {
             park.setChecked(false);
@@ -130,6 +134,21 @@ public class AutoActivity<pri> extends AppCompatActivity {
         overflow=Byte.parseByte(overflowtxt.getText().toString());
         if (overflow>0){
             findViewById(R.id.button5).setVisibility(VISIBLE);
+        }
+        if (pgpppggpp=="pgp"){
+            pgp.setChecked(true);
+            gpp.setChecked(false);
+            ppg.setChecked(false);
+        }
+        if (pgpppggpp=="ppg"){
+            ppg.setChecked(true);
+            gpp.setChecked(false);
+            pgp.setChecked(false);
+        }
+        if (pgpppggpp=="gpp"){
+            gpp.setChecked(true);
+            pgp.setChecked(false);
+            ppg.setChecked(false);
         }
 
 
@@ -200,6 +219,9 @@ public class AutoActivity<pri> extends AppCompatActivity {
         AUTOsave.putExtra("autooverflow",overflowtxt.getText().toString());
         RecordsActivity.Info.parkedAuto =parked;
         AUTOsave.putExtra("parkedAuto",String.valueOf(parked));
+        RecordsActivity.Info.ppggpppgp=pgpppggpp;
+        AUTOsave.putExtra("ppgpgpgpp",String.valueOf(pgpppggpp));
+
 
     }
 
@@ -371,6 +393,24 @@ public class AutoActivity<pri> extends AppCompatActivity {
         noparked.setChecked(false);
         parkedwithothers.setChecked(true);
         parked="parkedwithothers";
+    }
+    public void ppg (View view){
+        ppg.setChecked(true);
+        gpp.setChecked(false);
+        pgp.setChecked(false);
+        pgpppggpp="ppg";
+    }
+    public void pgp (View view){
+        pgp.setChecked(true);
+        ppg.setChecked(false);
+        gpp.setChecked(false);
+        pgpppggpp="pgp";
+    }
+    public void gpp (View view){
+        gpp.setChecked(true);
+        ppg.setChecked(false);
+        pgp.setChecked(false);
+        pgpppggpp="gpp";
     }
 
 

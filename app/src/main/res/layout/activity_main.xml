@@ -137,4 +137,90 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="254dp"
+        android:layout_height="382dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="36dp"
+        android:rotation="90"
+        android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/redtopleft"
+        android:layout_width="24dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="redtopleft"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/bottomleft"
+        android:layout_width="24dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomleft"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/bluetopright"
+        android:layout_width="24dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="212dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bluetopright"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/bottomright"
+        android:layout_width="24dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="152dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomright"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/bottommid"
+        android:layout_width="24dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="116dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottommid"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/topmid"
+        android:layout_width="24dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="topmid"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.167" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

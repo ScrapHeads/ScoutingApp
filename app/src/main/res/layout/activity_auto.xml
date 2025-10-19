@@ -7,22 +7,12 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="624dp"
-        android:text="clear"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="113dp"
         android:layout_height="45dp"
-        android:layout_marginTop="316dp"
-        android:layout_marginEnd="504dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="508dp"
         android:text="Overflow"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
@@ -69,22 +59,10 @@
         app:layout_constraintVertical_bias="0.571" />
 
     <TextView
-        android:id="@+id/textView43"
-        android:layout_width="22dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginEnd="712dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView42"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="444dp"
+        android:layout_marginEnd="340dp"
         android:text="P"
         android:textColor="#673AB7"
         android:textSize="24sp"
@@ -95,8 +73,8 @@
         android:id="@+id/textView34"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="12dp"
         android:text="G"
         android:textColor="#8BC34A"
         android:textSize="24sp"
@@ -194,11 +172,33 @@
         android:id="@+id/textView44"
         android:layout_width="22dp"
         android:layout_height="59dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="712dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="612dp"
         android:text="G"
         android:textColor="#8BC34A"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="524dp"
+        android:text="clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="22dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="612dp"
+        android:text="P"
+        android:textColor="#673AB7"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -206,18 +206,18 @@
         android:id="@+id/radioGroup7"
         android:layout_width="30dp"
         android:layout_height="97dp"
-        android:layout_marginTop="167dp"
-        android:layout_marginEnd="432dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="328dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -232,12 +232,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup16">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -252,12 +252,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup10">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -272,12 +272,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup17">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -292,12 +292,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup9">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -312,12 +312,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup5">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -332,12 +332,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup8">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -356,12 +356,12 @@
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -371,20 +371,18 @@
         android:id="@+id/radioGroup18"
         android:layout_width="30dp"
         android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="568dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453">
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/autochoice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/autochoice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -783,7 +781,7 @@
         android:id="@+id/switch1"
         android:layout_width="217dp"
         android:layout_height="44dp"
-        android:layout_marginStart="280dp"
+        android:layout_marginStart="372dp"
         android:layout_marginTop="80dp"
         android:text="Do They Have Auto?"
         android:textColor="@color/scraphead_yellow"
@@ -835,5 +833,54 @@
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
     </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="116dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501">
+
+        <RadioButton
+            android:id="@+id/ppg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ppg"
+            android:text="P  P  G"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/gpp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gpp"
+            android:text="G  P  P"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/pgp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pgp"
+            android:text="P  G  P"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="136dp"
+        android:text="Obelisk patterns"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

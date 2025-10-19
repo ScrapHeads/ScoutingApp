@@ -3,8 +3,6 @@ package com.example.myfirstapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -14,12 +12,11 @@ import android.widget.TextView;
 import android.util.Log;
 
 
-
 public class preGameInfo extends AppCompatActivity {
     RadioButton red, blue, sample, noPreload, postionOne, postionTwo, specimen;
     TextView scoutName, matchNumber, teamNumber;
     byte botpostion;
-    String botAlliance, botPreload;
+    String botAlliance, botPreload, fieldPositionNuw;
 
 
     @Override
@@ -100,7 +97,9 @@ public class preGameInfo extends AppCompatActivity {
             RecordsActivity.Info.fieldPosition = botpostion;
             save.putExtra("botpostion", botpostion);                            Log.d("Vput", String.valueOf(botpostion)); Log.d("Vput", String.valueOf(RecordsActivity.Info.fieldPosition));
             RecordsActivity.Info.preload = botPreload;
-            save.putExtra("botpreload", botPreload);                            Log.d("Vput", String.valueOf(botPreload)); Log.d("Vput", String.valueOf(RecordsActivity.Info.preload));
+            save.putExtra("botpreload", botPreload);
+            RecordsActivity.Info.fieldPositionNuw = fieldPositionNuw;
+            save.putExtra("fieldPositionNuw", fieldPositionNuw);                                                                                Log.d("Vput", String.valueOf(botPreload)); Log.d("Vput", String.valueOf(RecordsActivity.Info.preload));
 
         }
 
@@ -152,4 +151,26 @@ public class preGameInfo extends AppCompatActivity {
         postionTwo.setChecked(true);
         botpostion = 2;
     }
+
+    public void bluetopright() {
+        fieldPositionNuw ="1";
+    }
+    public void topmid() {
+        fieldPositionNuw ="2";
+    }
+    public void redtopleft() {
+        fieldPositionNuw ="3";
+    }
+    public void bottomright() {
+        fieldPositionNuw ="4";
+    }
+    public void bottommid() {
+        fieldPositionNuw ="5";
+    }
+    public void bottomleft() {
+        fieldPositionNuw ="6";
+    }
+
+
+
 }
