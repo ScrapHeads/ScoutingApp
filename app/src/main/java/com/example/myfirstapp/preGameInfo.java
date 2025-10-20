@@ -23,7 +23,7 @@ public class preGameInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setRequestedOrientation(ActivityInfo. SCREEN_ORIENTATION_LANDSCAPE);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         red = findViewById(R.id.mainRedButton);
         blue = findViewById(R.id.mainBlueButton);
         //specimen = findViewById(R.id.mainSpecimen);
@@ -36,141 +36,190 @@ public class preGameInfo extends AppCompatActivity {
         setPrevious();
     }
 
-        public void setPrevious() {
-        Intent previous=getIntent();
-            scoutName.setText(previous.getStringExtra("scoutName"));
-            scoutName.setText(String.valueOf(RecordsActivity.Info.scoutName));
-            teamNumber.setText(previous.getStringExtra("teamNumber"));
-            teamNumber.setText(String.valueOf(RecordsActivity.Info.teamNumber));
-            matchNumber.setText(previous.getStringExtra("matchNumder"));
-            matchNumber.setText(String.valueOf(RecordsActivity.Info.matchNumber));
-            botAlliance=(previous.getStringExtra("alliance"));
-            botAlliance=(String.valueOf(RecordsActivity.Info.alliance));
-            if (botAlliance == "red") {
-                blue.setChecked(false);
-                red.setChecked(true);
-            }
-            if (botAlliance == "blue") {
-                blue.setChecked(true);
-                red.setChecked(false);
-            }
-            previous.getStringExtra("preload");
-            botPreload=(String.valueOf(RecordsActivity.Info.preload));
-            if (botPreload == "specimen") {
-                noPreload.setChecked(false);
-                sample.setChecked(false);
-                specimen.setChecked(true);
-            }
-            if (botPreload == "sample") {
-                noPreload.setChecked(false);
-                specimen.setChecked(false);
-                sample.setChecked(true);
-            }
-            if (botPreload == "noPreload") {
-                sample.setChecked(false);
-                specimen.setChecked(false);
-                noPreload.setChecked(true);
-            }
-            botpostion=(RecordsActivity.Info.fieldPosition);
-            if (botpostion == 1 ) {
-                postionTwo.setChecked(false);
-                postionOne.setChecked(true);
-            }
-            if (botpostion == 2 ) {
-                postionOne.setChecked(false);
-                postionTwo.setChecked(true);
-            }
-
-
+    public void setPrevious() {
+        Intent previous = getIntent();
+        scoutName.setText(previous.getStringExtra("scoutName"));
+        scoutName.setText(String.valueOf(RecordsActivity.Info.scoutName));
+        teamNumber.setText(previous.getStringExtra("teamNumber"));
+        teamNumber.setText(String.valueOf(RecordsActivity.Info.teamNumber));
+        matchNumber.setText(previous.getStringExtra("matchNumder"));
+        matchNumber.setText(String.valueOf(RecordsActivity.Info.matchNumber));
+        botAlliance = (previous.getStringExtra("alliance"));
+        botAlliance = (String.valueOf(RecordsActivity.Info.alliance));
+        if (botAlliance == "red") {
+            blue.setChecked(false);
+            red.setChecked(true);
+        }
+        if (botAlliance == "blue") {
+            blue.setChecked(true);
+            red.setChecked(false);
+        }
+        previous.getStringExtra("preload");
+        botPreload = (String.valueOf(RecordsActivity.Info.preload));
+        if (botPreload == "specimen") {
+            noPreload.setChecked(false);
+            sample.setChecked(false);
+            specimen.setChecked(true);
+        }
+        if (botPreload == "sample") {
+            noPreload.setChecked(false);
+            specimen.setChecked(false);
+            sample.setChecked(true);
+        }
+        if (botPreload == "noPreload") {
+            sample.setChecked(false);
+            specimen.setChecked(false);
+            noPreload.setChecked(true);
+        }
+        botpostion = (RecordsActivity.Info.fieldPosition);
+        if (botpostion == 1) {
+            postionTwo.setChecked(false);
+            postionOne.setChecked(true);
+        }
+        if (botpostion == 2) {
+            postionOne.setChecked(false);
+            postionTwo.setChecked(true);
         }
 
-        public void saveData(){
-            Intent save= new Intent(this, RecordsActivity.class);
-            RecordsActivity.Info.scoutName = scoutName.getText().toString();
-            save.putExtra("scoutName", scoutName.getText().toString());         Log.d("Vput",scoutName.getText().toString()); Log.d("Vput",RecordsActivity.Info.scoutName);
-            RecordsActivity.Info.teamNumber = teamNumber.getText().toString();      Log.d("Vput",RecordsActivity.Info.scoutName);
-            save.putExtra("teamNumber", teamNumber.getText().toString());       Log.d("Vput",teamNumber.getText().toString()); Log.d("Vput",RecordsActivity.Info.teamNumber);
-            RecordsActivity.Info.matchNumber = matchNumber.getText().toString();
-            save.putExtra("matchNumber", matchNumber.getText().toString());     Log.d("Vput",matchNumber.getText().toString()); Log.d("Vput",RecordsActivity.Info.matchNumber);
-            RecordsActivity.Info.alliance = botAlliance;
-            save.putExtra("alliance", botAlliance);                             Log.d("Vput",botAlliance); Log.d("Vput",RecordsActivity.Info.alliance);
-            RecordsActivity.Info.fieldPosition = botpostion;
-            save.putExtra("botpostion", botpostion);                            Log.d("Vput", String.valueOf(botpostion)); Log.d("Vput", String.valueOf(RecordsActivity.Info.fieldPosition));
-            RecordsActivity.Info.preload = botPreload;
-            save.putExtra("botpreload", botPreload);
-            RecordsActivity.Info.fieldPositionNuw = fieldPositionNuw;
-            save.putExtra("fieldPositionNuw", fieldPositionNuw);                                                                                Log.d("Vput", String.valueOf(botPreload)); Log.d("Vput", String.valueOf(RecordsActivity.Info.preload));
 
-        }
-
-    public void toSample(View view){
-        Intent next = new Intent(this, AutoActivity.class);             Log.d("logNextClick", "Make a Page");
-        saveData();                                                                 Log.d("logNextClick", "Save Data");
-        startActivity(next);                                                        Log.d("logNextClick", "open Page");
     }
-    public void back(View view){
+
+    public void saveData() {
+        Intent save = new Intent(this, RecordsActivity.class);
+        RecordsActivity.Info.scoutName = scoutName.getText().toString();
+        save.putExtra("scoutName", scoutName.getText().toString());
+        Log.d("Vput", scoutName.getText().toString());
+        Log.d("Vput", RecordsActivity.Info.scoutName);
+        RecordsActivity.Info.teamNumber = teamNumber.getText().toString();
+        Log.d("Vput", RecordsActivity.Info.scoutName);
+        save.putExtra("teamNumber", teamNumber.getText().toString());
+        Log.d("Vput", teamNumber.getText().toString());
+        Log.d("Vput", RecordsActivity.Info.teamNumber);
+        RecordsActivity.Info.matchNumber = matchNumber.getText().toString();
+        save.putExtra("matchNumber", matchNumber.getText().toString());
+        Log.d("Vput", matchNumber.getText().toString());
+        Log.d("Vput", RecordsActivity.Info.matchNumber);
+        RecordsActivity.Info.alliance = botAlliance;
+        save.putExtra("alliance", botAlliance);
+        Log.d("Vput", botAlliance);
+        Log.d("Vput", RecordsActivity.Info.alliance);
+        RecordsActivity.Info.fieldPosition = botpostion;
+        save.putExtra("botpostion", botpostion);
+        Log.d("Vput", String.valueOf(botpostion));
+        Log.d("Vput", String.valueOf(RecordsActivity.Info.fieldPosition));
+        RecordsActivity.Info.preload = botPreload;
+        save.putExtra("botpreload", botPreload);
+        RecordsActivity.Info.fieldPositionNuw = fieldPositionNuw;
+        save.putExtra("fieldPositionNuw", fieldPositionNuw);
+        Log.d("Vput", String.valueOf(botPreload));
+        Log.d("Vput", String.valueOf(RecordsActivity.Info.preload));
+
+    }
+
+    public void toSample(View view) {
+        Intent next = new Intent(this, AutoActivity.class);
+        Log.d("logNextClick", "Make a Page");
+        saveData();
+        Log.d("logNextClick", "Save Data");
+        startActivity(next);
+        Log.d("logNextClick", "open Page");
+    }
+
+    public void back(View view) {
         Intent next = new Intent(this, scoutingChoice.class);
         saveData();
         startActivity(next);
     }
-    public void redClick(View view){    Log.d("logredClick", "starting method");
-        blue.setChecked(false);         Log.d("logredClick", "set blue false");
-        red.setChecked(true);           Log.d("logredClick", "set RED true");
-        botAlliance="red";              Log.d("logredClick", "set botAlliance to red");
-      }
-    public void blueClick(View view){   Log.d("logblueClick", "starting method");
-        red.setChecked(false);          Log.d("logblueClick", "set red false");
-        blue.setChecked(true);          Log.d("logblueClick", "set blue true");
-        botAlliance="blue";             Log.d("logredClick", "set botAlliance to blue");
+
+    public void redClick(View view) {
+        Log.d("logredClick", "starting method");
+        blue.setChecked(false);
+        Log.d("logredClick", "set blue false");
+        red.setChecked(true);
+        Log.d("logredClick", "set RED true");
+        botAlliance = "red";
+        Log.d("logredClick", "set botAlliance to red");
     }
-    public void specimenClick(View view){
+
+    public void blueClick(View view) {
+        Log.d("logblueClick", "starting method");
+        red.setChecked(false);
+        Log.d("logblueClick", "set red false");
+        blue.setChecked(true);
+        Log.d("logblueClick", "set blue true");
+        botAlliance = "blue";
+        Log.d("logredClick", "set botAlliance to blue");
+    }
+
+    public void specimenClick(View view) {
         noPreload.setChecked(false);
         sample.setChecked(false);
         specimen.setChecked(true);
-        botPreload="specimen";          Log.d( "botPreload", botPreload );
+        botPreload = "specimen";
+        Log.d("botPreload", botPreload);
     }
-    public void sampleClick(View view){
+
+    public void sampleClick(View view) {
         noPreload.setChecked(false);
         specimen.setChecked(false);
         sample.setChecked(true);
-        botPreload="sample";
+        botPreload = "sample";
     }
-    public void NoPreloadClick(View view){
+
+    public void NoPreloadClick(View view) {
         sample.setChecked(false);
         specimen.setChecked(false);
         noPreload.setChecked(true);
-        botPreload="noPreload";
+        botPreload = "noPreload";
     }
-    public void PostionOne(View view){
+
+    public void PostionOne(View view) {
         postionTwo.setChecked(false);
         postionOne.setChecked(true);
         botpostion = 1;
     }
-    public void PostionTwo(View view){
+
+    public void PostionTwo(View view) {
         postionOne.setChecked(false);
         postionTwo.setChecked(true);
         botpostion = 2;
     }
 
     public void bluetopright() {
-        fieldPositionNuw ="1";
+        Log.d("YELLOWBUTTONS", "clicked blue top right");
+        fieldPositionNuw = "top 1";
+        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to top 1");
     }
+
     public void topmid() {
-        fieldPositionNuw ="2";
+        Log.d("YELLOWBUTTONS", "clicked top mid");
+        fieldPositionNuw = "top 2";
+        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to top 2");
     }
+
     public void redtopleft() {
-        fieldPositionNuw ="3";
+        Log.d("YELLOWBUTTONS", "clicked red top left");
+        fieldPositionNuw = "top 3";
+        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to top 3");
     }
+
     public void bottomright() {
-        fieldPositionNuw ="4";
+        Log.d("YELLOWBUTTONS", "clicked bottom right");
+        fieldPositionNuw = "bottom 4";
+        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to bottom 4");
     }
+
     public void bottommid() {
-        fieldPositionNuw ="5";
+        Log.d("YELLOWBUTTONS", "clicked bottom mid");
+        fieldPositionNuw = "bottom 5";
+        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to bottom 5");
     }
+
     public void bottomleft() {
-        fieldPositionNuw ="6";
+        Log.d("YELLOWBUTTONS", "clicked bottom left");
+        fieldPositionNuw = "bottom 6";
+        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to bottom 6");
     }
-
-
-
 }
+
+
