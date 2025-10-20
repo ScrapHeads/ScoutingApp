@@ -118,12 +118,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice34"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -277,12 +277,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup16">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -297,12 +297,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup10">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice29"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -317,12 +317,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup17">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice27"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice28"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -337,12 +337,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup5">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice26"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -357,12 +357,12 @@
         app:layout_constraintTop_toTopOf="@+id/radioGroup8">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice23"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -381,12 +381,12 @@
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -404,12 +404,12 @@
         app:layout_constraintVertical_bias="0.462">
 
         <RadioButton
-            android:id="@+id/autochoice1"
+            android:id="@+id/autochoice19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/autochoice2"
+            android:id="@+id/autochoice20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

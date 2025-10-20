@@ -24,6 +24,24 @@ public class RecordsActivity {
         public static byte overflowtxtauto;
         static String parkedAuto ="";
         static String ppggpppgp = "";
+        static String autogrup1 = "";
+        static String autogrup2 = "";
+        static String autogrup3 = "";
+        static String autogrup4 = "";
+        static String autogrup5 = "";
+        static String autogrup6 = "";
+        static String autogrup7 = "";
+        static String autogrup8 = "";
+        static String autogrup9 = "";
+        static String autogrup10 = "";
+        static String autogrup11 = "";
+        static String autogrup12 = "";
+        static String autogrup13 = "";
+        static String autogrup14 = "";
+        static String autogrup15 = "";
+        static String autogrup16 = "";
+        static String autogrup17 = "";
+        static String autogrup18 = "";
 
         //Tele activty
         public static byte teleSpecimenLowChamber = 0;
