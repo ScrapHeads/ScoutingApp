@@ -11,7 +11,7 @@ public class RecordsActivity {
         static String preload = "";
         static String alliance = "";
         public static byte fieldPosition = 0;
-        static String fieldPositionNuw="";
+        static String fieldPositionNuw="Press a Postion";
 
         //Auto activity
         public static byte autoLowChamberText = 0;
@@ -52,6 +52,24 @@ public class RecordsActivity {
         static String teleAscent = "";
         public static byte overflowtxtTely =0;
         static String telyparked="";
+        static String telegrup1 = "";
+        static String telegrup2 = "";
+        static String telegrup3 = "";
+        static String telegrup4 = "";
+        static String telegrup5 = "";
+        static String telegrup6 = "";
+        static String telegrup7 = "";
+        static String telegrup8 = "";
+        static String telegrup9 = "";
+        static String telegrup10 = "";
+        static String telegrup11 = "";
+        static String telegrup12 = "";
+        static String telegrup13 = "";
+        static String telegrup14 = "";
+        static String telegrup15 = "";
+        static String telegrup16 = "";
+        static String telegrup17 = "";
+        static String telegrup18 = "";
 
         //Match notes
         public static byte skillLvl = 0;

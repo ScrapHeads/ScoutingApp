@@ -120,12 +120,14 @@
         <RadioButton
             android:id="@+id/telechoice33"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice15" />
 
         <RadioButton
             android:id="@+id/telechoice34"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice16" />
 
     </RadioGroup>
 
@@ -279,12 +281,14 @@
         <RadioButton
             android:id="@+id/telechoice31"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice13" />
 
         <RadioButton
             android:id="@+id/telechoice32"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice14" />
 
     </RadioGroup>
 
@@ -299,12 +303,14 @@
         <RadioButton
             android:id="@+id/telechoice29"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice11" />
 
         <RadioButton
             android:id="@+id/telechoice30"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice12" />
 
     </RadioGroup>
 
@@ -319,12 +325,14 @@
         <RadioButton
             android:id="@+id/telechoice27"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice9" />
 
         <RadioButton
             android:id="@+id/telechoice28"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice10" />
 
     </RadioGroup>
 
@@ -339,12 +347,14 @@
         <RadioButton
             android:id="@+id/telechoice25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice7" />
 
         <RadioButton
             android:id="@+id/telechoice26"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice8" />
 
     </RadioGroup>
 
@@ -359,12 +369,14 @@
         <RadioButton
             android:id="@+id/telechoice23"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice5" />
 
         <RadioButton
             android:id="@+id/telechoice24"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice6" />
 
     </RadioGroup>
 
@@ -383,12 +395,14 @@
         <RadioButton
             android:id="@+id/telychoice21"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice3" />
 
         <RadioButton
             android:id="@+id/telechoice22"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice4" />
 
     </RadioGroup>
 
@@ -404,12 +418,14 @@
         <RadioButton
             android:id="@+id/telechoice19"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice1" />
 
         <RadioButton
             android:id="@+id/telechoice20"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:onClick="telechoice2" />
 
     </RadioGroup>
 
