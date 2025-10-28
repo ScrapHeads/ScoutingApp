@@ -257,7 +257,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
             autochoice14.setChecked(true);
             autochoice13.setChecked(false);
         }
-        if (autogrup9 == "autochoice15") {
+        if (autogrup9 == "telychoice15") {
             autochoice15.setChecked(true);
             autochoice16.setChecked(false);
         }
@@ -714,7 +714,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
     public void autochoice15(View view) {
         autochoice15.setChecked(true);
         autochoice16.setChecked(false);
-        autogrup8 = "autochoice15";
+        autogrup8 = "telychoice15";
     }
 
     public void autochoice16(View view) {
@@ -733,6 +733,34 @@ public class AutoActivity<pri> extends AppCompatActivity {
         autochoice18.setChecked(true);
         autochoice17.setChecked(false);
         autogrup9 = "autochoice18";
+    }
+    public void Autoclear(View view){
+        autochoice18.setChecked(false);
+        autochoice17.setChecked(false);
+        autochoice16.setChecked(false);
+        autochoice15.setChecked(false);
+        autochoice14.setChecked(false);
+        autochoice13.setChecked(false);
+        autochoice12.setChecked(false);
+        autochoice11.setChecked(false);
+        autochoice10.setChecked(false);
+        autochoice9.setChecked(false);
+        autochoice8.setChecked(false);
+        autochoice7.setChecked(false);
+        autochoice6.setChecked(false);
+        autochoice5.setChecked(false);
+        autochoice4.setChecked(false);
+        autochoice3.setChecked(false);
+        autochoice1.setChecked(false);
+        autochoice2.setChecked(false);
+        RecordsActivity.Info.autogrup1="";
+        RecordsActivity.Info.autogrup2="";
+        RecordsActivity.Info.autogrup3="";
+        RecordsActivity.Info.autogrup5="";
+        RecordsActivity.Info.autogrup6="";
+        RecordsActivity.Info.autogrup7="";
+        RecordsActivity.Info.autogrup8="";
+        RecordsActivity.Info.autogrup9="";
     }
 }
 

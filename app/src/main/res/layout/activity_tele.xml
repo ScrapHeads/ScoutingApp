@@ -6,796 +6,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".Tele"
-    tools:layout_editor_absoluteX="86dp"
-    tools:layout_editor_absoluteY="7dp">
+    tools:context=".Tele">
 
-    <RadioGroup
-        android:layout_width="156dp"
-        android:layout_height="316dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="136dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/telypark1"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:onClick="clickdidnotparked"
-            android:text="Didn't Park"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/telybparled"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:onClick="clickbarlyparked"
-            android:text="Barely Parked"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/telyfullpared"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:onClick="clickfullparked"
-            android:text="Fully Parked"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/telyparkedwithothers"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:onClick="clickparkedwithothers"
-            android:text="Parked With Other Bot"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
-    </RadioGroup>
-
+    <!-- Header -->
     <TextView
-        android:id="@+id/overflowText"
-        android:layout_width="53dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="448dp"
-        android:text="0"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="113dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="420dp"
-        android:text="Overflow"
-        android:textAlignment="center"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/overflowMin"
-        android:layout_width="44dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
-        android:onClick="overflowDecres"
-        android:rotationX="-17"
-        android:rotationY="-360"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/overflowText"
-        app:layout_constraintEnd_toStartOf="@+id/overflowText"
-        app:layout_constraintTop_toTopOf="@+id/overflowText"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/overflowbuttenAdd"
-        android:layout_width="44dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="12dp"
-        android:onClick="overflowIncreas"
-        android:rotationX="-17"
-        android:rotationY="-360"
-        android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/overflowText"
-        app:layout_constraintStart_toEndOf="@+id/overflowText"
-        app:layout_constraintTop_toTopOf="@+id/overflowText"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup7"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="376dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/telechoice33"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice15" />
-
-        <RadioButton
-            android:id="@+id/telechoice34"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice16" />
-
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="624dp"
-        android:text="G"
-        android:textColor="#8BC34A"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-        app:layout_constraintEnd_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="4dp"
-        android:text="G"
-        android:textColor="#8BC34A"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
-        app:layout_constraintEnd_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toTopOf="@+id/textView16"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
-        android:text="G"
-        android:textColor="#8BC34A"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintEnd_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toTopOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="380dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="624dp"
-        android:text="P"
-        android:textColor="#673AB7"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
-        android:text="G"
-        android:textColor="#8BC34A"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
-        app:layout_constraintEnd_toStartOf="@+id/textView17"
-        app:layout_constraintTop_toTopOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup15"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup16"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup16"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup16">
-
-        <RadioButton
-            android:id="@+id/telechoice31"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice13" />
-
-        <RadioButton
-            android:id="@+id/telechoice32"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice14" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup16"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup10"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup10"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup10">
-
-        <RadioButton
-            android:id="@+id/telechoice29"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice11" />
-
-        <RadioButton
-            android:id="@+id/telechoice30"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice12" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup10"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup17"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup17"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup17">
-
-        <RadioButton
-            android:id="@+id/telechoice27"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice9" />
-
-        <RadioButton
-            android:id="@+id/telechoice28"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice10" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup17"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup5"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup5"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup5">
-
-        <RadioButton
-            android:id="@+id/telechoice25"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice7" />
-
-        <RadioButton
-            android:id="@+id/telechoice26"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice8" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup5"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup8"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup8"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup8">
-
-        <RadioButton
-            android:id="@+id/telechoice23"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice5" />
-
-        <RadioButton
-            android:id="@+id/telechoice24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice6" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup8"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup18"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup18"
-        app:layout_constraintVertical_bias="0.0">
-
-        <RadioButton
-            android:id="@+id/telychoice21"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice3" />
-
-        <RadioButton
-            android:id="@+id/telechoice22"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice4" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup18"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="588dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/telechoice19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice1" />
-
-        <RadioButton
-            android:id="@+id/telechoice20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice2" />
-
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/button2"
+        android:id="@+id/TelespesamenText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="556dp"
-        android:text="clear"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/endAscentGroup"
-        android:layout_width="295dp"
-        android:layout_height="388dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.792"
+        android:text="Tele"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent">
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/scraphead_blue"
-            android:text="Tele Ascent"
-            android:textAlignment="center"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="48sp"
-            tools:textColor="@color/scraphead_yellow" />
-
-        <RadioButton
-            android:id="@+id/teleNoPark"
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="TeleClickNoPark"
-            android:text="No park"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/telePark"
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="TeleClickPark"
-            android:text="Park"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/telelevel1"
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="TeleClickLvlOne"
-            android:text="Level 1"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/endlevel2"
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="TeleClicklvl2"
-            android:text="Level 2"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/endLevel3"
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="TeleClicklvl3"
-            android:text="Level 3"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/spesamenHCSubtractionButton"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelehighChamberDecrease"
-        android:text="-"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spesamenHCZeroText"
-        app:layout_constraintEnd_toStartOf="@+id/spesamenHCZeroText"
-        app:layout_constraintTop_toTopOf="@+id/spesamenHCZeroText"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <Button
-        android:id="@+id/spesamenHCAddButton"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="24dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelehighChamberIncrease"
-        android:text="+"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spesamenHCZeroText"
-        app:layout_constraintStart_toEndOf="@+id/spesamenHCZeroText"
-        app:layout_constraintTop_toTopOf="@+id/spesamenHCZeroText"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <TextView
-        android:id="@+id/spesamenHighChamberText"
-        android:layout_width="158dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="48dp"
-        android:text="High Chamber"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/spesamenLCZeroText"
-        app:layout_constraintHorizontal_bias="0.429"
-        app:layout_constraintStart_toStartOf="@+id/spesamenLCZeroText"
-        app:layout_constraintTop_toBottomOf="@+id/spesamenLCZeroText" />
-
-    <TextView
-        android:id="@+id/spesamenHCZeroText"
-        android:layout_width="28dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="0"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/spesamenHighChamberText"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="@+id/spesamenHighChamberText"
-        app:layout_constraintTop_toBottomOf="@+id/spesamenHighChamberText" />
-
-    <Button
-        android:id="@+id/spesamenLCSubtractionButton"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelelowChamberDecrease"
-        android:text="-"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spesamenLCZeroText"
-        app:layout_constraintEnd_toStartOf="@+id/spesamenLCZeroText"
-        app:layout_constraintTop_toTopOf="@+id/spesamenLCZeroText"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <Button
-        android:id="@+id/spesamenLowChamberIncrease"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="24dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelelowChamberIncrease"
-        android:text="+"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spesamenLCZeroText"
-        app:layout_constraintStart_toEndOf="@+id/spesamenLCZeroText"
-        app:layout_constraintTop_toTopOf="@+id/spesamenLCZeroText"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <TextView
-        android:id="@+id/spesamenLCZeroText"
-        android:layout_width="30dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:text="0"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/spesamenlowChamberTexT"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/spesamenlowChamberTexT"
-        app:layout_constraintTop_toBottomOf="@+id/spesamenlowChamberTexT" />
-
-    <TextView
-        android:id="@+id/spesamenlowChamberTexT"
-        android:layout_width="143dp"
-        android:layout_height="55dp"
-        android:gravity="center"
-        android:text="Low Chamber"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp" />
+
+    <!-- Back and Next buttons -->
+    <Button
+        android:id="@+id/backSpesamen"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="backAuto"
+        android:text="Back"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent" />
-
-    <Button
-        android:id="@+id/spesamenHighBasketSubtract"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelehighBasketDecrease"
-        android:text="-"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/teleHighBasketCount"
-        app:layout_constraintEnd_toStartOf="@+id/teleHighBasketCount"
-        app:layout_constraintTop_toTopOf="@+id/teleHighBasketCount"
-        app:layout_constraintVertical_bias="0.512" />
-
-    <Button
-        android:id="@+id/spesamenHighBasketAdd"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelehighBasketIncrease"
-        android:text="+"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/teleHighBasketCount"
-        app:layout_constraintStart_toEndOf="@+id/teleHighBasketCount"
-        app:layout_constraintTop_toTopOf="@+id/teleHighBasketCount"
-        app:layout_constraintVertical_bias="0.487" />
-
-    <TextView
-        android:id="@+id/teleHighBasketCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="0"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/spesamenHighBasketText"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="@+id/spesamenHighBasketText"
-        app:layout_constraintTop_toBottomOf="@+id/spesamenHighBasketText" />
-
-    <Button
-        android:id="@+id/spesamenLowBasketSubtract"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelelowBasketDecrease"
-        android:text="-"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintEnd_toStartOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintTop_toTopOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <TextView
-        android:id="@+id/spesamenHighBasketText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="High Basket"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintTop_toBottomOf="@+id/spesamenLowBasketCount" />
-
-    <Button
-        android:id="@+id/spesamenLowBasketAdd"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TelelowBasketIncrease"
-        android:text="+"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintStart_toEndOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintTop_toTopOf="@+id/spesamenLowBasketCount"
-        app:layout_constraintVertical_bias="0.358" />
-
-    <TextView
-        android:id="@+id/spesamenLowBasketCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="0"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/sampleLowBasketText3"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="@+id/sampleLowBasketText3"
-        app:layout_constraintTop_toBottomOf="@+id/sampleLowBasketText3" />
-
-    <TextView
-        android:id="@+id/sampleLowBasketText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Low Basket"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintTop_toBottomOf="@+id/sampleNetZoneCount3" />
-
-    <Button
-        android:id="@+id/spesamenNetSubtract"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TeleNetZoneDecrease"
-        android:text="-"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintEnd_toStartOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <Button
-        android:id="@+id/spesamenNetAdd"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="TeleNetZoneIncrease"
-        android:text="+"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintStart_toEndOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount3"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <TextView
-        android:id="@+id/spesamenNetZoneText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Net Zone"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent" />
-
-    <TextView
-        android:id="@+id/sampleNetZoneCount3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="0"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/spesamenNetZoneText"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/spesamenNetZoneText"
-        app:layout_constraintTop_toBottomOf="@+id/spesamenNetZoneText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/spesamenNextButton"
@@ -811,41 +51,184 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/TelespesamenText"
+    <!-- Clear button -->
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Tele"
+        android:text="Clear"
+        android:onClick="teleclear"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="556dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Overflow counter -->
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overflow"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="420dp" />
+
+    <TextView
+        android:id="@+id/overflowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="448dp" />
 
     <Button
-        android:id="@+id/backSpesamen"
-        android:layout_width="107dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="backAuto"
-        android:text="Back"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/overflowMin"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:onClick="overflowDecres"
+        app:layout_constraintEnd_toStartOf="@+id/overflowText"
+        app:layout_constraintTop_toTopOf="@+id/overflowText"
+        app:layout_constraintBottom_toBottomOf="@+id/overflowText" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="131dp"
-        android:layout_height="127dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="136dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_000005449" />
+    <Button
+        android:id="@+id/overflowbuttenAdd"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:onClick="overflowIncreas"
+        app:layout_constraintStart_toEndOf="@+id/overflowText"
+        app:layout_constraintTop_toTopOf="@+id/overflowText"
+        app:layout_constraintBottom_toBottomOf="@+id/overflowText" />
+
+    <!-- Radio group for parking state -->
+    <RadioGroup
+        android:id="@+id/radioGroupParking"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/telypark1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Didn't Park"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp"
+            android:onClick="clickdidnotparked" />
+
+        <RadioButton
+            android:id="@+id/telybparled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barely Parked"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp"
+            android:onClick="clickbarlyparked" />
+
+        <RadioButton
+            android:id="@+id/telyfullpared"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fully Parked"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp"
+            android:onClick="clickfullparked" />
+
+        <RadioButton
+            android:id="@+id/telyparkedwithothers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parked With Other Bot"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="20sp"
+            android:onClick="clickparkedwithothers" />
+    </RadioGroup>
+
+    <!-- Tele Ascent section -->
+    <RadioGroup
+        android:id="@+id/endAscentGroup"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/scraphead_blue"
+            android:text="Tele Ascent"
+            android:textAlignment="center"
+            android:textColor="@color/scraphead_yellow"
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/teleNoPark"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:text="No Park"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp"
+            android:onClick="TeleClickNoPark" />
+
+        <RadioButton
+            android:id="@+id/telePark"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:text="Park"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp"
+            android:onClick="TeleClickPark" />
+
+        <RadioButton
+            android:id="@+id/telelevel1"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:text="Level 1"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp"
+            android:onClick="TeleClickLvlOne" />
+
+        <RadioButton
+            android:id="@+id/endlevel2"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:text="Level 2"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp"
+            android:onClick="TeleClicklvl2" />
+
+        <RadioButton
+            android:id="@+id/endLevel3"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/white"
+            android:buttonTint="@color/scraphead_yellow"
+            android:text="Level 3"
+            android:textColor="@color/scraphead_blue"
+            android:textSize="20sp"
+            android:onClick="TeleClicklvl3" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

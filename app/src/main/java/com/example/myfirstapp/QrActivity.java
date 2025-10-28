@@ -212,22 +212,55 @@ public class QrActivity extends AppCompatActivity {
         }
 
         RecordsActivity.Info.teamNumber = "";
-        RecordsActivity.Info.preload = "";
-        RecordsActivity.Info.fieldPosition = 0;
+        //RecordsActivity.Info.preload = "";
+        RecordsActivity.Info.fieldPositionNuw = "";
 
-        RecordsActivity.Info.autoLowChamberText = 0;
-        RecordsActivity.Info.autoHighChamberText = 0;
-        RecordsActivity.Info.autoNetZoneText = 0;
-        RecordsActivity.Info.autoLowBasketText = 0;
-        RecordsActivity.Info.autoHighBasketText = 0;
-        RecordsActivity.Info.AutoAscent = "";
+        RecordsActivity.Info.overflowtxtauto=0;
+        RecordsActivity.Info.parkedAuto="";
+        RecordsActivity.Info.ppggpppgp="";
+        RecordsActivity.Info.autogrup1="";
+        RecordsActivity.Info.autogrup2="";
+        RecordsActivity.Info.autogrup3="";
+        RecordsActivity.Info.autogrup5="";
+        RecordsActivity.Info.autogrup6="";
+        RecordsActivity.Info.autogrup7="";
+        RecordsActivity.Info.autogrup8="";
+        RecordsActivity.Info.autogrup9="";
+        RecordsActivity.Info.overflowtxtTely=0;
+        RecordsActivity.Info.telyparked="";
+        RecordsActivity.Info.telegrup1="";
+        RecordsActivity.Info.telegrup2="";
+        RecordsActivity.Info.telegrup3="";
+        RecordsActivity.Info.telegrup4="";
+        RecordsActivity.Info.telegrup5="";
+        RecordsActivity.Info.telegrup6="";
+        RecordsActivity.Info.telegrup7="";
+        RecordsActivity.Info.telegrup8="";
+        RecordsActivity.Info.telegrup9="";
+        RecordsActivity.Info.telegrup10="";
+        RecordsActivity.Info.telegrup11="";
+        RecordsActivity.Info.telegrup12="";
+        RecordsActivity.Info.telegrup13="";
+        RecordsActivity.Info.telegrup14="";
+        RecordsActivity.Info.telegrup15="";
+        RecordsActivity.Info.telegrup16="";
+        RecordsActivity.Info.telegrup17="";
+        RecordsActivity.Info.telegrup18="";
 
-        RecordsActivity.Info.teleSpecimenLowChamber = 0;
-        RecordsActivity.Info.teleHighChamber = 0;
-        RecordsActivity.Info.teleNetZoneText = 0;
-        RecordsActivity.Info.teleLowBasketText = 0;
-        RecordsActivity.Info.teleHighBasketText = 0;
-        RecordsActivity.Info.teleAscent = "";
+
+        //RecordsActivity.Info.autoLowChamberText = 0;
+        //RecordsActivity.Info.autoHighChamberText = 0;
+        //RecordsActivity.Info.autoNetZoneText = 0;
+        //RecordsActivity.Info.autoLowBasketText = 0;
+        //RecordsActivity.Info.autoHighBasketText = 0;
+        //RecordsActivity.Info.AutoAscent = "";
+
+        //RecordsActivity.Info.teleSpecimenLowChamber = 0;
+        //RecordsActivity.Info.teleHighChamber = 0;
+        //RecordsActivity.Info.teleNetZoneText = 0;
+        //RecordsActivity.Info.teleLowBasketText = 0;
+        //RecordsActivity.Info.teleHighBasketText = 0;
+        //RecordsActivity.Info.teleAscent = "";
 
         RecordsActivity.Info.skillLvl = 0;
         RecordsActivity.Info.tipped = false;
@@ -248,4 +281,54 @@ public class QrActivity extends AppCompatActivity {
 
         startActivity(news);
     }
+    //String json = (RecordsActivity.Info.scoutName);
+    //json += ("\t " + RecordsActivity.Info.teamNumber);
+    //json += ("\t" + RecordsActivity.Info.matchNumber);
+    //json += ("\t " + RecordsActivity.Info.alliance);
+    //json += (" \t " + RecordsActivity.Info.fieldPositionNuw);
+
+    // Auto
+    //json += (" \t " + RecordsActivity.Info.overflowtxtauto);
+    //json += (" \t " + RecordsActivity.Info.parkedAuto);
+    //json += (" \t " + RecordsActivity.Info.ppggpppgp);
+    //json += (" \t " + RecordsActivity.Info.autogrup1);
+    //json += (" \t " + RecordsActivity.Info.autogrup2);
+    //json += (" \t " + RecordsActivity.Info.autogrup3);
+    //json += (" \t " + RecordsActivity.Info.autogrup5);
+    //json += (" \t " + RecordsActivity.Info.autogrup6);
+    //json += (" \t " + RecordsActivity.Info.autogrup7);
+    //json += (" \t " + RecordsActivity.Info.autogrup8);
+    //json += (" \t " + RecordsActivity.Info.autogrup9);
+
+    // Tele
+    //json += (" \t " + RecordsActivity.Info.overflowtxtTely);
+    //json += (" \t " + RecordsActivity.Info.telyparked);
+    /*json += (" \t " + RecordsActivity.Info.telegrup1);
+    json += (" \t " + RecordsActivity.Info.telegrup2);
+    json += (" \t " + RecordsActivity.Info.telegrup3);
+    json += (" \t " + RecordsActivity.Info.telegrup4);
+    json += (" \t " + RecordsActivity.Info.telegrup5);
+    json += (" \t " + RecordsActivity.Info.telegrup6);
+    json += (" \t " + RecordsActivity.Info.telegrup7);
+    json += (" \t " + RecordsActivity.Info.telegrup8);
+    json += (" \t " + RecordsActivity.Info.telegrup9);
+    json += (" \t " + RecordsActivity.Info.telegrup10);
+    json += (" \t " + RecordsActivity.Info.telegrup11);
+    json += (" \t " + RecordsActivity.Info.telegrup12);
+    json += (" \t " + RecordsActivity.Info.telegrup13);
+    json += (" \t " + RecordsActivity.Info.telegrup14);
+    json += (" \t " + RecordsActivity.Info.telegrup15);
+    json += (" \t " + RecordsActivity.Info.telegrup16);
+    json += (" \t " + RecordsActivity.Info.telegrup17);
+    json += (" \t " + RecordsActivity.Info.telegrup18);
+
+    // Match notes
+    json += (" \t " + RecordsActivity.Info.tipped);
+    json += (" \t " + RecordsActivity.Info.droppedPieces);
+    json += (" \t " + RecordsActivity.Info.BotDied);
+    json += (" \t " + RecordsActivity.Info.ArmWorksSlowly);
+    json += (" \t " + RecordsActivity.Info.BotMovesSlow);
+    json += (" \t " + RecordsActivity.Info.MinorFoul);
+    json += (" \t " + RecordsActivity.Info.MajorFoul);
+    json += (" \t " + RecordsActivity.Info.endCommitBox);*/
 }

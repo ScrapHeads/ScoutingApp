@@ -8,6 +8,36 @@
     tools:layout_editor_absoluteY="89dp"
     tools:visibility="visible">
 
+    <Button
+        android:id="@+id/sampleNetSubtract3"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="netZoneDecrease3"
+        android:text="-"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount4"
+        app:layout_constraintEnd_toStartOf="@+id/sampleNetZoneCount4"
+        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount4"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <Button
+        android:id="@+id/sampleNetSubtract2"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="netZoneDecrease2"
+        android:text="-"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount2"
+        app:layout_constraintEnd_toStartOf="@+id/sampleNetZoneCount2"
+        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount2"
+        app:layout_constraintVertical_bias="0.589" />
+
     <TextView
         android:id="@+id/sampleNetZoneCount4"
         android:layout_width="wrap_content"
@@ -16,30 +46,45 @@
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@id/textView4"
-        app:layout_constraintHorizontal_bias="0.331"
-        app:layout_constraintStart_toStartOf="@id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/sampleNetZoneCount2"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="@+id/sampleNetZoneCount2"
         app:layout_constraintTop_toBottomOf="@id/textView4" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="183dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="Minor Foul"
+    <Button
+        android:id="@+id/sampleNetAdd3"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="56dp"
+        android:backgroundTint="@color/scraphead_blue"
+        android:onClick="netZoneIncrease3"
+        android:text="+"
         android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/sampleNetZoneCount2"
-        app:layout_constraintHorizontal_bias="0.331"
-        app:layout_constraintStart_toStartOf="@+id/sampleNetZoneCount2"
-        app:layout_constraintTop_toBottomOf="@+id/sampleNetZoneCount2" />
+        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount4"
+        app:layout_constraintStart_toEndOf="@+id/sampleNetZoneCount4"
+        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount4"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <TextView
+        android:id="@+id/sampleNetZoneCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="158dp"
         android:layout_height="37dp"
-        android:layout_marginStart="836dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="724dp"
+        android:layout_marginTop="132dp"
         android:text="Major Foul"
         android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
@@ -50,7 +95,7 @@
         android:id="@+id/sampleNetAdd2"
         android:layout_width="59dp"
         android:layout_height="66dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="52dp"
         android:backgroundTint="@color/scraphead_blue"
         android:onClick="netZoneIncrease2"
         android:text="+"
@@ -59,64 +104,21 @@
         app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount2"
         app:layout_constraintStart_toEndOf="@+id/sampleNetZoneCount2"
         app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount2"
-        app:layout_constraintVertical_bias="0.555"
+        app:layout_constraintVertical_bias="0.641"
         tools:onClick="netZoneIncrease2" />
 
-    <Button
-        android:id="@+id/sampleNetAdd3"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="48dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="netZoneIncrease3"
-        android:text="+"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="183dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:text="Minor Foul"
         android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount4"
-        app:layout_constraintStart_toEndOf="@+id/sampleNetZoneCount4"
-        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount4"
-        app:layout_constraintVertical_bias="0.611" />
-
-    <TextView
-        android:id="@+id/sampleNetZoneCount2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="0"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.387"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/sampleNetSubtract2"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="52dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="netZoneDecrease2"
-        android:text="-"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount2"
-        app:layout_constraintEnd_toStartOf="@+id/sampleNetZoneCount2"
-        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount2" />
-
-    <Button
-        android:id="@+id/sampleNetSubtract3"
-        android:layout_width="59dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="52dp"
-        android:backgroundTint="@color/scraphead_blue"
-        android:onClick="netZoneDecrease3"
-        android:text="-"
-        android:textColor="@color/scraphead_yellow"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sampleNetZoneCount4"
-        app:layout_constraintEnd_toStartOf="@+id/sampleNetZoneCount4"
-        app:layout_constraintTop_toTopOf="@+id/sampleNetZoneCount4" />
+        app:layout_constraintEnd_toEndOf="@+id/sampleNetZoneCount2"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="@+id/sampleNetZoneCount2"
+        app:layout_constraintTop_toBottomOf="@+id/sampleNetZoneCount2" />
 
     <TextView
         android:id="@+id/textView3"
