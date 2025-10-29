@@ -165,14 +165,15 @@
         android:layout_width="289dp"
         android:layout_height="40dp"
         android:layout_marginTop="64dp"
-        android:scaleX="1.2"
-        android:scaleY="1.2"
         android:background="@color/scraphead_blue"
         android:checked="false"
         android:onClick="tipped"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
         android:text="Bot almost tipped over"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -189,6 +190,7 @@
         android:text="Bot dropped pieces"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/matchNotesOne"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/matchNotesOne"
@@ -198,7 +200,7 @@
         android:id="@+id/matchNotesSix"
         android:layout_width="289dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@color/scraphead_blue"
         android:onClick="MakesAGoodAlliancePartener"
         android:scaleX="1.2"
@@ -207,7 +209,7 @@
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/matchNotesfive"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/matchNotesfive"
         app:layout_constraintTop_toBottomOf="@+id/matchNotesfive" />
 
@@ -215,7 +217,7 @@
         android:id="@+id/matchNotesThree"
         android:layout_width="289dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="69dp"
         android:background="@color/scraphead_blue"
         android:onClick="BotDied"
         android:scaleX="1.2"
@@ -223,16 +225,15 @@
         android:text="Bot died"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/matchNotesTwo"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/matchNotesTwo"
-        app:layout_constraintTop_toBottomOf="@+id/matchNotesTwo" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
         android:id="@+id/matchNotesFour"
         android:layout_width="289dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="76dp"
         android:background="@color/scraphead_blue"
         android:onClick="ArmWorksSlowly"
         android:scaleX="1.2"
@@ -240,6 +241,7 @@
         android:text="Arm works slowly"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/matchNotesThree"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/matchNotesThree"
@@ -249,7 +251,6 @@
         android:id="@+id/matchNotesfive"
         android:layout_width="289dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
         android:background="@color/scraphead_blue"
         android:onClick="BotMovesSlow"
         android:scaleX="1.2"
@@ -257,10 +258,9 @@
         android:text="Bot moves slow"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/matchNotesFour"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/matchNotesFour"
-        app:layout_constraintTop_toBottomOf="@+id/matchNotesFour" />
+        app:layout_constraintEnd_toEndOf="@+id/matchNotesThree"
+        app:layout_constraintStart_toStartOf="@+id/matchNotesThree"
+        app:layout_constraintTop_toBottomOf="@+id/matchNotesThree" />
 
     <TextView
         android:id="@+id/textView"
