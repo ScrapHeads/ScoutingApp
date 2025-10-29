@@ -20,7 +20,7 @@ public class RecordsActivity {
         public static byte autoLowBasketText = 0;
         public static byte autoHighBasketText = 0;
         static String AutoAscent = "";
-        public static boolean noAuto= false;
+        public static boolean doWeHaveAuto = false;
         public static byte overflowtxtauto;
         static String parkedAuto ="";
         static String ppggpppgp = "";

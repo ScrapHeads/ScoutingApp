@@ -55,7 +55,7 @@ public class pitQr extends AppCompatActivity {
             json += ("\t "+ RecordsActivity.Info.autoLowBasketText);
             json += ("\t "+ RecordsActivity.Info.autoHighBasketText);
             json += ("\t "+ RecordsActivity.Info.AutoAscent);
-            json += ("\t "+ RecordsActivity.Info.noAuto);                     Log.d("rAjson",json);
+            json += ("\t "+ RecordsActivity.Info.doWeHaveAuto);                     Log.d("rAjson",json);
 
             //tele activity
             json += ("\t "+ RecordsActivity.Info.teleSpecimenLowChamber);

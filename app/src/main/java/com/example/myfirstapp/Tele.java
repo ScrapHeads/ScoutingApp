@@ -10,6 +10,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.util.Log;
 
@@ -19,6 +20,7 @@ public class Tele extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers, telychoice1, telychoice2, telychoice3, telychoice4, telychoice5, telychoice6, telychoice7, telychoice8, telychoice9, telychoice10, telychoice11, telychoice12, telychoice13, telychoice14, telychoice15, telychoice16, telychoice17, telychoice18;
     TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt;
     byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0;
+
     String teleBotAscent, parked, autogrup1, autogrup2, autogrup3,autogrup4,autogrup5,autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
 
     @Override

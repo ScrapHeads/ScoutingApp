@@ -9,7 +9,9 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.util.Log;
 
@@ -20,7 +22,8 @@ public class AutoActivity<pri> extends AppCompatActivity {
     TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt;
     byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber = 0, AutoloChamber = 0, autoTeamPer = 0, overflow = 0;
     String autoBotAscent, parked, pgpppggpp, autogrup1, autogrup2, autogrup3, autogrup4, autogrup5, autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
-
+    private Switch hasAuto;
+    private boolean doWeHaveAuto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +63,8 @@ public class AutoActivity<pri> extends AppCompatActivity {
         autochoice16 = findViewById(R.id.autochoice16);
         autochoice17 = findViewById(R.id.autochoice17);
         autochoice18 = findViewById(R.id.autochoice18);
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
+        hasAuto = findViewById(R.id.switch1);
         setPrevious();
     }
 
@@ -82,7 +86,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         autoBotAscent = String.valueOf(0);
         AutoHiChamberText.setText("0");
         AutoloChamberText.setText("0");
-        RecordsActivity.Info.noAuto = true;
+        RecordsActivity.Info.doWeHaveAuto = true;
         saveData();
         startActivity(no_Auto);
     }
@@ -275,6 +279,15 @@ public class AutoActivity<pri> extends AppCompatActivity {
         }
 
 
+        if (RecordsActivity.Info.doWeHaveAuto = true) {
+            hasAuto.setChecked(false);
+        }
+        if (RecordsActivity.Info.doWeHaveAuto = false) {
+
+            hasAuto.setChecked(true);
+        }
+
+
         autoNetZone = Byte.parseByte(autoNetZoneText.getText().toString());
         if (autoNetZone == 0) {
             Log.d("AASet Previous", String.valueOf(autoNetZone));
@@ -404,6 +417,14 @@ public class AutoActivity<pri> extends AppCompatActivity {
         AUTOsave.putExtra("autogrup17", String.valueOf(autogrup17));
         RecordsActivity.Info.autogrup18 = autogrup18;
         AUTOsave.putExtra("autogrup18", String.valueOf(autogrup18));
+        if (hasAuto.equals(true)){
+            RecordsActivity.Info.doWeHaveAuto=false;
+        }
+        if (hasAuto.equals(false)){
+            RecordsActivity.Info.doWeHaveAuto=true;
+        }
+        RecordsActivity.Info.doWeHaveAuto= Boolean.parseBoolean(String.valueOf(doWeHaveAuto));
+        AUTOsave.putExtra("doWeHaveAuto", doWeHaveAuto);
 
 
     }
@@ -419,7 +440,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void netZoneIncrease(View view) {
         //findViewById(R.id.sampleNetSubtract).setVisibility(VISIBLE);
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         autoNetZone++;
         autoNetZoneText.setText(String.valueOf(autoNetZone));
 
@@ -431,7 +452,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
     public void netZoneDecrease(View view) {
         ;
         if (autoNetZone > 0) {
-            RecordsActivity.Info.noAuto = false;
+            RecordsActivity.Info.doWeHaveAuto = false;
             autoNetZone--;
             autoNetZoneText.setText(String.valueOf(autoNetZone));
 
@@ -443,7 +464,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void lowChamberIncrease(View view) {
         //findViewById(R.id.specimenLCSubtractionButton).setVisibility(VISIBLE);
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         AutoloChamber++;
         AutoloChamberText.setText(String.valueOf(AutoloChamber));
         if (AutoloChamber > 0) {
@@ -453,7 +474,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void lowChamberDecrease(View view) {
         if (AutoloChamber > 0) {
-            RecordsActivity.Info.noAuto = false;
+            RecordsActivity.Info.doWeHaveAuto = false;
             AutoloChamber--;
             AutoloChamberText.setText(String.valueOf(AutoloChamber));
 
@@ -465,14 +486,14 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void lowBasketIncrease(View view) {
         findViewById(R.id.sampleLowBasketSubtract).setVisibility(VISIBLE);
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         autoLowBasket++;
         autoLowBasketText.setText(String.valueOf(autoLowBasket));
     }
 
     public void highChamberIncrease(View view) {
         //findViewById(R.id.specimenHCSubtractionButton4).setVisibility(VISIBLE);
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         AutoHiChamber++;
         AutoHiChamberText.setText(String.valueOf(AutoHiChamber));
         if (AutoHiChamber > 0) {
@@ -482,7 +503,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void highChamberDecrease(View view) {
         if (AutoHiChamber > 0) {
-            RecordsActivity.Info.noAuto = false;
+            RecordsActivity.Info.doWeHaveAuto = false;
             AutoHiChamber--;
             AutoHiChamberText.setText(String.valueOf(AutoHiChamber));
             if (AutoHiChamber <= 0) {
@@ -493,7 +514,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void lowBasketDecrease(View view) {
         if (autoLowBasket > 0) {
-            RecordsActivity.Info.noAuto = false;
+            RecordsActivity.Info.doWeHaveAuto = false;
             autoLowBasket--;
             autoLowBasketText.setText(String.valueOf(autoLowBasket));
         }
@@ -504,14 +525,14 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void highBasketIncrease(View view) {
         findViewById(R.id.sampleHighBasketSubtract).setVisibility(VISIBLE);
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         autoHighbasket++;
         autoHighBasketText.setText(String.valueOf(autoHighbasket));
     }
 
     public void highBasketDecrease(View view) {
         if (autoHighbasket > 0) {
-            RecordsActivity.Info.noAuto = false;
+            RecordsActivity.Info.doWeHaveAuto = false;
             autoHighbasket--;
             autoHighBasketText.setText(String.valueOf(autoHighbasket));
         }
@@ -522,7 +543,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
     }
 
     public void ClickPark(View view) {
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         noPark.setChecked(false);
         LevleOne.setChecked(false);
         park.setChecked(true);
@@ -530,7 +551,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
     }
 
     public void ClickNoPark(View view) {
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         Log.d("NoParkClick", "starting method");
         park.setChecked(false);
         Log.d("NoParkClick", "set Park false");
@@ -542,7 +563,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
     }
 
     public void ClickLevleOne(View view) {
-        RecordsActivity.Info.noAuto = false;
+        RecordsActivity.Info.doWeHaveAuto = false;
         park.setChecked(false);
         Log.d("LevleOne", "set park false");
         noPark.setChecked(false);
@@ -762,5 +783,6 @@ public class AutoActivity<pri> extends AppCompatActivity {
         RecordsActivity.Info.autogrup8="";
         RecordsActivity.Info.autogrup9="";
     }
+
 }
 
