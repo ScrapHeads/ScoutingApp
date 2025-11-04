@@ -19,8 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AutoActivity<pri> extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers, ppg, gpp, pgp, autochoice1, autochoice2, autochoice3, autochoice4, autochoice5, autochoice6, autochoice7, autochoice8, autochoice9, autochoice10, autochoice11, autochoice12, autochoice13, autochoice14, autochoice15, autochoice16, autochoice17, autochoice18;
-    TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt;
-    byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber = 0, AutoloChamber = 0, autoTeamPer = 0, overflow = 0;
+    TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt,OverallpointS;
+    byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber = 0, AutoloChamber = 0, autoTeamPer = 0, overflow = 0, Overallpoints=0;
     String autoBotAscent, parked, pgpppggpp, autogrup1, autogrup2, autogrup3, autogrup4, autogrup5, autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
     private Switch hasAuto;
     private boolean doWeHaveAuto;
@@ -30,6 +30,8 @@ public class AutoActivity<pri> extends AppCompatActivity {
         setContentView(R.layout.activity_auto);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         overflowtxt = findViewById(R.id.textView10);
+        OverallpointS = findViewById(R.id.textView24);
+
         autoNetZoneText = findViewById(R.id.sampleNetZoneCount);
         autoLowBasketText = findViewById(R.id.sampleLowBasketCount);
         autoHighBasketText = findViewById(R.id.sampleHighBasketCount);
@@ -120,6 +122,9 @@ public class AutoActivity<pri> extends AppCompatActivity {
         Log.d("AASet Previous", "AutoAscent" + String.valueOf(RecordsActivity.Info.AutoAscent));
         autoBotAscent = RecordsActivity.Info.AutoAscent;
         overflowtxt.setText(String.valueOf(RecordsActivity.Info.overflowtxtauto));
+
+        OverallpointS.setText(String.valueOf((RecordsActivity.Info.Overallpoints)));
+
         parked = RecordsActivity.Info.parkedAuto;
         pgpppggpp = RecordsActivity.Info.ppggpppgp;
         autogrup1 = RecordsActivity.Info.autogrup1;
@@ -190,6 +195,17 @@ public class AutoActivity<pri> extends AppCompatActivity {
         if (overflow > 0) {
             findViewById(R.id.button5).setVisibility(VISIBLE);
         }
+
+        Overallpoints = Byte.parseByte(OverallpointS.getText().toString());
+        if (Overallpoints == 0) {
+            findViewById(R.id.button3).setVisibility(GONE);
+        }
+        Overallpoints = Byte.parseByte(OverallpointS.getText().toString());
+        if (Overallpoints > 0) {
+            findViewById(R.id.button3).setVisibility(VISIBLE);
+        }
+
+
         if (pgpppggpp == "pgp") {
             pgp.setChecked(true);
             gpp.setChecked(false);

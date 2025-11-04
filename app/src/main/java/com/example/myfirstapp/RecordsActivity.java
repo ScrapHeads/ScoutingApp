@@ -22,6 +22,7 @@ public class RecordsActivity {
         static String AutoAscent = "";
         public static boolean doWeHaveAuto = false;
         public static byte overflowtxtauto;
+        public static byte Overallpoints;
         static String parkedAuto ="";
         static String ppggpppgp = "";
         static String autogrup1 = "";
