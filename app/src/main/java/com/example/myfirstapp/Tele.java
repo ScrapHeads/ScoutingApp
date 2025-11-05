@@ -18,8 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Tele extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers, telychoice1, telychoice2, telychoice3, telychoice4, telychoice5, telychoice6, telychoice7, telychoice8, telychoice9, telychoice10, telychoice11, telychoice12, telychoice13, telychoice14, telychoice15, telychoice16, telychoice17, telychoice18;
-    TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt;
-    byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0;
+    TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt, OverallpointS;
+    byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0, Overallpoints=0;
 
     String teleBotAscent, parked, autogrup1, autogrup2, autogrup3,autogrup4,autogrup5,autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
 
@@ -34,6 +34,8 @@ public class Tele extends AppCompatActivity {
         teleHighBasketText = findViewById(R.id.teleHighBasketCount);
         teleHiChamberText=findViewById(R.id.spesamenHCZeroText);
         teleloChamberText=findViewById(R.id.spesamenLCZeroText);
+        OverallpointS = findViewById(R.id.textView27);
+
         park =findViewById(R.id.telePark);
         noPark = findViewById(R.id.teleNoPark);
         LevleOne = findViewById(R.id.telelevel1);
@@ -90,6 +92,11 @@ public class Tele extends AppCompatActivity {
         autogrup4 = RecordsActivity.Info.telegrup4;
         autogrup5 = RecordsActivity.Info.telegrup5;
         autogrup6 = RecordsActivity.Info.telegrup6;
+
+        OverallpointS.setText(String.valueOf((RecordsActivity.Info.teleOverallpoint)));
+
+
+
         autogrup7 = RecordsActivity.Info.telegrup7;
         autogrup8 = RecordsActivity.Info.telegrup8;
         autogrup9 = RecordsActivity.Info.telegrup9;
@@ -677,6 +684,24 @@ public class Tele extends AppCompatActivity {
         RecordsActivity.Info.telegrup16="";
         RecordsActivity.Info.telegrup17="";
         RecordsActivity.Info.telegrup18="";
+    }
+
+    public void OverallpointsDecres(View view){
+        if (Overallpoints>0){
+            Overallpoints--;
+            OverallpointS.setText(String.valueOf(Overallpoints));
+        }
+        if (Overallpoints<=0){
+            findViewById(R.id.button10).setVisibility(GONE);
+        }
+    }
+
+    public void OverallpointsIncreas (View view){
+        Overallpoints++;
+        OverallpointS.setText(String.valueOf(Overallpoints));
+        if (Overallpoints >0){
+            findViewById(R.id.button10).setVisibility(VISIBLE);
+        }
     }
 
 }

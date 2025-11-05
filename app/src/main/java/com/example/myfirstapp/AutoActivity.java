@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -19,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AutoActivity<pri> extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers, ppg, gpp, pgp, autochoice1, autochoice2, autochoice3, autochoice4, autochoice5, autochoice6, autochoice7, autochoice8, autochoice9, autochoice10, autochoice11, autochoice12, autochoice13, autochoice14, autochoice15, autochoice16, autochoice17, autochoice18;
-    TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt,OverallpointS;
+    TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt,OverallpointS, text1,text2,text3,text4,text5,tex5,text6,text7,text8,text9;
     byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber = 0, AutoloChamber = 0, autoTeamPer = 0, overflow = 0, Overallpoints=0;
     String autoBotAscent, parked, pgpppggpp, autogrup1, autogrup2, autogrup3, autogrup4, autogrup5, autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
     private Switch hasAuto;
@@ -65,6 +64,8 @@ public class AutoActivity<pri> extends AppCompatActivity {
         autochoice16 = findViewById(R.id.autochoice16);
         autochoice17 = findViewById(R.id.autochoice17);
         autochoice18 = findViewById(R.id.autochoice18);
+        text1=findViewById(R.id.textView34);
+        text2=findViewById(R.id.textView40);
         RecordsActivity.Info.doWeHaveAuto = false;
         hasAuto = findViewById(R.id.switch1);
         setPrevious();
@@ -123,7 +124,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         autoBotAscent = RecordsActivity.Info.AutoAscent;
         overflowtxt.setText(String.valueOf(RecordsActivity.Info.overflowtxtauto));
 
-        OverallpointS.setText(String.valueOf((RecordsActivity.Info.Overallpoints)));
+        OverallpointS.setText(String.valueOf((RecordsActivity.Info.AutoOverallpoint)));
 
         parked = RecordsActivity.Info.parkedAuto;
         pgpppggpp = RecordsActivity.Info.ppggpppgp;
@@ -393,6 +394,10 @@ public class AutoActivity<pri> extends AppCompatActivity {
         Log.d("BackClick", "End Save Data");
         RecordsActivity.Info.overflowtxtauto = Byte.parseByte(overflowtxt.getText().toString());
         AUTOsave.putExtra("autooverflow", overflowtxt.getText().toString());
+        AUTOsave.putExtra("AutoOverallpoint", OverallpointS.getText().toString());
+        RecordsActivity.Info.AutoOverallpoint = Byte.parseByte(OverallpointS.getText().toString());
+
+
         RecordsActivity.Info.parkedAuto = parked;
         AUTOsave.putExtra("parkedAuto", String.valueOf(parked));
         RecordsActivity.Info.ppggpppgp = pgpppggpp;
@@ -599,7 +604,6 @@ public class AutoActivity<pri> extends AppCompatActivity {
             findViewById(R.id.button5).setVisibility(VISIBLE);
         }
     }
-
     public void overflowDecres(View view) {
         if (overflow > 0) {
             overflow--;
@@ -607,6 +611,24 @@ public class AutoActivity<pri> extends AppCompatActivity {
         }
         if (overflow <= 0) {
             findViewById(R.id.button5).setVisibility(GONE);
+        }
+    }
+
+    public void OverallpointsDecres(View view){
+        if (Overallpoints>0){
+            Overallpoints--;
+            OverallpointS.setText(String.valueOf(Overallpoints));
+        }
+        if (Overallpoints<=0){
+            findViewById(R.id.button3).setVisibility(GONE);
+        }
+    }
+
+    public void OverallpointsIncreas (View view){
+        Overallpoints++;
+        OverallpointS.setText(String.valueOf(Overallpoints));
+        if (overflow >0){
+            findViewById(R.id.button3).setVisibility(VISIBLE);
         }
     }
 
@@ -647,6 +669,10 @@ public class AutoActivity<pri> extends AppCompatActivity {
         gpp.setChecked(false);
         pgp.setChecked(false);
         pgpppggpp = "ppg";
+
+
+
+
     }
 
     public void pgp(View view) {
@@ -799,6 +825,10 @@ public class AutoActivity<pri> extends AppCompatActivity {
         RecordsActivity.Info.autogrup8="";
         RecordsActivity.Info.autogrup9="";
     }
+
+
+
+
 
 }
 

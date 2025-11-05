@@ -28,7 +28,7 @@
         android:layout_height="39dp"
         android:background="@color/scraphead_blue"
         android:ems="10"
-        android:hint="mach number"
+        android:hint="match number"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"

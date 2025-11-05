@@ -22,7 +22,7 @@ public class RecordsActivity {
         static String AutoAscent = "";
         public static boolean doWeHaveAuto = false;
         public static byte overflowtxtauto;
-        public static byte Overallpoints;
+        public static byte AutoOverallpoint;
         static String parkedAuto ="";
         static String ppggpppgp = "";
         static String autogrup1 = "";
@@ -53,6 +53,7 @@ public class RecordsActivity {
         static String teleAscent = "";
         public static byte overflowtxtTely =0;
         static String telyparked="";
+        public static byte teleOverallpoint=0;
         static String telegrup1 = "";
         static String telegrup2 = "";
         static String telegrup3 = "";

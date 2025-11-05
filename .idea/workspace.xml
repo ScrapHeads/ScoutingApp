@@ -361,17 +361,50 @@
       <path value="$PROJECT_DIR$/test" />
     </ignored-roots>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
+          <line>666</line>
+          <properties class="com.example.myfirstapp.AutoActivity" method="ppg">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
+          <line>677</line>
+          <properties class="com.example.myfirstapp.AutoActivity" method="pgp">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
+          <line>684</line>
+          <properties class="com.example.myfirstapp.AutoActivity" method="gpp">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
       <map>
         <entry key="com.example.myfirstapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1762295236812" />
+            <CheckInfo lastCheckTimestamp="1762381705322" />
           </value>
         </entry>
         <entry key="com.example.myfirstapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1762295236811" />
+            <CheckInfo lastCheckTimestamp="1762381705325" />
           </value>
         </entry>
       </map>
