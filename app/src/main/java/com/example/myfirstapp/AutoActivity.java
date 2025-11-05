@@ -627,7 +627,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
     public void OverallpointsIncreas (View view){
         Overallpoints++;
         OverallpointS.setText(String.valueOf(Overallpoints));
-        if (overflow >0){
+        if (Overallpoints >0){
             findViewById(R.id.button3).setVisibility(VISIBLE);
         }
     }
