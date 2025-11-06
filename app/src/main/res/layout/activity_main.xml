@@ -169,8 +169,8 @@
 
     <Button
         android:id="@+id/redtopleft"
-        android:layout_width="24dp"
-        android:layout_height="35dp"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
         android:layout_marginTop="76dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="@color/scraphead_yellow"
@@ -182,8 +182,8 @@
 
     <Button
         android:id="@+id/bottomleft"
-        android:layout_width="24dp"
-        android:layout_height="35dp"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
         android:layout_marginTop="288dp"
         android:layout_marginEnd="80dp"
         android:backgroundTint="@color/scraphead_yellow"
@@ -199,10 +199,10 @@
 
     <Button
         android:id="@+id/bluetopright"
-        android:layout_width="24dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="252dp"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="240dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bluetopright"
         android:outlineProvider="bounds"
@@ -212,8 +212,8 @@
 
     <Button
         android:id="@+id/bottommid"
-        android:layout_width="24dp"
-        android:layout_height="35dp"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
         android:layout_marginTop="336dp"
         android:layout_marginEnd="172dp"
         android:backgroundTint="@color/scraphead_yellow"
@@ -225,10 +225,10 @@
 
     <Button
         android:id="@+id/bottomright"
-        android:layout_width="24dp"
-        android:layout_height="35dp"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
         android:layout_marginTop="336dp"
-        android:layout_marginEnd="208dp"
+        android:layout_marginEnd="224dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bottomright"
         android:outlineProvider="bounds"
@@ -238,8 +238,8 @@
 
     <Button
         android:id="@+id/topmid"
-        android:layout_width="24dp"
-        android:layout_height="35dp"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="topmid"
         android:outlineProvider="bounds"

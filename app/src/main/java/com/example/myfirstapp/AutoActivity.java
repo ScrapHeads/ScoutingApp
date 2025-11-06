@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -17,10 +18,11 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AutoActivity<pri> extends AppCompatActivity {
-    RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers, ppg, gpp, pgp, autochoice1, autochoice2, autochoice3, autochoice4, autochoice5, autochoice6, autochoice7, autochoice8, autochoice9, autochoice10, autochoice11, autochoice12, autochoice13, autochoice14, autochoice15, autochoice16, autochoice17, autochoice18;
+    RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers, ppg, gpp, pgp;
     TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt,OverallpointS, text1,text2,text3,text4,text5,tex5,text6,text7,text8,text9;
     byte autoNetZone = 0, autoLowBasket = 0, autoHighbasket = 0, AutoHiChamber = 0, AutoloChamber = 0, autoTeamPer = 0, overflow = 0, Overallpoints=0;
     String autoBotAscent, parked, pgpppggpp, autogrup1, autogrup2, autogrup3, autogrup4, autogrup5, autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
+    CheckBox autochoice1, autochoice2, autochoice3, autochoice4, autochoice5, autochoice6, autochoice7, autochoice8, autochoice9, autochoice10, autochoice11, autochoice12, autochoice13, autochoice14, autochoice15, autochoice16, autochoice17, autochoice18;
     private Switch hasAuto;
     private boolean doWeHaveAuto;
     @Override
@@ -46,8 +48,8 @@ public class AutoActivity<pri> extends AppCompatActivity {
         ppg = findViewById(R.id.ppg);
         gpp = findViewById(R.id.gpp);
         pgp = findViewById(R.id.pgp);
-        autochoice1 = findViewById(R.id.autochoice1);
-        autochoice2 = findViewById(R.id.autochoice2);
+        autochoice1 = findViewById(R.id.checkBox2);
+        autochoice2 = findViewById(R.id.checkBox3);
         autochoice3 = findViewById(R.id.autochoice3);
         autochoice4 = findViewById(R.id.autochoice4);
         autochoice5 = findViewById(R.id.autochoice5);
@@ -66,6 +68,19 @@ public class AutoActivity<pri> extends AppCompatActivity {
         autochoice18 = findViewById(R.id.autochoice18);
         text1=findViewById(R.id.textView34);
         text2=findViewById(R.id.textView40);
+        text3=findViewById(R.id.textView39);
+        text4=findViewById(R.id.textView33);
+        tex5=findViewById(R.id.textView36);
+        text6=findViewById(R.id.textView37);
+        text7=findViewById(R.id.textView35);
+        text8=findViewById(R.id.textView41);
+        text9=findViewById(R.id.textView42);
+
+
+
+
+
+
         RecordsActivity.Info.doWeHaveAuto = false;
         hasAuto = findViewById(R.id.switch1);
         setPrevious();
@@ -211,6 +226,13 @@ public class AutoActivity<pri> extends AppCompatActivity {
             pgp.setChecked(true);
             gpp.setChecked(false);
             ppg.setChecked(false);
+            text1.setText("p");
+            text2.setText("g");
+            text3.setText("p");
+            text4.setText("p");
+            tex5.setText("g");
+            text6.setText("p");
+            text7.setText("p");
         }
         if (pgpppggpp == "ppg") {
             ppg.setChecked(true);

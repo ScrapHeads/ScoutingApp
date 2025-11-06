@@ -15,7 +15,7 @@
         android:layout_height="36dp"
         android:layout_marginTop="344dp"
         android:layout_marginEnd="532dp"
-        android:text="Overall points"
+        android:text="Overall Balls"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
@@ -255,49 +255,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup7"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="328dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/autochoice17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice17" />
-
-        <RadioButton
-            android:id="@+id/autochoice18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice18" />
-
-    </RadioGroup>
-
-    <RadioGroup
         android:id="@+id/radioGroup15"
         android:layout_width="30dp"
         android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="@+id/radioGroup16"
         app:layout_constraintStart_toEndOf="@+id/radioGroup16"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup16">
-
-        <RadioButton
-            android:id="@+id/autochoice15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice15" />
-
-        <RadioButton
-            android:id="@+id/autochoice16"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice16" />
-
-    </RadioGroup>
+        app:layout_constraintTop_toTopOf="@+id/radioGroup16"/>
 
     <RadioGroup
         android:id="@+id/radioGroup16"
@@ -305,21 +268,7 @@
         android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="@+id/radioGroup10"
         app:layout_constraintStart_toEndOf="@+id/radioGroup10"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup10">
-
-        <RadioButton
-            android:id="@+id/autochoice13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice13" />
-
-        <RadioButton
-            android:id="@+id/autochoice14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice14" />
-
-    </RadioGroup>
+        app:layout_constraintTop_toTopOf="@+id/radioGroup10"/>
 
     <RadioGroup
         android:id="@+id/radioGroup10"
@@ -327,136 +276,14 @@
         android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="@+id/radioGroup17"
         app:layout_constraintStart_toEndOf="@+id/radioGroup17"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup17">
-
-        <RadioButton
-            android:id="@+id/autochoice11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice11" />
-
-        <RadioButton
-            android:id="@+id/autochoice12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice12" />
-
-    </RadioGroup>
+        app:layout_constraintTop_toTopOf="@+id/radioGroup17"/>
 
     <RadioGroup
         android:id="@+id/radioGroup17"
         android:layout_width="30dp"
         android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup9"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup9"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup9">
-
-        <RadioButton
-            android:id="@+id/autochoice9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice9" />
-
-        <RadioButton
-            android:id="@+id/autochoice10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice10" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup9"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup5"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup5"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup5">
-
-        <RadioButton
-            android:id="@+id/autochoice7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice7" />
-
-        <RadioButton
-            android:id="@+id/autochoice8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice8" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup5"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup8"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup8"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup8">
-
-        <RadioButton
-            android:id="@+id/autochoice5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice5" />
-
-        <RadioButton
-            android:id="@+id/autochoice6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice6" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup8"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup18"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup18"
-        app:layout_constraintVertical_bias="0.0">
-
-        <RadioButton
-            android:id="@+id/autochoice3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice3" />
-
-        <RadioButton
-            android:id="@+id/autochoice4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice4" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup18"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="568dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/autochoice1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice1" />
-
-        <RadioButton
-            android:id="@+id/autochoice2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="autochoice2" />
-
-    </RadioGroup>
+        tools:layout_editor_absoluteX="1020dp"
+        tools:layout_editor_absoluteY="188dp" />
 
     <RadioGroup
         android:id="@+id/endAscentGroup"
@@ -952,5 +779,24 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="26dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="28dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

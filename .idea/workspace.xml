@@ -366,7 +366,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
-          <line>666</line>
+          <line>688</line>
           <properties class="com.example.myfirstapp.AutoActivity" method="ppg">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -375,7 +375,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
-          <line>677</line>
+          <line>699</line>
           <properties class="com.example.myfirstapp.AutoActivity" method="pgp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -384,7 +384,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
-          <line>684</line>
+          <line>706</line>
           <properties class="com.example.myfirstapp.AutoActivity" method="gpp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -399,12 +399,12 @@
       <map>
         <entry key="com.example.myfirstapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1762381705322" />
+            <CheckInfo lastCheckTimestamp="1762468111193" />
           </value>
         </entry>
         <entry key="com.example.myfirstapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1762381705325" />
+            <CheckInfo lastCheckTimestamp="1762468111194" />
           </value>
         </entry>
       </map>

@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Tele extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers, telychoice1, telychoice2, telychoice3, telychoice4, telychoice5, telychoice6, telychoice7, telychoice8, telychoice9, telychoice10, telychoice11, telychoice12, telychoice13, telychoice14, telychoice15, telychoice16, telychoice17, telychoice18;
-    TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt, OverallpointS;
+    TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt, OverallpointS,text1,text2,text3,text4,text5,text6,text7,text8,text9;
     byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0, Overallpoints=0;
 
     String teleBotAscent, parked, autogrup1, autogrup2, autogrup3,autogrup4,autogrup5,autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
@@ -61,6 +61,16 @@ public class Tele extends AppCompatActivity {
         telychoice14 = findViewById(R.id.telechoice32);
         telychoice15 = findViewById(R.id.telechoice33);
         telychoice16 = findViewById(R.id.telechoice34);
+        text1=findViewById(R.id.textView14);
+        text2=findViewById(R.id.textView8);
+        text3=findViewById(R.id.textView9);
+        text4=findViewById(R.id.textView7);
+        text5=findViewById(R.id.textView12);
+        text6=findViewById(R.id.textView16);
+        text7=findViewById(R.id.textView15);
+        text8=findViewById(R.id.textView19);
+        text9=findViewById(R.id.textView17);
+
         setPrevious();                                      Log.d("tApre","get I");
     }
 
