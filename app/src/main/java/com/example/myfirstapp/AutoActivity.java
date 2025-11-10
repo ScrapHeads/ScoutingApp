@@ -48,9 +48,9 @@ public class AutoActivity<pri> extends AppCompatActivity {
         ppg = findViewById(R.id.ppg);
         gpp = findViewById(R.id.gpp);
         pgp = findViewById(R.id.pgp);
-        autochoice1 = findViewById(R.id.checkBox2);
-        autochoice2 = findViewById(R.id.checkBox3);
-        autochoice3 = findViewById(R.id.autochoice3);
+        autochoice1 = findViewById(R.id.checkBox1);
+        autochoice2 = findViewById(R.id.checkBox1);
+        autochoice3 = findViewById(R.id.checkbox3);
         autochoice4 = findViewById(R.id.autochoice4);
         autochoice5 = findViewById(R.id.autochoice5);
         autochoice6 = findViewById(R.id.autochoice6);
