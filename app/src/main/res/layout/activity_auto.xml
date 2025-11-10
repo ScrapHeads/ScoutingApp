@@ -703,10 +703,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:layout_width="156dp"
-        android:layout_height="316dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="108dp"
+        android:layout_width="173dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="90dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -715,7 +715,7 @@
             android:layout_width="match_parent"
             android:layout_height="79dp"
             android:onClick="clickdidnotparked"
-            android:text="Didn't Park"
+            android:text="Didn't Move"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
@@ -724,7 +724,7 @@
             android:layout_width="match_parent"
             android:layout_height="79dp"
             android:onClick="clickbarlyparked"
-            android:text="Barely Parked"
+            android:text="Barely Moved"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
@@ -733,18 +733,10 @@
             android:layout_width="match_parent"
             android:layout_height="79dp"
             android:onClick="clickfullparked"
-            android:text="Fully Parked"
+            android:text="Moved Out Of White Triangle"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/AUTOparkedwithothers"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:onClick="clickparkedwithothers"
-            android:text="Parked With Other Bot"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp" />
     </RadioGroup>
 
     <RadioGroup

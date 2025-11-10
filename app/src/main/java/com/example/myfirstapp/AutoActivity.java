@@ -44,7 +44,6 @@ public class AutoActivity<pri> extends AppCompatActivity {
         noparked = findViewById(R.id.autopark1);
         barlyparked = findViewById(R.id.autobparled);
         fullparked = findViewById(R.id.autofullpared);
-        parkedwithothers = findViewById(R.id.AUTOparkedwithothers);
         ppg = findViewById(R.id.ppg);
         gpp = findViewById(R.id.gpp);
         pgp = findViewById(R.id.pgp);
@@ -691,10 +690,6 @@ public class AutoActivity<pri> extends AppCompatActivity {
         gpp.setChecked(false);
         pgp.setChecked(false);
         pgpppggpp = "ppg";
-
-
-
-
     }
 
     public void pgp(View view) {
