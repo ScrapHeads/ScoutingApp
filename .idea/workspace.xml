@@ -360,7 +360,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
-          <line>688</line>
+          <line>687</line>
           <properties class="com.example.myfirstapp.AutoActivity" method="ppg">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -369,7 +369,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
-          <line>699</line>
+          <line>694</line>
           <properties class="com.example.myfirstapp.AutoActivity" method="pgp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -378,7 +378,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
-          <line>706</line>
+          <line>701</line>
           <properties class="com.example.myfirstapp.AutoActivity" method="gpp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
