@@ -741,7 +741,7 @@
 
     <RadioGroup
         android:layout_width="116dp"
-        android:layout_height="155dp"
+        android:layout_height="145dp"
         android:layout_marginStart="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -793,6 +793,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice13"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox15"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -801,6 +802,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice11"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox13"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -809,6 +811,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice9"
         app:layout_constraintEnd_toStartOf="@+id/checkBox8"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -817,6 +820,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice7"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox9"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -825,6 +829,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice5"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox7"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -833,6 +838,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice3"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox5"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -841,6 +847,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice1"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox3"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -849,6 +856,7 @@
         android:layout_width="28dp"
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
+        android:onClick="autochoice15"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox17"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -858,6 +866,7 @@
         android:layout_height="38dp"
         android:layout_marginTop="192dp"
         android:layout_marginEnd="327dp"
+        android:onClick="autochoice17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -865,6 +874,7 @@
         android:id="@+id/autocheckbox14"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice14"
         app:layout_constraintEnd_toEndOf="@+id/autocheckbox13"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox13"
@@ -874,6 +884,7 @@
         android:id="@+id/autocheckbox12"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice12"
         app:layout_constraintEnd_toStartOf="@+id/autocheckbox13"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox11"
@@ -883,6 +894,7 @@
         android:id="@+id/autocheckbox10"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice10"
         app:layout_constraintEnd_toStartOf="@+id/checkBox8"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox9"
         app:layout_constraintTop_toBottomOf="@+id/autocheckbox9" />
@@ -891,6 +903,7 @@
         android:id="@+id/autocheckbox8"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice8"
         app:layout_constraintEnd_toEndOf="@+id/autocheckbox7"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox7"
         app:layout_constraintTop_toBottomOf="@+id/autocheckbox7" />
@@ -899,6 +912,7 @@
         android:id="@+id/autocheckbox6"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice6"
         app:layout_constraintEnd_toEndOf="@+id/autocheckbox5"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox5"
         app:layout_constraintTop_toBottomOf="@+id/autocheckbox5" />
@@ -907,6 +921,7 @@
         android:id="@+id/autocheckbox2"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice2"
         app:layout_constraintEnd_toEndOf="@+id/autocheckbox1"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox1"
         app:layout_constraintTop_toBottomOf="@+id/autocheckbox1" />
@@ -915,6 +930,7 @@
         android:id="@+id/autocheckbox4"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice4"
         app:layout_constraintEnd_toEndOf="@+id/autocheckbox3"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox3"
         app:layout_constraintTop_toBottomOf="@+id/autocheckbox3" />
@@ -923,6 +939,7 @@
         android:id="@+id/autocheckbox16"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice16"
         app:layout_constraintEnd_toEndOf="@+id/autocheckbox15"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox15"
         app:layout_constraintTop_toBottomOf="@+id/autocheckbox15" />
@@ -931,6 +948,7 @@
         android:id="@+id/autocheckbox18"
         android:layout_width="28dp"
         android:layout_height="38dp"
+        android:onClick="autochoice18"
         app:layout_constraintEnd_toEndOf="@+id/autocheckbox17"
         app:layout_constraintStart_toStartOf="@+id/autocheckbox17"
         app:layout_constraintTop_toBottomOf="@+id/autocheckbox17" />

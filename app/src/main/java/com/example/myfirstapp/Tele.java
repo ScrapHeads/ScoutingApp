@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -17,10 +18,10 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Tele extends AppCompatActivity {
-    RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers, telychoice1, telychoice2, telychoice3, telychoice4, telychoice5, telychoice6, telychoice7, telychoice8, telychoice9, telychoice10, telychoice11, telychoice12, telychoice13, telychoice14, telychoice15, telychoice16, telychoice17, telychoice18;
+    RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers;
     TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt, OverallpointS,text1,text2,text3,text4,text5,text6,text7,text8,text9;
     byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0, Overallpoints=0;
-
+    CheckBox telechoice1, telechoice2, telechoice3, telechoice4, telechoice5, telechoice6, telechoice7, telechoice8, telechoice9, telechoice10, telechoice11, telechoice12, telechoice13, telechoice14, telechoice15, telechoice16;
     String teleBotAscent, parked, autogrup1, autogrup2, autogrup3,autogrup4,autogrup5,autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
 
     @Override
@@ -45,22 +46,22 @@ public class Tele extends AppCompatActivity {
         barlyparked=findViewById(R.id.telybparled);
         fullparked=findViewById(R.id.telyfullpared);
         parkedwithothers=findViewById(R.id.telyparkedwithothers);
-        telychoice1 = findViewById(R.id.telechoice19);
-        telychoice2 = findViewById(R.id.telechoice20);
-        telychoice3 = findViewById(R.id.telechoice21);
-        telychoice4 = findViewById(R.id.telechoice22);
-        telychoice5 = findViewById(R.id.telechoice23);
-        telychoice6 = findViewById(R.id.telechoice24);
-        telychoice7 = findViewById(R.id.telechoice25);
-        telychoice8 = findViewById(R.id.telechoice26);
-        telychoice9 = findViewById(R.id.telechoice27);
-        telychoice10 = findViewById(R.id.telechoice28);
-        telychoice11 = findViewById(R.id.telechoice29);
-        telychoice12 = findViewById(R.id.telechoice30);
-        telychoice13 = findViewById(R.id.telechoice31);
-        telychoice14 = findViewById(R.id.telechoice32);
-        telychoice15 = findViewById(R.id.telechoice33);
-        telychoice16 = findViewById(R.id.telechoice34);
+        telechoice1 = findViewById(R.id.telechoice19);
+        telechoice2 = findViewById(R.id.telechoice20);
+        telechoice3 = findViewById(R.id.telechoice21);
+        telechoice4 = findViewById(R.id.telechoice22);
+        telechoice5 = findViewById(R.id.telechoice23);
+        telechoice6 = findViewById(R.id.telechoice24);
+        telechoice7 = findViewById(R.id.telechoice25);
+        telechoice8 = findViewById(R.id.telechoice26);
+        telechoice9 = findViewById(R.id.telechoice27);
+        telechoice10 = findViewById(R.id.telechoice28);
+        telechoice11 = findViewById(R.id.telechoice29);
+        telechoice12 = findViewById(R.id.telechoice30);
+        telechoice13 = findViewById(R.id.telechoice31);
+        telechoice14 = findViewById(R.id.telechoice32);
+        telechoice15 = findViewById(R.id.telechoice33);
+        telechoice16 = findViewById(R.id.telechoice34);
         text1=findViewById(R.id.textView14);
         text2=findViewById(R.id.textView8);
         text3=findViewById(R.id.textView9);
