@@ -698,6 +698,7 @@
         android:text="Do They Have Auto?"
         android:textColor="@color/scraphead_yellow"
         android:textSize="18sp"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
