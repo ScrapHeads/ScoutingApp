@@ -21,7 +21,7 @@ public class Tele extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers;
     TextView teleNetZoneText, teleLowBasketText, teleHighBasketText,teleHiChamberText,teleloChamberText, overflowtxt, OverallpointS,text1,text2,text3,text4,text5,text6,text7,text8,text9;
     byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0, Overallpoints=0;
-    CheckBox telechoice1, telechoice2, telechoice3, telechoice4, telechoice5, telechoice6, telechoice7, telechoice8, telechoice9, telechoice10, telechoice11, telechoice12, telechoice13, telechoice14, telechoice15, telechoice16;
+    CheckBox telechoice1, telechoice2, telechoice3, telechoice4, telechoice5, telechoice6, telechoice7, telechoice8, telechoice9, telechoice10, telechoice11, telechoice12, telechoice13, telechoice14, telechoice15, telechoice16, telechoice17, telechoice18;
     String teleBotAscent, parked, autogrup1, autogrup2, autogrup3,autogrup4,autogrup5,autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
 
     @Override
@@ -46,22 +46,24 @@ public class Tele extends AppCompatActivity {
         barlyparked=findViewById(R.id.telybparled);
         fullparked=findViewById(R.id.telyfullpared);
         parkedwithothers=findViewById(R.id.telyparkedwithothers);
-        telechoice1 = findViewById(R.id.telechoice19);
-        telechoice2 = findViewById(R.id.telechoice20);
-        telechoice3 = findViewById(R.id.telechoice21);
-        telechoice4 = findViewById(R.id.telechoice22);
-        telechoice5 = findViewById(R.id.telechoice23);
-        telechoice6 = findViewById(R.id.telechoice24);
-        telechoice7 = findViewById(R.id.telechoice25);
-        telechoice8 = findViewById(R.id.telechoice26);
-        telechoice9 = findViewById(R.id.telechoice27);
-        telechoice10 = findViewById(R.id.telechoice28);
-        telechoice11 = findViewById(R.id.telechoice29);
-        telechoice12 = findViewById(R.id.telechoice30);
-        telechoice13 = findViewById(R.id.telechoice31);
-        telechoice14 = findViewById(R.id.telechoice32);
-        telechoice15 = findViewById(R.id.telechoice33);
-        telechoice16 = findViewById(R.id.telechoice34);
+        telechoice1 = findViewById(R.id.telecheckbox1);
+        telechoice2 = findViewById(R.id.telecheckbox2);
+        telechoice3 = findViewById(R.id.telecheckbox3);
+        telechoice4 = findViewById(R.id.telecheckbox4);
+        telechoice5 = findViewById(R.id.telecheckbox5);
+        telechoice6 = findViewById(R.id.telecheckbox6);
+        telechoice7 = findViewById(R.id.telecheckbox7);
+        telechoice8 = findViewById(R.id.telecheckbox8);
+        telechoice9 = findViewById(R.id.telecheckbox9);
+        telechoice10 = findViewById(R.id.telecheckbox10);
+        telechoice11 = findViewById(R.id.telecheckbox11);
+        telechoice12 = findViewById(R.id.telecheckbox12);
+        telechoice13 = findViewById(R.id.telecheckbox13);
+        telechoice14 = findViewById(R.id.telecheckbox14);
+        telechoice15 = findViewById(R.id.telecheckbox15);
+        telechoice16 = findViewById(R.id.telecheckbox16);
+        telechoice17 = findViewById(R.id.telecheckbox17);
+        telechoice18 = findViewById(R.id.telecheckbox18);
         text1=findViewById(R.id.textView14);
         text2=findViewById(R.id.textView8);
         text3=findViewById(R.id.textView9);
@@ -227,76 +229,76 @@ public class Tele extends AppCompatActivity {
             parkedwithothers.setChecked(true);
         }
         if (autogrup1 == "telychoice1") {
-            telychoice1.setChecked(true);
-            telychoice2.setChecked(false);
+            telechoice1.setChecked(true);
+            telechoice2.setChecked(false);
         }
         if (autogrup1 == "telychoice2") {
-            telychoice1.setChecked(false);
-            telychoice2.setChecked(true);
+            telechoice1.setChecked(false);
+            telechoice2.setChecked(true);
         }
         if (autogrup3 == "telychoice3") {
-            telychoice3.setChecked(true);
-            telychoice4.setChecked(false);
+            telechoice3.setChecked(true);
+            telechoice4.setChecked(false);
         }
         if (autogrup3 == "telychoice4") {
-            telychoice4.setChecked(true);
-            telychoice3.setChecked(false);
+            telechoice4.setChecked(true);
+            telechoice3.setChecked(false);
         }
         if (autogrup4 == "telychoice5") {
-            telychoice5.setChecked(true);
-            telychoice6.setChecked(false);
+            telechoice5.setChecked(true);
+            telechoice6.setChecked(false);
         }
         if (autogrup4 == "telychoice6") {
-            telychoice6.setChecked(true);
-            telychoice5.setChecked(false);
+            telechoice6.setChecked(true);
+            telechoice5.setChecked(false);
         }
         if (autogrup5 == "telychoice7") {
-            telychoice7.setChecked(true);
-            telychoice8.setChecked(false);
+            telechoice7.setChecked(true);
+            telechoice8.setChecked(false);
         }
         if (autogrup5 == "telychoice8") {
-            telychoice8.setChecked(true);
-            telychoice7.setChecked(false);
+            telechoice8.setChecked(true);
+            telechoice7.setChecked(false);
         }
         if (autogrup6 == "telychoice9") {
-            telychoice9.setChecked(true);
-            telychoice10.setChecked(false);
+            telechoice9.setChecked(true);
+            telechoice10.setChecked(false);
         }
         if (autogrup6 == "telychoice10") {
-            telychoice10.setChecked(true);
-            telychoice9.setChecked(false);
+            telechoice10.setChecked(true);
+            telechoice9.setChecked(false);
         }
         if (autogrup7 == "telychoice11") {
-            telychoice11.setChecked(true);
-            telychoice12.setChecked(false);
+            telechoice11.setChecked(true);
+            telechoice12.setChecked(false);
         }
         if (autogrup7 == "telychoice12") {
-            telychoice12.setChecked(true);
-            telychoice11.setChecked(false);
+            telechoice12.setChecked(true);
+            telechoice11.setChecked(false);
         }
         if (autogrup8 == "telychoice13") {
-            telychoice13.setChecked(true);
-            telychoice14.setChecked(false);
+            telechoice13.setChecked(true);
+            telechoice14.setChecked(false);
         }
         if (autogrup8 == "telychoice14") {
-            telychoice14.setChecked(true);
-            telychoice13.setChecked(false);
+            telechoice14.setChecked(true);
+            telechoice13.setChecked(false);
         }
         if (autogrup9 == "telychoice15") {
-            telychoice15.setChecked(true);
-            telychoice16.setChecked(false);
+            telechoice15.setChecked(true);
+            telechoice16.setChecked(false);
         }
         if (autogrup9 == "telychoice16") {
-            telychoice16.setChecked(true);
-            telychoice15.setChecked(false);
+            telechoice16.setChecked(true);
+            telechoice15.setChecked(false);
         }
         if (autogrup10 == "telychoice17") {
-            telychoice17.setChecked(true);
-            telychoice18.setChecked(false);
+            telechoice17.setChecked(true);
+            telechoice18.setChecked(false);
         }
         if (autogrup10 == "telychoice18") {
-            telychoice18.setChecked(true);
-            telychoice17.setChecked(false);
+            telechoice18.setChecked(true);
+            telechoice17.setChecked(false);
         }
         }
 
@@ -552,131 +554,131 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice1(View view) {
-        telychoice1.setChecked(true);
-        telychoice2.setChecked(false);
-        autogrup1 = "telychoice1";
+        telechoice1.setChecked(true);
+        telechoice2.setChecked(false);
+        autogrup1 = "telechoice1";
     }
 
     public void telechoice2(View view) {
-        telychoice2.setChecked(true);
-        telychoice1.setChecked(false);
-        autogrup1 = "telychoice2";
+        telechoice2.setChecked(true);
+        telechoice1.setChecked(false);
+        autogrup1 = "telechoice2";
     }
 
     public void telechoice3(View view) {
-        telychoice3.setChecked(true);
-        telychoice4.setChecked(false);
-        autogrup3 = "telychoice3";
+        telechoice3.setChecked(true);
+        telechoice4.setChecked(false);
+        autogrup3 = "telechoice3";
     }
 
     public void telechoice4(View view) {
-        telychoice4.setChecked(true);
-        telychoice3.setChecked(false);
-        autogrup3 = "telychoice4";
+        telechoice4.setChecked(true);
+        telechoice3.setChecked(false);
+        autogrup3 = "telechoice4";
     }
 
     public void telechoice5(View view) {
-        telychoice5.setChecked(true);
-        telychoice6.setChecked(false);
-        autogrup4 = "telychoice5";
+        telechoice5.setChecked(true);
+        telechoice6.setChecked(false);
+        autogrup4 = "telechoice5";
     }
 
     public void telechoice6(View view) {
-        telychoice6.setChecked(true);
-        telychoice5.setChecked(false);
-        autogrup4 = "telychoice6";
+        telechoice6.setChecked(true);
+        telechoice5.setChecked(false);
+        autogrup4 = "telechoice6";
     }
 
     public void telechoice7(View view) {
-        telychoice7.setChecked(true);
-        telychoice8.setChecked(false);
-        autogrup5 = "telychoice7";
+        telechoice7.setChecked(true);
+        telechoice8.setChecked(false);
+        autogrup5 = "telechoice7";
     }
 
     public void telechoice8(View view) {
-        telychoice8.setChecked(true);
-        telychoice7.setChecked(false);
-        autogrup5 = "telychoice8";
+        telechoice8.setChecked(true);
+        telechoice7.setChecked(false);
+        autogrup5 = "telechoice8";
     }
 
     public void telechoice9(View view) {
-        telychoice9.setChecked(true);
-        telychoice10.setChecked(false);
-        autogrup6 = "telychoice9";
+        telechoice9.setChecked(true);
+        telechoice10.setChecked(false);
+        autogrup6 = "telechoice9";
     }
 
     public void telechoice10(View view) {
-        telychoice10.setChecked(true);
-        telychoice9.setChecked(false);
-        autogrup6 = "telychoice10";
+        telechoice10.setChecked(true);
+        telechoice9.setChecked(false);
+        autogrup6 = "telechoice10";
     }
 
     public void telechoice11(View view) {
-        telychoice11.setChecked(true);
-        telychoice12.setChecked(false);
-        autogrup7 = "telychoice11";
+        telechoice11.setChecked(true);
+        telechoice12.setChecked(false);
+        autogrup7 = "telechoice11";
     }
 
     public void telechoice12(View view) {
-        telychoice12.setChecked(true);
-        telychoice11.setChecked(false);
-        autogrup7 = "telychoice12";
+        telechoice12.setChecked(true);
+        telechoice11.setChecked(false);
+        autogrup7 = "telechoice12";
     }
 
     public void telechoice13(View view) {
-        telychoice13.setChecked(true);
-        telychoice14.setChecked(false);
-        autogrup8 = "telychoice13";
+        telechoice13.setChecked(true);
+        telechoice14.setChecked(false);
+        autogrup8 = "telechoice13";
     }
 
     public void telechoice14(View view) {
-        telychoice14.setChecked(true);
-        telychoice13.setChecked(false);
-        autogrup8 = "telychoice14";
+        telechoice14.setChecked(true);
+        telechoice13.setChecked(false);
+        autogrup8 = "telechoice14";
     }
 
     public void telechoice15(View view) {
-        telychoice15.setChecked(true);
-        telychoice16.setChecked(false);
-        autogrup9 = "telychoice15";
+        telechoice15.setChecked(true);
+        telechoice16.setChecked(false);
+        autogrup9 = "telechoice15";
     }
 
     public void telechoice16(View view) {
-        telychoice16.setChecked(true);
-        telychoice15.setChecked(false);
-        autogrup9 = "telychoice16";
+        telechoice16.setChecked(true);
+        telechoice15.setChecked(false);
+        autogrup9 = "telechoice16";
     }
 
     public void telechoice17(View view) {
-        telychoice17.setChecked(true);
-        telychoice18.setChecked(false);
-        autogrup10 = "telychoice17";
+        telechoice17.setChecked(true);
+        telechoice18.setChecked(false);
+        autogrup10 = "telechoice17";
     }
 
     public void telechoice18(View view) {
-        telychoice18.setChecked(true);
-        telychoice17.setChecked(false);
-        autogrup10 = "telychoice18";
+        telechoice18.setChecked(true);
+        telechoice17.setChecked(false);
+        autogrup10 = "telechoice18";
     }
     public void teleclear(View view){
-        if (telychoice1 != null) telychoice1.setChecked(false);
-        if (telychoice2 != null) telychoice2.setChecked(false);
-        if (telychoice3 != null) telychoice3.setChecked(false);
-        if (telychoice4 != null) telychoice4.setChecked(false);
-        if (telychoice5 != null) telychoice5.setChecked(false);
-        if (telychoice6 != null) telychoice6.setChecked(false);
-        if (telychoice7 != null) telychoice7.setChecked(false);
-        if (telychoice8 != null) telychoice8.setChecked(false);
-        if (telychoice9 != null) telychoice9.setChecked(false);
-        if (telychoice10 != null) telychoice10.setChecked(false);
-        if (telychoice11 != null) telychoice11.setChecked(false);
-        if (telychoice12 != null) telychoice12.setChecked(false);
-        if (telychoice13 != null) telychoice13.setChecked(false);
-        if (telychoice14 != null) telychoice14.setChecked(false);
-        if (telychoice15 != null) telychoice15.setChecked(false);
-        if (telychoice16 != null) telychoice16.setChecked(false);
-        if (telychoice17 != null) telychoice17.setChecked(false);
-        if (telychoice18 != null) telychoice18.setChecked(false);
+        if (telechoice1 != null) telechoice1.setChecked(false);
+        if (telechoice2 != null) telechoice2.setChecked(false);
+        if (telechoice3 != null) telechoice3.setChecked(false);
+        if (telechoice4 != null) telechoice4.setChecked(false);
+        if (telechoice5 != null) telechoice5.setChecked(false);
+        if (telechoice6 != null) telechoice6.setChecked(false);
+        if (telechoice7 != null) telechoice7.setChecked(false);
+        if (telechoice8 != null) telechoice8.setChecked(false);
+        if (telechoice9 != null) telechoice9.setChecked(false);
+        if (telechoice10 != null) telechoice10.setChecked(false);
+        if (telechoice11 != null) telechoice11.setChecked(false);
+        if (telechoice12 != null) telechoice12.setChecked(false);
+        if (telechoice13 != null) telechoice13.setChecked(false);
+        if (telechoice14 != null) telechoice14.setChecked(false);
+        if (telechoice15 != null) telechoice15.setChecked(false);
+        if (telechoice16 != null) telechoice16.setChecked(false);
+        if (telechoice17 != null) telechoice17.setChecked(false);
+        if (telechoice18 != null) telechoice18.setChecked(false);
         RecordsActivity.Info.telegrup1="";
         RecordsActivity.Info.telegrup2="";
         RecordsActivity.Info.telegrup3="";

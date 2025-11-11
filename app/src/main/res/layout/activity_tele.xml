@@ -10,6 +10,169 @@
     tools:layout_editor_absoluteX="86dp"
     tools:layout_editor_absoluteY="7dp">
 
+    <CheckBox
+        android:id="@+id/telecheckbox2"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice2"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox1"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox1"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox1" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox1"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice1"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox4"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice4"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox3"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox3"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox3" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox3"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice3"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox6"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice6"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox5"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox5"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox5" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox5"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice5"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox8"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice8"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox7"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox7"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox7" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox7"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice7"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox10"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice10"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox9"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox9"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox9" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox9"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice9"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox12"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice12"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox11"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox11"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox11" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox11"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice11"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox14"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice14"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox13"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox13"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox13" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox13"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice13"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox16"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice16"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox15"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox15"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox15" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox15"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:onClick="telechoice15"
+        app:layout_constraintEnd_toStartOf="@+id/telecheckbox17"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox18"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:onClick="telechoice18"
+        app:layout_constraintEnd_toEndOf="@+id/telecheckbox17"
+        app:layout_constraintStart_toStartOf="@+id/telecheckbox17"
+        app:layout_constraintTop_toBottomOf="@+id/telecheckbox17" />
+
+    <CheckBox
+        android:id="@+id/telecheckbox17"
+        android:layout_width="28dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="357dp"
+        android:onClick="telechoice17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView26"
         android:layout_width="146dp"
@@ -161,35 +324,12 @@
         app:layout_constraintTop_toTopOf="@+id/overflowText"
         app:layout_constraintVertical_bias="1.0" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup7"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="376dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/telechoice33"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice15" />
-
-        <RadioButton
-            android:id="@+id/telechoice34"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice16" />
-
-    </RadioGroup>
-
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="624dp"
+        android:layout_width="22dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="615dp"
         android:text="G"
         android:textColor="#8BC34A"
         android:textSize="24sp"
@@ -200,9 +340,9 @@
         android:id="@+id/textView8"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="10dp"
         android:text="P"
-        android:textColor="#673AB7"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toStartOf="@+id/textView9"
@@ -213,9 +353,9 @@
         android:id="@+id/textView9"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="10dp"
         android:text="P"
-        android:textColor="#673AB7"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintEnd_toStartOf="@+id/textView7"
@@ -226,9 +366,9 @@
         android:id="@+id/textView12"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="10dp"
         android:text="P"
-        android:textColor="#673AB7"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toStartOf="@+id/textView16"
@@ -239,9 +379,9 @@
         android:id="@+id/textView7"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="10dp"
         android:text="P"
-        android:textColor="#673AB7"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
@@ -253,9 +393,9 @@
         android:layout_width="18dp"
         android:layout_height="39dp"
         android:layout_marginTop="144dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="10dp"
         android:text="G"
-        android:textColor="#8BC34A"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="parent" />
@@ -264,9 +404,9 @@
         android:id="@+id/textView15"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="10dp"
         android:text="P"
-        android:textColor="#673AB7"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
         app:layout_constraintEnd_toStartOf="@+id/textView19"
@@ -277,9 +417,9 @@
         android:id="@+id/textView16"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="10dp"
         android:text="G"
-        android:textColor="#8BC34A"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintEnd_toStartOf="@+id/textView15"
@@ -291,196 +431,36 @@
         android:layout_width="18dp"
         android:layout_height="39dp"
         android:layout_marginTop="144dp"
-        android:layout_marginEnd="380dp"
+        android:layout_marginEnd="362dp"
         android:text="P"
-        android:textColor="#673AB7"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="18dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="624dp"
+        android:layout_width="22dp"
+        android:layout_height="38dp"
         android:text="P"
         android:textColor="#673AB7"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="18dp"
         android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="10dp"
         android:text="G"
-        android:textColor="#8BC34A"
+        android:textColor="@color/scraphead_yellow"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
         app:layout_constraintEnd_toStartOf="@+id/textView17"
         app:layout_constraintTop_toTopOf="@+id/textView15"
         app:layout_constraintVertical_bias="0.0" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup15"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup16"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup16"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup16">
-
-        <RadioButton
-            android:id="@+id/telechoice31"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice13" />
-
-        <RadioButton
-            android:id="@+id/telechoice32"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice14" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup16"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup10"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup10"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup10">
-
-        <RadioButton
-            android:id="@+id/telechoice29"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice11" />
-
-        <RadioButton
-            android:id="@+id/telechoice30"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice12" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup10"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup17"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup17"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup17">
-
-        <RadioButton
-            android:id="@+id/telechoice27"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice9" />
-
-        <RadioButton
-            android:id="@+id/telechoice28"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice10" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup17"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup5"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup5"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup5">
-
-        <RadioButton
-            android:id="@+id/telechoice25"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice7" />
-
-        <RadioButton
-            android:id="@+id/telechoice26"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice8" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup5"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup8"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup8"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup8">
-
-        <RadioButton
-            android:id="@+id/telechoice23"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice5" />
-
-        <RadioButton
-            android:id="@+id/telechoice24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice6" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup8"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup18"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup18"
-        app:layout_constraintVertical_bias="0.0">
-
-        <RadioButton
-            android:id="@+id/telechoice21"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice3" />
-
-        <RadioButton
-            android:id="@+id/telechoice22"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice4" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radioGroup18"
-        android:layout_width="30dp"
-        android:layout_height="97dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="588dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/telechoice19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice1" />
-
-        <RadioButton
-            android:id="@+id/telechoice20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="telechoice2" />
-
-    </RadioGroup>
 
     <Button
         android:id="@+id/button2"
