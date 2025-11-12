@@ -229,7 +229,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
             text2.setText("g");
             text3.setText("p");
             text4.setText("p");
-            tex5.setText("g");
+            text5.setText("g");
             text6.setText("p");
             text7.setText("p");
         }
