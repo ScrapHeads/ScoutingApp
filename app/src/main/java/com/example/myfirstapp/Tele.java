@@ -229,75 +229,75 @@ public class Tele extends AppCompatActivity {
             noparked.setChecked(false);
             parkedwithothers.setChecked(true);
         }
-        if (Objects.equals(autogrup1, "telychoice1")) {
+        if (Objects.equals(autogrup1, "telechoice1")) {
             telechoice1.setChecked(true);
             telechoice2.setChecked(false);
         }
-        if (Objects.equals(autogrup1, "telychoice2")) {
+        if (Objects.equals(autogrup1, "telechoice2")) {
             telechoice1.setChecked(false);
             telechoice2.setChecked(true);
         }
-        if (Objects.equals(autogrup2, "telychoice3")) {
+        if (Objects.equals(autogrup2, "telechoice3")) {
             telechoice3.setChecked(true);
             telechoice4.setChecked(false);
         }
-        if (Objects.equals(autogrup2, "telychoice4")) {
+        if (Objects.equals(autogrup2, "telechoice4")) {
             telechoice4.setChecked(true);
             telechoice3.setChecked(false);
         }
-        if (Objects.equals(autogrup3, "telychoice5")) {
+        if (Objects.equals(autogrup3, "telechoice5")) {
             telechoice5.setChecked(true);
             telechoice6.setChecked(false);
         }
-        if (Objects.equals(autogrup3, "telychoice6")) {
+        if (Objects.equals(autogrup3, "telechoice6")) {
             telechoice6.setChecked(true);
             telechoice5.setChecked(false);
         }
-        if (Objects.equals(autogrup4, "telychoice7")) {
+        if (Objects.equals(autogrup4, "telechoice7")) {
             telechoice7.setChecked(true);
             telechoice8.setChecked(false);
         }
-        if (Objects.equals(autogrup4, "telychoice8")) {
+        if (Objects.equals(autogrup4, "telechoice8")) {
             telechoice8.setChecked(true);
             telechoice7.setChecked(false);
         }
-        if (Objects.equals(autogrup5, "telychoice9")) {
+        if (Objects.equals(autogrup5, "telechoice9")) {
             telechoice9.setChecked(true);
             telechoice10.setChecked(false);
         }
-        if (Objects.equals(autogrup5, "telychoice10")) {
+        if (Objects.equals(autogrup5, "telechoice10")) {
             telechoice10.setChecked(true);
             telechoice9.setChecked(false);
         }
-        if (Objects.equals(autogrup6, "telychoice11")) {
+        if (Objects.equals(autogrup6, "telechoice11")) {
             telechoice11.setChecked(true);
             telechoice12.setChecked(false);
         }
-        if (Objects.equals(autogrup6, "telychoice12")) {
+        if (Objects.equals(autogrup6, "telechoice12")) {
             telechoice12.setChecked(true);
             telechoice11.setChecked(false);
         }
-        if (Objects.equals(autogrup7, "telychoice13")) {
+        if (Objects.equals(autogrup7, "telechoice13")) {
             telechoice13.setChecked(true);
             telechoice14.setChecked(false);
         }
-        if (Objects.equals(autogrup7, "telychoice14")) {
+        if (Objects.equals(autogrup7, "telechoice14")) {
             telechoice14.setChecked(true);
             telechoice13.setChecked(false);
         }
-        if (Objects.equals(autogrup8, "telychoice15")) {
+        if (Objects.equals(autogrup8, "telechoice15")) {
             telechoice15.setChecked(true);
             telechoice16.setChecked(false);
         }
-        if (Objects.equals(autogrup8, "telychoice16")) {
+        if (Objects.equals(autogrup8, "telechoice16")) {
             telechoice16.setChecked(true);
             telechoice15.setChecked(false);
         }
-        if (Objects.equals(autogrup9, "telychoice17")) {
+        if (Objects.equals(autogrup9, "telechoice17")) {
             telechoice17.setChecked(true);
             telechoice18.setChecked(false);
         }
-        if (Objects.equals(autogrup9, "telychoice18")) {
+        if (Objects.equals(autogrup9, "telechoice18")) {
             telechoice18.setChecked(true);
             telechoice17.setChecked(false);
         }
