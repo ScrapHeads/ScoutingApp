@@ -11,11 +11,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
 
 public class Tele extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, LevleTwo,LevleThree, noparked, barlyparked, fullparked, parkedwithothers;
@@ -123,184 +124,184 @@ public class Tele extends AppCompatActivity {
         autogrup17 = RecordsActivity.Info.telegrup17;
         autogrup18 = RecordsActivity.Info.telegrup18;
 
-        if (teleBotAscent == "park"){
+        if (Objects.equals(teleBotAscent, "park")){
             noPark.setChecked(false);
             LevleOne.setChecked(false);
             LevleTwo.setChecked(false);
             LevleThree.setChecked(false);
             park.setChecked(true);
         }
-        if (teleBotAscent=="noPark"){
+        if (Objects.equals(teleBotAscent, "noPark")){
             park.setChecked(false);
             LevleOne.setChecked(false);
             LevleTwo.setChecked(false);
             LevleThree.setChecked(false);
             noPark.setChecked(true);
         }
-        if (teleBotAscent == "lvlOne"){
+        if (Objects.equals(teleBotAscent, "lvlOne")){
             park.setChecked(false);
             noPark.setChecked(false);
             LevleTwo.setChecked(false);
             LevleThree.setChecked(false);
             LevleOne.setChecked(true);
         }
-        if (teleBotAscent== "LvlTwo"){
+        if (Objects.equals(teleBotAscent, "LvlTwo")){
             park.setChecked(false);
             LevleOne.setChecked(false);
             LevleThree.setChecked(false);
             noPark.setChecked(false);
             LevleTwo.setChecked(true);
         }
-        if (teleBotAscent== "LvlThree") {
+        if (Objects.equals(teleBotAscent, "LvlThree")) {
             park.setChecked(false);
             LevleOne.setChecked(false);
             noPark.setChecked(false);
             LevleTwo.setChecked(false);
             LevleThree.setChecked(true);
         }
-            teleNetZone = Byte.parseByte(teleNetZoneText.getText().toString());
-            if (teleNetZone == 0){
-                findViewById(R.id.spesamenNetSubtract).setVisibility(INVISIBLE);
-            }
-            teleNetZone = Byte.parseByte(teleNetZoneText.getText().toString());
-            if (teleNetZone > 0) {
-                findViewById(R.id.spesamenNetSubtract).setVisibility(VISIBLE);
-            }
-            Overflow= Byte.parseByte(overflowtxt.getText().toString());
-            if (Overflow==0){
-                findViewById(R.id.overflowMin).setVisibility(GONE);
-            }
-            Overflow=Byte.parseByte(overflowtxt.getText().toString());
-            if (Overflow > 0){
-                findViewById(R.id.overflowMin).setVisibility(VISIBLE);
-            }
+        teleNetZone = Byte.parseByte(teleNetZoneText.getText().toString());
+        if (teleNetZone == 0){
+            findViewById(R.id.spesamenNetSubtract).setVisibility(INVISIBLE);
+        }
+        teleNetZone = Byte.parseByte(teleNetZoneText.getText().toString());
+        if (teleNetZone > 0) {
+            findViewById(R.id.spesamenNetSubtract).setVisibility(VISIBLE);
+        }
+        Overflow= Byte.parseByte(overflowtxt.getText().toString());
+        if (Overflow==0){
+            findViewById(R.id.overflowMin).setVisibility(GONE);
+        }
+        Overflow=Byte.parseByte(overflowtxt.getText().toString());
+        if (Overflow > 0){
+            findViewById(R.id.overflowMin).setVisibility(VISIBLE);
+        }
 
 
-            teleloChamber = Byte.parseByte(teleloChamberText.getText().toString());
-            if (teleloChamber == 0){
-                findViewById(R.id.spesamenLCSubtractionButton).setVisibility(INVISIBLE);
-            }
-            if (teleloChamber > 0) {
-                findViewById(R.id.spesamenLCSubtractionButton).setVisibility(VISIBLE);
-            }
-            teleHiChamber = Byte.parseByte(teleHiChamberText.getText().toString());
-            if (teleHiChamber ==0) {
-                findViewById(R.id.spesamenHCSubtractionButton).setVisibility(GONE);
-            }
-            if (teleHiChamber > 0) {
-                findViewById(R.id.spesamenHCSubtractionButton).setVisibility(VISIBLE);
-            }
-            teleLowBasket = Byte.parseByte(teleLowBasketText.getText().toString());
-            if (teleLowBasket ==0){
-                findViewById(R.id.spesamenLowBasketSubtract).setVisibility(GONE);
-            }
-            if (teleLowBasket > 0) {
-                findViewById(R.id.spesamenLowBasketSubtract).setVisibility(VISIBLE);
-            }
-            teleHighBasket = Byte.parseByte(teleHighBasketText.getText().toString());
-            if (teleHighBasket ==0){
-                findViewById(R.id.spesamenHighBasketSubtract).setVisibility(GONE);
-            }
-            if (teleHighBasket > 0) {
-                findViewById(R.id.spesamenHighBasketSubtract).setVisibility(VISIBLE);                                Log.d("AASet Previous", "VISIBLE");
-            }
-        if (parked=="noparked"){
+        teleloChamber = Byte.parseByte(teleloChamberText.getText().toString());
+        if (teleloChamber == 0){
+            findViewById(R.id.spesamenLCSubtractionButton).setVisibility(INVISIBLE);
+        }
+        if (teleloChamber > 0) {
+            findViewById(R.id.spesamenLCSubtractionButton).setVisibility(VISIBLE);
+        }
+        teleHiChamber = Byte.parseByte(teleHiChamberText.getText().toString());
+        if (teleHiChamber ==0) {
+            findViewById(R.id.spesamenHCSubtractionButton).setVisibility(GONE);
+        }
+        if (teleHiChamber > 0) {
+            findViewById(R.id.spesamenHCSubtractionButton).setVisibility(VISIBLE);
+        }
+        teleLowBasket = Byte.parseByte(teleLowBasketText.getText().toString());
+        if (teleLowBasket ==0){
+            findViewById(R.id.spesamenLowBasketSubtract).setVisibility(GONE);
+        }
+        if (teleLowBasket > 0) {
+            findViewById(R.id.spesamenLowBasketSubtract).setVisibility(VISIBLE);
+        }
+        teleHighBasket = Byte.parseByte(teleHighBasketText.getText().toString());
+        if (teleHighBasket ==0){
+            findViewById(R.id.spesamenHighBasketSubtract).setVisibility(GONE);
+        }
+        if (teleHighBasket > 0) {
+            findViewById(R.id.spesamenHighBasketSubtract).setVisibility(VISIBLE);                                Log.d("AASet Previous", "VISIBLE");
+        }
+        if (Objects.equals(parked, "noparked")){
             barlyparked.setChecked(false);
             fullparked.setChecked(false);
             parkedwithothers.setChecked(false);
             noparked.setChecked(true);
         }
-        if (parked=="barlyparked"){
+        if (Objects.equals(parked, "barlyparked")){
             fullparked.setChecked(false);
             parkedwithothers.setChecked(false);
             noparked.setChecked(false);
             barlyparked.setChecked(true);
         }
-        if (parked=="fullparked"){
+        if (Objects.equals(parked, "fullparked")){
             barlyparked.setChecked(false);
             parkedwithothers.setChecked(false);
             noparked.setChecked(false);
             fullparked.setChecked(true);
         }
-        if (parked=="parkedwithothers"){
+        if (Objects.equals(parked, "parkedwithothers")){
             barlyparked.setChecked(false);
             fullparked.setChecked(false);
             noparked.setChecked(false);
             parkedwithothers.setChecked(true);
         }
-        if (autogrup1 == "telychoice1") {
+        if (Objects.equals(autogrup1, "telychoice1")) {
             telechoice1.setChecked(true);
             telechoice2.setChecked(false);
         }
-        if (autogrup1 == "telychoice2") {
+        if (Objects.equals(autogrup1, "telychoice2")) {
             telechoice1.setChecked(false);
             telechoice2.setChecked(true);
         }
-        if (autogrup2 == "telychoice3") {
+        if (Objects.equals(autogrup2, "telychoice3")) {
             telechoice3.setChecked(true);
             telechoice4.setChecked(false);
         }
-        if (autogrup2 == "telychoice4") {
+        if (Objects.equals(autogrup2, "telychoice4")) {
             telechoice4.setChecked(true);
             telechoice3.setChecked(false);
         }
-        if (autogrup3 == "telychoice5") {
+        if (Objects.equals(autogrup3, "telychoice5")) {
             telechoice5.setChecked(true);
             telechoice6.setChecked(false);
         }
-        if (autogrup3 == "telychoice6") {
+        if (Objects.equals(autogrup3, "telychoice6")) {
             telechoice6.setChecked(true);
             telechoice5.setChecked(false);
         }
-        if (autogrup4 == "telychoice7") {
+        if (Objects.equals(autogrup4, "telychoice7")) {
             telechoice7.setChecked(true);
             telechoice8.setChecked(false);
         }
-        if (autogrup4 == "telychoice8") {
+        if (Objects.equals(autogrup4, "telychoice8")) {
             telechoice8.setChecked(true);
             telechoice7.setChecked(false);
         }
-        if (autogrup5 == "telychoice9") {
+        if (Objects.equals(autogrup5, "telychoice9")) {
             telechoice9.setChecked(true);
             telechoice10.setChecked(false);
         }
-        if (autogrup5 == "telychoice10") {
+        if (Objects.equals(autogrup5, "telychoice10")) {
             telechoice10.setChecked(true);
             telechoice9.setChecked(false);
         }
-        if (autogrup6 == "telychoice11") {
+        if (Objects.equals(autogrup6, "telychoice11")) {
             telechoice11.setChecked(true);
             telechoice12.setChecked(false);
         }
-        if (autogrup6 == "telychoice12") {
+        if (Objects.equals(autogrup6, "telychoice12")) {
             telechoice12.setChecked(true);
             telechoice11.setChecked(false);
         }
-        if (autogrup7 == "telychoice13") {
+        if (Objects.equals(autogrup7, "telychoice13")) {
             telechoice13.setChecked(true);
             telechoice14.setChecked(false);
         }
-        if (autogrup7 == "telychoice14") {
+        if (Objects.equals(autogrup7, "telychoice14")) {
             telechoice14.setChecked(true);
             telechoice13.setChecked(false);
         }
-        if (autogrup8 == "telychoice15") {
+        if (Objects.equals(autogrup8, "telychoice15")) {
             telechoice15.setChecked(true);
             telechoice16.setChecked(false);
         }
-        if (autogrup8 == "telychoice16") {
+        if (Objects.equals(autogrup8, "telychoice16")) {
             telechoice16.setChecked(true);
             telechoice15.setChecked(false);
         }
-        if (autogrup9 == "telychoice17") {
+        if (Objects.equals(autogrup9, "telychoice17")) {
             telechoice17.setChecked(true);
             telechoice18.setChecked(false);
         }
-        if (autogrup9 == "telychoice18") {
+        if (Objects.equals(autogrup9, "telychoice18")) {
             telechoice18.setChecked(true);
             telechoice17.setChecked(false);
         }
-        }
+    }
 
 
     public void saveData() {
@@ -339,24 +340,24 @@ public class Tele extends AppCompatActivity {
         AUTOsave.putExtra("autogrup8", String.valueOf(autogrup8));
         RecordsActivity.Info.telegrup9 = autogrup9;
         AUTOsave.putExtra("autogrup9", String.valueOf(autogrup9));
-        //RecordsActivity.Info.telegrup10 = autogrup10;
-        //AUTOsave.putExtra("autogrup10", String.valueOf(autogrup10));
-        //RecordsActivity.Info.telegrup11 = autogrup11;
-        //AUTOsave.putExtra("autogrup11", String.valueOf(autogrup11));
-        //RecordsActivity.Info.telegrup12 = autogrup12;
-        //AUTOsave.putExtra("autogrup12", String.valueOf(autogrup12));
-        //RecordsActivity.Info.telegrup13 = autogrup13;
-        //AUTOsave.putExtra("autogrup13", String.valueOf(autogrup13));
-        //RecordsActivity.Info.telegrup14 = autogrup14;
-        //AUTOsave.putExtra("autogrup14", String.valueOf(autogrup14));
-        //RecordsActivity.Info.telegrup15 = autogrup15;
-        //AUTOsave.putExtra("autogrup15", String.valueOf(autogrup15));
-        //RecordsActivity.Info.telegrup16 = autogrup16;
-        //AUTOsave.putExtra("autogrup16", String.valueOf(autogrup16));
-        //RecordsActivity.Info.telegrup17 = autogrup17;
-        //AUTOsave.putExtra("autogrup17", String.valueOf(autogrup17));
-        //RecordsActivity.Info.telegrup18 = autogrup18;
-        //AUTOsave.putExtra("autogrup18", String.valueOf(autogrup18));
+        RecordsActivity.Info.telegrup10 = autogrup10;
+        AUTOsave.putExtra("autogrup10", String.valueOf(autogrup10));
+        RecordsActivity.Info.telegrup11 = autogrup11;
+        AUTOsave.putExtra("autogrup11", String.valueOf(autogrup11));
+        RecordsActivity.Info.telegrup12 = autogrup12;
+        AUTOsave.putExtra("autogrup12", String.valueOf(autogrup12));
+        RecordsActivity.Info.telegrup13 = autogrup13;
+        AUTOsave.putExtra("autogrup13", String.valueOf(autogrup13));
+        RecordsActivity.Info.telegrup14 = autogrup14;
+        AUTOsave.putExtra("autogrup14", String.valueOf(autogrup14));
+        RecordsActivity.Info.telegrup15 = autogrup15;
+        AUTOsave.putExtra("autogrup15", String.valueOf(autogrup15));
+        RecordsActivity.Info.telegrup16 = autogrup16;
+        AUTOsave.putExtra("autogrup16", String.valueOf(autogrup16));
+        RecordsActivity.Info.telegrup17 = autogrup17;
+        AUTOsave.putExtra("autogrup17", String.valueOf(autogrup17));
+        RecordsActivity.Info.telegrup18 = autogrup18;
+        AUTOsave.putExtra("autogrup18", String.valueOf(autogrup18));
 
     }
 
@@ -415,8 +416,8 @@ public class Tele extends AppCompatActivity {
     }
     public void TelelowChamberDecrease(View view){
         if (teleloChamber > 0) {
-        teleloChamber--;
-        teleloChamberText.setText(String.valueOf(teleloChamber));
+            teleloChamber--;
+            teleloChamberText.setText(String.valueOf(teleloChamber));
         }
         if (teleloChamber <=0){
             findViewById(R.id.spesamenLCSubtractionButton).setVisibility(GONE);                     Log.d("tAloChamber", "INVISIBLE");
@@ -440,8 +441,8 @@ public class Tele extends AppCompatActivity {
     }
     public void TelehighChamberDecrease(View view) {
         if (teleHiChamber > 0) {
-        teleHiChamber--;
-        teleHiChamberText.setText(String.valueOf(teleHiChamber));
+            teleHiChamber--;
+            teleHiChamberText.setText(String.valueOf(teleHiChamber));
         }
         if (teleHiChamber <=0){
             findViewById(R.id.spesamenHCSubtractionButton).setVisibility(GONE);
@@ -450,8 +451,8 @@ public class Tele extends AppCompatActivity {
 
     public void TelelowBasketDecrease(View view) {
         if (teleLowBasket > 0) {
-        teleLowBasket--;
-        teleLowBasketText.setText(String.valueOf(teleLowBasket));
+            teleLowBasket--;
+            teleLowBasketText.setText(String.valueOf(teleLowBasket));
         }
         if (teleLowBasket <=0){
             findViewById(R.id.spesamenLowBasketSubtract).setVisibility(GONE);
@@ -467,8 +468,8 @@ public class Tele extends AppCompatActivity {
     }
     public void TelehighBasketDecrease(View view) {
         if (teleHighBasket > 0) {
-        teleHighBasket--;
-        teleHighBasketText.setText(String.valueOf(teleHighBasket));
+            teleHighBasket--;
+            teleHighBasketText.setText(String.valueOf(teleHighBasket));
         }
         if (teleHighBasket <=0){
             findViewById(R.id.spesamenHighBasketSubtract).setVisibility(GONE);
@@ -499,7 +500,7 @@ public class Tele extends AppCompatActivity {
         LevleThree.setChecked(false);
         LevleOne.setChecked(true);      Log.d("LevleOne", "set LevleOne true");
 
-        teleBotAscent="lvlOne";  Log.d("levleOne", String.valueOf(teleBotAscent));
+        teleBotAscent="lvlOne";  Log.d("levleOne", teleBotAscent);
         Log.d("levleOne", String.valueOf(teleBotAscent));
     }
 
@@ -644,7 +645,7 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice16(View view) {
-       // telechoice16.setChecked(true);
+        // telechoice16.setChecked(true);
         telechoice15.setChecked(false);
         autogrup8 = "telechoice16";
     }
