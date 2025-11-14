@@ -17,6 +17,9 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.HashSet;
+import java.util.TreeSet;
+
 public class AutoActivity<pri> extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers, ppg, gpp, pgp;
     TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt,OverallpointS, text1,text2,text3,text4,text5,text6,text7,text8,text9;
@@ -243,75 +246,75 @@ public class AutoActivity<pri> extends AppCompatActivity {
             pgp.setChecked(false);
             ppg.setChecked(false);
         }
-        if (autogrup1 == "autochoice1") {
+        if (autogrup1 == "Green") {
             autochoice1.setChecked(true);
             autochoice2.setChecked(false);
         }
-        if (autogrup1 == "autochoice2") {
+        if (autogrup1 == "purple") {
             autochoice1.setChecked(false);
             autochoice2.setChecked(true);
         }
-        if (autogrup2 == "autochoice3") {
+        if (autogrup2 == "Green") {
             autochoice3.setChecked(true);
             autochoice4.setChecked(false);
         }
-        if (autogrup2 == "autochoice4") {
+        if (autogrup2 == "purple") {
             autochoice4.setChecked(true);
             autochoice3.setChecked(false);
         }
-        if (autogrup3 == "autochoice5") {
+        if (autogrup3 == "Green") {
             autochoice5.setChecked(true);
             autochoice6.setChecked(false);
         }
-        if (autogrup3 == "autochoice6") {
+        if (autogrup3 == "purple") {
             autochoice6.setChecked(true);
             autochoice5.setChecked(false);
         }
-        if (autogrup4 == "autochoice7") {
+        if (autogrup4 == "Green") {
             autochoice7.setChecked(true);
             autochoice8.setChecked(false);
         }
-        if (autogrup4 == "autochoice8") {
+        if (autogrup4 == "purple") {
             autochoice8.setChecked(true);
             autochoice7.setChecked(false);
         }
-        if (autogrup5 == "autochoice9") {
+        if (autogrup5 == "Green") {
             autochoice9.setChecked(true);
             autochoice10.setChecked(false);
         }
-        if (autogrup5 == "autochoice10") {
+        if (autogrup5 == "purple") {
             autochoice10.setChecked(true);
             autochoice9.setChecked(false);
         }
-        if (autogrup6 == "autochoice11") {
+        if (autogrup6 == "Green") {
             autochoice11.setChecked(true);
             autochoice12.setChecked(false);
         }
-        if (autogrup6 == "autochoice12") {
+        if (autogrup6 == "purple") {
             autochoice12.setChecked(true);
             autochoice11.setChecked(false);
         }
-        if (autogrup7 == "autochoice13") {
+        if (autogrup7 == "Green") {
             autochoice13.setChecked(true);
             autochoice14.setChecked(false);
         }
-        if (autogrup7 == "autochoice14") {
+        if (autogrup7 == "purple") {
             autochoice14.setChecked(true);
             autochoice13.setChecked(false);
         }
-        if (autogrup8 == "telychoice15") {
+        if (autogrup8 == "Green") {
             autochoice15.setChecked(true);
             autochoice16.setChecked(false);
         }
-        if (autogrup8 == "autochoice16") {
+        if (autogrup8 == "purple") {
             autochoice16.setChecked(true);
             autochoice15.setChecked(false);
         }
-        if (autogrup9 == "autochoice17") {
+        if (autogrup9 == "Green") {
             autochoice17.setChecked(true);
             autochoice18.setChecked(false);
         }
-        if (autogrup9 == "autochoice18") {
+        if (autogrup9 == "purple") {
             autochoice18.setChecked(true);
             autochoice17.setChecked(false);
         }
@@ -424,41 +427,41 @@ public class AutoActivity<pri> extends AppCompatActivity {
         RecordsActivity.Info.ppggpppgp = pgpppggpp;
         AUTOsave.putExtra("ppgpgpgpp", String.valueOf(pgpppggpp));
         RecordsActivity.Info.autogrup1 = autogrup1;
-        AUTOsave.putExtra("autogrup1", String.valueOf(autogrup1));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup1));
         RecordsActivity.Info.autogrup2 = autogrup2;
-        AUTOsave.putExtra("autogrup2", String.valueOf(autogrup2));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup2));
         RecordsActivity.Info.autogrup3 = autogrup3;
-        AUTOsave.putExtra("autogrup3", String.valueOf(autogrup3));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup3));
         RecordsActivity.Info.autogrup4 = autogrup4;
-        AUTOsave.putExtra("autogrup4", String.valueOf(autogrup4));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup4));
         RecordsActivity.Info.autogrup5 = autogrup5;
-        AUTOsave.putExtra("autogrup5", String.valueOf(autogrup5));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup5));
         RecordsActivity.Info.autogrup6 = autogrup6;
-        AUTOsave.putExtra("autogrup6", String.valueOf(autogrup6));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup6));
         RecordsActivity.Info.autogrup7 = autogrup7;
-        AUTOsave.putExtra("autogrup7", String.valueOf(autogrup7));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup7));
         RecordsActivity.Info.autogrup8 = autogrup8;
-        AUTOsave.putExtra("autogrup8", String.valueOf(autogrup8));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup8));
         RecordsActivity.Info.autogrup9 = autogrup9;
-        AUTOsave.putExtra("autogrup9", String.valueOf(autogrup9));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup9));
         RecordsActivity.Info.autogrup10 = autogrup10;
-        AUTOsave.putExtra("autogrup10", String.valueOf(autogrup10));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup10));
         RecordsActivity.Info.autogrup11 = autogrup11;
-        AUTOsave.putExtra("autogrup11", String.valueOf(autogrup11));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup11));
         RecordsActivity.Info.autogrup12 = autogrup12;
-        AUTOsave.putExtra("autogrup12", String.valueOf(autogrup12));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup12));
         RecordsActivity.Info.autogrup13 = autogrup13;
-        AUTOsave.putExtra("autogrup13", String.valueOf(autogrup13));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup13));
         RecordsActivity.Info.autogrup14 = autogrup14;
-        AUTOsave.putExtra("autogrup14", String.valueOf(autogrup14));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup14));
         RecordsActivity.Info.autogrup15 = autogrup15;
-        AUTOsave.putExtra("autogrup15", String.valueOf(autogrup15));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup15));
         RecordsActivity.Info.autogrup16 = autogrup16;
-        AUTOsave.putExtra("autogrup16", String.valueOf(autogrup16));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup16));
         RecordsActivity.Info.autogrup17 = autogrup17;
-        AUTOsave.putExtra("autogrup17", String.valueOf(autogrup17));
+        AUTOsave.putExtra("Green", String.valueOf(autogrup17));
         RecordsActivity.Info.autogrup18 = autogrup18;
-        AUTOsave.putExtra("autogrup18", String.valueOf(autogrup18));
+        AUTOsave.putExtra("purple", String.valueOf(autogrup18));
         if (hasAuto.equals(true)){
             RecordsActivity.Info.doWeHaveAuto=false;
         }
@@ -707,113 +710,82 @@ public class AutoActivity<pri> extends AppCompatActivity {
     }
 
 
-    public void autochoice1(View view) {
-        //autochoice1.setChecked(true);
-        autochoice2.setChecked(false);
-        autogrup1 = "autochoice1";
+    private void uncheck(CheckBox a, CheckBox b) {
+        if (a != null) a.setChecked(false);
+        if (b != null) b.setChecked(false);
     }
+
+
+    // Group 1 → autogrup1
+    public void autochoice1(View view) {
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            autochoice2.setChecked(false);
+            autogrup1 = "Green";
+        } else autogrup1 = null;
+    }
+
 
     public void autochoice2(View view) {
-        //autochoice2.setChecked(true);
-        autochoice1.setChecked(false);
-        autogrup1 = "autochoice2";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            autochoice1.setChecked(false);
+            autogrup1 = "purple";
+        } else autogrup1 = null;
     }
 
+
+    // Group 2 → autogrup2
     public void autochoice3(View view) {
-        //autochoice3.setChecked(true);
-        autochoice4.setChecked(false);
-        autogrup2 = "autochoice3";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            autochoice4.setChecked(false);
+            autogrup2 = "Green";
+        } else autogrup2 = null;
     }
+
 
     public void autochoice4(View view) {
-        //autochoice4.setChecked(true);
-        autochoice3.setChecked(false);
-        autogrup2 = "autochoice4";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            autochoice3.setChecked(false);
+            autogrup2 = "purple";
+        } else autogrup2 = null;
     }
 
+
+    // Group 3 → autogrup3
     public void autochoice5(View view) {
-        //autochoice5.setChecked(true);
-        autochoice6.setChecked(false);
-        autogrup3 = "autochoice5";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            autochoice6.setChecked(false);
+            autogrup3 = "Green";
+        } else autogrup3 = null;
     }
+
 
     public void autochoice6(View view) {
-       // autochoice6.setChecked(true);
-        autochoice5.setChecked(false);
-        autogrup3 = "autochoice6";
-    }
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            autochoice5.setChecked(false);
+        }
+    public void autochoice7 (View view){
 
-    public void autochoice7(View view) {
-       // autochoice7.setChecked(true);
-        autochoice8.setChecked(false);
-        autogrup4 = "autochoice7";
-    }
 
-    public void autochoice8(View view) {
-       // autochoice8.setChecked(true);
-        autochoice7.setChecked(false);
-        autogrup4 = "autochoice8";
-    }
+        }
 
-    public void autochoice9(View view) {
-       // autochoice9.setChecked(true);
-        autochoice10.setChecked(false);
-        autogrup5 = "autochoice9";
-    }
 
-    public void autochoice10(View view) {
-       // autochoice10.setChecked(true);
-        autochoice9.setChecked(false);
-        autogrup5 = "autochoice10";
-    }
 
-    public void autochoice11(View view) {
-       // autochoice11.setChecked(true);
-        autochoice12.setChecked(false);
-        autogrup6 = "autochoice11";
-    }
 
-    public void autochoice12(View view) {
-       // autochoice12.setChecked(true);
-        autochoice11.setChecked(false);
-        autogrup6 = "autochoice12";
-    }
 
-    public void autochoice13(View view) {
-       // autochoice13.setChecked(true);
-        autochoice14.setChecked(false);
-        autogrup7 = "autochoice13";
-    }
 
-    public void autochoice14(View view) {
-       // autochoice14.setChecked(true);
-        autochoice13.setChecked(false);
-        autogrup7 = "autochoice14";
-    }
 
-    public void autochoice15(View view) {
-       // autochoice15.setChecked(true);
-        autochoice16.setChecked(false);
-        autogrup8 = "telychoice15";
-    }
 
-    public void autochoice16(View view) {
-       // autochoice16.setChecked(true);
-        autochoice15.setChecked(false);
-        autogrup8 = "autochoice16";
-    }
 
-    public void autochoice17(View view) {
-       // autochoice17.setChecked(true);
-        autochoice18.setChecked(false);
-        autogrup9 = "autochoice17";
-    }
 
-    public void autochoice18(View view) {
-        //autochoice18.setChecked(true);
-        autochoice17.setChecked(false);
-        autogrup9 = "autochoice18";
-    }
+
+
+
     //public void Autoclear(View view){
     //    autochoice18.setChecked(false);
     //    autochoice17.setChecked(false);
@@ -847,5 +819,5 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
 
 
-}
+}}
 
