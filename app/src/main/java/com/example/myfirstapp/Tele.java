@@ -322,41 +322,41 @@ public class Tele extends AppCompatActivity {
         AUTOsave.putExtra("Tellyoverflow", overflowtxt.getText().toString());
         RecordsActivity.Info.telyparked =parked;
         AUTOsave.putExtra("tellyparked",String.valueOf(parked));
-        RecordsActivity.Info.telegrup1 = autogrup1;
+        RecordsActivity.Info.autogrup1 = autogrup1;
         AUTOsave.putExtra("Green", String.valueOf(autogrup1));
-        RecordsActivity.Info.telegrup2 = autogrup2;
+        RecordsActivity.Info.autogrup2 = autogrup2;
         AUTOsave.putExtra("purple", String.valueOf(autogrup2));
-        RecordsActivity.Info.telegrup3 = autogrup3;
+        RecordsActivity.Info.autogrup3 = autogrup3;
         AUTOsave.putExtra("Green", String.valueOf(autogrup3));
-        RecordsActivity.Info.telegrup4 = autogrup4;
+        RecordsActivity.Info.autogrup4 = autogrup4;
         AUTOsave.putExtra("purple", String.valueOf(autogrup4));
-        RecordsActivity.Info.telegrup5 = autogrup5;
+        RecordsActivity.Info.autogrup5 = autogrup5;
         AUTOsave.putExtra("Green", String.valueOf(autogrup5));
-        RecordsActivity.Info.telegrup6 = autogrup6;
+        RecordsActivity.Info.autogrup6 = autogrup6;
         AUTOsave.putExtra("purple", String.valueOf(autogrup6));
-        RecordsActivity.Info.telegrup7 = autogrup7;
+        RecordsActivity.Info.autogrup7 = autogrup7;
         AUTOsave.putExtra("Green", String.valueOf(autogrup7));
-        RecordsActivity.Info.telegrup8 = autogrup8;
+        RecordsActivity.Info.autogrup8 = autogrup8;
         AUTOsave.putExtra("purple", String.valueOf(autogrup8));
-        RecordsActivity.Info.telegrup9 = autogrup9;
+        RecordsActivity.Info.autogrup9 = autogrup9;
         AUTOsave.putExtra("Green", String.valueOf(autogrup9));
-        RecordsActivity.Info.telegrup10 = autogrup10;
+        RecordsActivity.Info.autogrup10 = autogrup10;
         AUTOsave.putExtra("purple", String.valueOf(autogrup10));
-        RecordsActivity.Info.telegrup11 = autogrup11;
+        RecordsActivity.Info.autogrup11 = autogrup11;
         AUTOsave.putExtra("Green", String.valueOf(autogrup11));
-        RecordsActivity.Info.telegrup12 = autogrup12;
+        RecordsActivity.Info.autogrup12 = autogrup12;
         AUTOsave.putExtra("purple", String.valueOf(autogrup12));
-        RecordsActivity.Info.telegrup13 = autogrup13;
+        RecordsActivity.Info.autogrup13 = autogrup13;
         AUTOsave.putExtra("Green", String.valueOf(autogrup13));
-        RecordsActivity.Info.telegrup14 = autogrup14;
+        RecordsActivity.Info.autogrup14 = autogrup14;
         AUTOsave.putExtra("purple", String.valueOf(autogrup14));
-        RecordsActivity.Info.telegrup15 = autogrup15;
+        RecordsActivity.Info.autogrup15 = autogrup15;
         AUTOsave.putExtra("Green", String.valueOf(autogrup15));
-        RecordsActivity.Info.telegrup16 = autogrup16;
+        RecordsActivity.Info.autogrup16 = autogrup16;
         AUTOsave.putExtra("purple", String.valueOf(autogrup16));
-        RecordsActivity.Info.telegrup17 = autogrup17;
+        RecordsActivity.Info.autogrup17 = autogrup17;
         AUTOsave.putExtra("Green", String.valueOf(autogrup17));
-        RecordsActivity.Info.telegrup18 = autogrup18;
+        RecordsActivity.Info.autogrup18 = autogrup18;
         AUTOsave.putExtra("purple", String.valueOf(autogrup18));
 
     }
@@ -553,113 +553,184 @@ public class Tele extends AppCompatActivity {
         parkedwithothers.setChecked(true);
         parked="parkedwithothers";
     }
-
     public void telechoice1(View view) {
-        //telechoice1.setChecked(true);
-        telechoice2.setChecked(false);
-        autogrup1 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice2.setChecked(false);
+            autogrup1 = "Green";
+        } else {
+            autogrup1 = null;
+        }
     }
 
     public void telechoice2(View view) {
-        //telechoice2.setChecked(true);
-        telechoice1.setChecked(false);
-        autogrup1 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice1.setChecked(false);
+            autogrup1 = "purple";
+        } else {
+            autogrup1 = null;
+        }
     }
 
     public void telechoice3(View view) {
-        //telechoice3.setChecked(true);
-        telechoice4.setChecked(false);
-        autogrup2 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice4.setChecked(false);
+            autogrup2 = "Green";
+        } else {
+            autogrup2 = null;
+        }
     }
 
     public void telechoice4(View view) {
-        //telechoice4.setChecked(true);
-        telechoice3.setChecked(false);
-        autogrup2 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice3.setChecked(false);
+            autogrup2 = "purple";
+        } else {
+            autogrup2 = null;
+        }
     }
 
     public void telechoice5(View view) {
-        //telechoice5.setChecked(true);
-        telechoice6.setChecked(false);
-        autogrup3 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice6.setChecked(false);
+            autogrup3 = "Green";
+        } else {
+            autogrup3 = null;
+        }
     }
 
     public void telechoice6(View view) {
-        //telechoice6.setChecked(true);
-        telechoice5.setChecked(false);
-        autogrup3 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice5.setChecked(false);
+            autogrup3 = "purple";
+        } else {
+            autogrup3 = null;
+        }
     }
 
     public void telechoice7(View view) {
-        //telechoice7.setChecked(true);
-        telechoice8.setChecked(false);
-        autogrup4 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice8.setChecked(false);
+            autogrup4 = "Green";
+        } else {
+            autogrup4 = null;
+        }
     }
 
     public void telechoice8(View view) {
-        //telechoice8.setChecked(true);
-        telechoice7.setChecked(false);
-        autogrup4 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice7.setChecked(false);
+            autogrup4 = "purple";
+        } else {
+            autogrup4 = null;
+        }
     }
 
     public void telechoice9(View view) {
-        //telechoice9.setChecked(true);
-        telechoice10.setChecked(false);
-        autogrup5 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice10.setChecked(false);
+            autogrup5 = "Green";
+        } else {
+            autogrup5 = null;
+        }
     }
 
     public void telechoice10(View view) {
-        //telechoice10.setChecked(true);
-        telechoice9.setChecked(false);
-        autogrup5 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice9.setChecked(false);
+            autogrup5 = "purple";
+        } else {
+            autogrup5 = null;
+        }
     }
 
     public void telechoice11(View view) {
-        //telechoice11.setChecked(true);
-        telechoice12.setChecked(false);
-        autogrup6 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice12.setChecked(false);
+            autogrup6 = "Green";
+        } else {
+            autogrup6 = null;
+        }
     }
 
     public void telechoice12(View view) {
-        //telechoice12.setChecked(true);
-        telechoice11.setChecked(false);
-        autogrup6 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice11.setChecked(false);
+            autogrup6 = "purple";
+        } else {
+            autogrup6 = null;
+        }
     }
 
     public void telechoice13(View view) {
-        //telechoice13.setChecked(true);
-        telechoice14.setChecked(false);
-        autogrup7 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice14.setChecked(false);
+            autogrup7 = "Green";
+        } else {
+            autogrup7 = null;
+        }
     }
 
     public void telechoice14(View view) {
-        //telechoice14.setChecked(true);
-        telechoice13.setChecked(false);
-        autogrup7 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice13.setChecked(false);
+            autogrup7 = "purple";
+        } else {
+            autogrup7 = null;
+        }
     }
 
     public void telechoice15(View view) {
-        //telechoice15.setChecked(true);
-        telechoice16.setChecked(false);
-        autogrup8 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice16.setChecked(false);
+            autogrup8 = "Green";
+        } else {
+            autogrup8 = null;
+        }
     }
 
     public void telechoice16(View view) {
-        // telechoice16.setChecked(true);
-        telechoice15.setChecked(false);
-        autogrup8 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice15.setChecked(false);
+            autogrup8 = "purple";
+        } else {
+            autogrup8 = null;
+        }
     }
 
     public void telechoice17(View view) {
-        //telechoice17.setChecked(true);
-        telechoice18.setChecked(false);
-        autogrup9 = "Green";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice18.setChecked(false);
+            autogrup9 = "Green";
+        } else {
+            autogrup9 = null;
+        }
     }
 
     public void telechoice18(View view) {
-        //telechoice18.setChecked(true);
-        telechoice17.setChecked(false);
-        autogrup9 = "purple";
+        CheckBox cb = (CheckBox) view;
+        if (cb.isChecked()) {
+            telechoice17.setChecked(false);
+            autogrup9 = "purple";
+        } else {
+            autogrup9 = null;
+        }
     }
     public void teleclear(View view){
         if (telechoice1 != null) telechoice1.setChecked(false);
