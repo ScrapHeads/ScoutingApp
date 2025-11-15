@@ -726,8 +726,7 @@
             android:onClick="clickbarlyparked"
             android:text="Barely Moved"
             android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp"
-            android:visibility="gone" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/autofullpared"

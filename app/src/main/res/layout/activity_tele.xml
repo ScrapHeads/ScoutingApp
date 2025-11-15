@@ -267,8 +267,7 @@
             android:onClick="clickparkedwithothers"
             android:text="Parked With Other Bot"
             android:textColor="@color/scraphead_yellow"
-            android:textSize="20sp"
-            android:visibility="gone" />
+            android:textSize="20sp" />
     </RadioGroup>
 
     <TextView
