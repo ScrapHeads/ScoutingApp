@@ -1,12 +1,14 @@
-package com.example.myapp;
+package com.example.myfirstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.CheckBox;
 import android.view.View;
 import android.content.SharedPreferences;
 
-public class TeleActivity extends AppCompatActivity {
+public class Tele extends AppCompatActivity {
 
     CheckBox telechoice1, telechoice2, telechoice3, telechoice4, telechoice5, telechoice6,
             telechoice7, telechoice8, telechoice9, telechoice10, telechoice11, telechoice12,
@@ -23,27 +25,28 @@ public class TeleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tele_activity); // Your XML name
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setContentView(R.layout.activity_tele); // Your XML name
 
         // Assign checkboxes
-        telechoice1 = findViewById(R.id.telechoice1);
-        telechoice2 = findViewById(R.id.telechoice2);
-        telechoice3 = findViewById(R.id.telechoice3);
-        telechoice4 = findViewById(R.id.telechoice4);
-        telechoice5 = findViewById(R.id.telechoice5);
-        telechoice6 = findViewById(R.id.telechoice6);
-        telechoice7 = findViewById(R.id.telechoice7);
-        telechoice8 = findViewById(R.id.telechoice8);
-        telechoice9 = findViewById(R.id.telechoice9);
-        telechoice10 = findViewById(R.id.telechoice10);
-        telechoice11 = findViewById(R.id.telechoice11);
-        telechoice12 = findViewById(R.id.telechoice12);
-        telechoice13 = findViewById(R.id.telechoice13);
-        telechoice14 = findViewById(R.id.telechoice14);
-        telechoice15 = findViewById(R.id.telechoice15);
-        telechoice16 = findViewById(R.id.telechoice16);
-        telechoice17 = findViewById(R.id.telechoice17);
-        telechoice18 = findViewById(R.id.telechoice18);
+        telechoice1 = findViewById(R.id.telecheckbox1);
+        telechoice2 = findViewById(R.id.telecheckbox2);
+        telechoice3 = findViewById(R.id.telecheckbox3);
+        telechoice4 = findViewById(R.id.telecheckbox4);
+        telechoice5 = findViewById(R.id.telecheckbox5);
+        telechoice6 = findViewById(R.id.telecheckbox6);
+        telechoice7 = findViewById(R.id.telecheckbox7);
+        telechoice8 = findViewById(R.id.telecheckbox8);
+        telechoice9 = findViewById(R.id.telecheckbox9);
+        telechoice10 = findViewById(R.id.telecheckbox10);
+        telechoice11 = findViewById(R.id.telecheckbox11);
+        telechoice12 = findViewById(R.id.telecheckbox12);
+        telechoice13 = findViewById(R.id.telecheckbox13);
+        telechoice14 = findViewById(R.id.telecheckbox14);
+        telechoice15 = findViewById(R.id.telecheckbox15);
+        telechoice16 = findViewById(R.id.telecheckbox16);
+        telechoice17 = findViewById(R.id.telecheckbox17);
+        telechoice18 = findViewById(R.id.telecheckbox18);
 
         // Load tele data
         loadDataTele();
