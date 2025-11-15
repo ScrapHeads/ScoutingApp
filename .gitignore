@@ -13,5 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+<<<<<<< HEAD
 .idea/workspace.xml
 .idea/workspace.xml
+=======
+>>>>>>> parent of 4da47a0 (Ignore workspace.xml in version control)
