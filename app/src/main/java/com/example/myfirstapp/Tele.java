@@ -27,6 +27,9 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
+=======
 >>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
 public class Tele extends AppCompatActivity {
 
@@ -143,6 +146,7 @@ public class Tele extends AppCompatActivity {
         SharedPreferences.Editor editor = prefs.edit();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         editor.putString("telegroup1", telegroup1);
         editor.putString("telegroup2", telegroup2);
         editor.putString("telegroup3", telegroup3);
@@ -153,6 +157,8 @@ public class Tele extends AppCompatActivity {
         editor.putString("telegroup8", telegroup8);
         editor.putString("telegroup9", telegroup9);
 =======
+=======
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
         if (teleBotAscent == "park"){
             noPark.setChecked(false);
             LevleOne.setChecked(false);
@@ -204,11 +210,15 @@ public class Tele extends AppCompatActivity {
             if (Overflow > 0){
                 findViewById(R.id.overflowMin).setVisibility(VISIBLE);
             }
+<<<<<<< HEAD
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
+=======
 >>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
 
         editor.apply();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // ----------------------------------------------------------
     // SET PREVIOUS TELE (REFLECT UI)
@@ -262,6 +272,8 @@ public class Tele extends AppCompatActivity {
     public void telechoice1(View view) {
         if (telechoice1.isChecked()) {
 =======
+=======
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
             teleloChamber = Byte.parseByte(teleloChamberText.getText().toString());
             if (teleloChamber == 0){
                 findViewById(R.id.spesamenLCSubtractionButton).setVisibility(INVISIBLE);
@@ -323,9 +335,12 @@ public class Tele extends AppCompatActivity {
             telegroup1 = null;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         saveDataTele();
     }
 =======
+=======
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
         if (autogrup1 == "telychoice2") {
             telechoice1.setChecked(false);
             telechoice2.setChecked(true);
@@ -395,6 +410,7 @@ public class Tele extends AppCompatActivity {
             telechoice17.setChecked(false);
         }
         }
+<<<<<<< HEAD
 >>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
 
     public void telechoice2(View view) {
@@ -406,6 +422,8 @@ public class Tele extends AppCompatActivity {
         }
         saveDataTele();
     }
+=======
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
 
     public void telechoice3(View view) {
         if (telechoice3.isChecked()) {
@@ -602,6 +620,7 @@ public class Tele extends AppCompatActivity {
         AUTOsave.putExtra("purple", String.valueOf(autogrup8));
         RecordsActivity.Info.telegrup9 = autogrup9;
 <<<<<<< HEAD
+<<<<<<< HEAD
         AUTOsave.putExtra("Green", String.valueOf(autogrup9));
         RecordsActivity.Info.telegrup10 = autogrup10;
         AUTOsave.putExtra("purple", String.valueOf(autogrup10));
@@ -622,6 +641,8 @@ public class Tele extends AppCompatActivity {
         RecordsActivity.Info.telegrup18 = autogrup18;
         AUTOsave.putExtra("purple", String.valueOf(autogrup18));
 =======
+=======
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
         AUTOsave.putExtra("autogrup9", String.valueOf(autogrup9));
         //RecordsActivity.Info.telegrup10 = autogrup10;
         //AUTOsave.putExtra("autogrup10", String.valueOf(autogrup10));
@@ -641,6 +662,9 @@ public class Tele extends AppCompatActivity {
         //AUTOsave.putExtra("autogrup17", String.valueOf(autogrup17));
         //RecordsActivity.Info.telegrup18 = autogrup18;
         //AUTOsave.putExtra("autogrup18", String.valueOf(autogrup18));
+<<<<<<< HEAD
+>>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
+=======
 >>>>>>> parent of 0b9fbe1 (Refactor string comparisons and update UI elements)
 
     }
