@@ -243,75 +243,75 @@ public class AutoActivity<pri> extends AppCompatActivity {
             pgp.setChecked(false);
             ppg.setChecked(false);
         }
-        if (autogrup1 == "autochoice1") {
+        if (autogrup1 == "Green") {
             autochoice1.setChecked(true);
             autochoice2.setChecked(false);
         }
-        if (autogrup1 == "autochoice2") {
+        if (autogrup1 == "Purple") {
             autochoice1.setChecked(false);
             autochoice2.setChecked(true);
         }
-        if (autogrup2 == "autochoice3") {
+        if (autogrup2 == "Green") {
             autochoice3.setChecked(true);
             autochoice4.setChecked(false);
         }
-        if (autogrup2 == "autochoice4") {
+        if (autogrup2 == "Purple") {
             autochoice4.setChecked(true);
             autochoice3.setChecked(false);
         }
-        if (autogrup3 == "autochoice5") {
+        if (autogrup3 == "Green") {
             autochoice5.setChecked(true);
             autochoice6.setChecked(false);
         }
-        if (autogrup3 == "autochoice6") {
+        if (autogrup3 == "Purple") {
             autochoice6.setChecked(true);
             autochoice5.setChecked(false);
         }
-        if (autogrup4 == "autochoice7") {
+        if (autogrup4 == "Green") {
             autochoice7.setChecked(true);
             autochoice8.setChecked(false);
         }
-        if (autogrup4 == "autochoice8") {
+        if (autogrup4 == "Purple") {
             autochoice8.setChecked(true);
             autochoice7.setChecked(false);
         }
-        if (autogrup5 == "autochoice9") {
+        if (autogrup5 == "Green") {
             autochoice9.setChecked(true);
             autochoice10.setChecked(false);
         }
-        if (autogrup5 == "autochoice10") {
+        if (autogrup5 == "Purple") {
             autochoice10.setChecked(true);
             autochoice9.setChecked(false);
         }
-        if (autogrup6 == "autochoice11") {
+        if (autogrup6 == "Green") {
             autochoice11.setChecked(true);
             autochoice12.setChecked(false);
         }
-        if (autogrup6 == "autochoice12") {
+        if (autogrup6 == "Purple") {
             autochoice12.setChecked(true);
             autochoice11.setChecked(false);
         }
-        if (autogrup7 == "autochoice13") {
+        if (autogrup7 == "Green") {
             autochoice13.setChecked(true);
             autochoice14.setChecked(false);
         }
-        if (autogrup7 == "autochoice14") {
+        if (autogrup7 == "Purple") {
             autochoice14.setChecked(true);
             autochoice13.setChecked(false);
         }
-        if (autogrup8 == "telychoice15") {
+        if (autogrup8 == "Green") {
             autochoice15.setChecked(true);
             autochoice16.setChecked(false);
         }
-        if (autogrup8 == "autochoice16") {
+        if (autogrup8 == "Purple") {
             autochoice16.setChecked(true);
             autochoice15.setChecked(false);
         }
-        if (autogrup9 == "autochoice17") {
+        if (autogrup9 == "Green") {
             autochoice17.setChecked(true);
             autochoice18.setChecked(false);
         }
-        if (autogrup9 == "autochoice18") {
+        if (autogrup9 == "Purple") {
             autochoice18.setChecked(true);
             autochoice17.setChecked(false);
         }
@@ -710,109 +710,109 @@ public class AutoActivity<pri> extends AppCompatActivity {
     public void autochoice1(View view) {
         //autochoice1.setChecked(true);
         autochoice2.setChecked(false);
-        autogrup1 = "autochoice1";
+        autogrup1 = "Green";
     }
 
     public void autochoice2(View view) {
         //autochoice2.setChecked(true);
         autochoice1.setChecked(false);
-        autogrup1 = "autochoice2";
+        autogrup1 = "Purple";
     }
 
     public void autochoice3(View view) {
         //autochoice3.setChecked(true);
         autochoice4.setChecked(false);
-        autogrup2 = "autochoice3";
+        autogrup2 = "Green";
     }
 
     public void autochoice4(View view) {
         //autochoice4.setChecked(true);
         autochoice3.setChecked(false);
-        autogrup2 = "autochoice4";
+        autogrup2 = "Purple";
     }
 
     public void autochoice5(View view) {
         //autochoice5.setChecked(true);
         autochoice6.setChecked(false);
-        autogrup3 = "autochoice5";
+        autogrup3 = "Green";
     }
 
     public void autochoice6(View view) {
        // autochoice6.setChecked(true);
         autochoice5.setChecked(false);
-        autogrup3 = "autochoice6";
+        autogrup3 = "Purple";
     }
 
     public void autochoice7(View view) {
        // autochoice7.setChecked(true);
         autochoice8.setChecked(false);
-        autogrup4 = "autochoice7";
+        autogrup4 = "Green";
     }
 
     public void autochoice8(View view) {
        // autochoice8.setChecked(true);
         autochoice7.setChecked(false);
-        autogrup4 = "autochoice8";
+        autogrup4 = "Purple";
     }
 
     public void autochoice9(View view) {
        // autochoice9.setChecked(true);
         autochoice10.setChecked(false);
-        autogrup5 = "autochoice9";
+        autogrup5 = "Green";
     }
 
     public void autochoice10(View view) {
        // autochoice10.setChecked(true);
         autochoice9.setChecked(false);
-        autogrup5 = "autochoice10";
+        autogrup5 = "Purple";
     }
 
     public void autochoice11(View view) {
        // autochoice11.setChecked(true);
         autochoice12.setChecked(false);
-        autogrup6 = "autochoice11";
+        autogrup6 = "Green";
     }
 
     public void autochoice12(View view) {
        // autochoice12.setChecked(true);
         autochoice11.setChecked(false);
-        autogrup6 = "autochoice12";
+        autogrup6 = "Purple";
     }
 
     public void autochoice13(View view) {
        // autochoice13.setChecked(true);
         autochoice14.setChecked(false);
-        autogrup7 = "autochoice13";
+        autogrup7 = "Green";
     }
 
     public void autochoice14(View view) {
        // autochoice14.setChecked(true);
         autochoice13.setChecked(false);
-        autogrup7 = "autochoice14";
+        autogrup7 = "Purple";
     }
 
     public void autochoice15(View view) {
        // autochoice15.setChecked(true);
         autochoice16.setChecked(false);
-        autogrup8 = "telychoice15";
+        autogrup8 = "Green";
     }
 
     public void autochoice16(View view) {
        // autochoice16.setChecked(true);
         autochoice15.setChecked(false);
-        autogrup8 = "autochoice16";
+        autogrup8 = "Purple";
     }
 
     public void autochoice17(View view) {
        // autochoice17.setChecked(true);
         autochoice18.setChecked(false);
-        autogrup9 = "autochoice17";
+        autogrup9 = "Green";
     }
 
     public void autochoice18(View view) {
         //autochoice18.setChecked(true);
         autochoice17.setChecked(false);
-        autogrup9 = "autochoice18";
+        autogrup9 = "Purple";
     }
     //public void Autoclear(View view){
     //    autochoice18.setChecked(false);

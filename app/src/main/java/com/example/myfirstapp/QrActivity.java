@@ -62,6 +62,7 @@ public class QrActivity extends AppCompatActivity {
 
         // Auto
         json += (" \t " + RecordsActivity.Info.overflowtxtauto);
+        json += (" \t"+ RecordsActivity.Info.AutoOverallpoint);
         json += (" \t " + RecordsActivity.Info.parkedAuto);
         json += (" \t " + RecordsActivity.Info.ppggpppgp);
         json += (" \t " + RecordsActivity.Info.autogrup1);
@@ -75,6 +76,7 @@ public class QrActivity extends AppCompatActivity {
 
         // Tele
         json += (" \t " + RecordsActivity.Info.overflowtxtTely);
+        json += (" \t "+ RecordsActivity.Info.teleOverallpoint);
         json += (" \t " + RecordsActivity.Info.telyparked);
         json += (" \t " + RecordsActivity.Info.telegrup1);
         json += (" \t " + RecordsActivity.Info.telegrup2);
