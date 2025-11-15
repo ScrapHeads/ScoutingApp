@@ -208,7 +208,7 @@
             android:background="@color/white"
             android:buttonTint="@color/scraphead_yellow"
             android:onClick="basketBotclick"
-            android:text="sorting Bot"
+            android:text="Basket Bot"
             android:textColor="@color/scraphead_blue"
             android:textSize="20sp" />
 

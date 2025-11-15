@@ -183,6 +183,7 @@ public class Tele extends AppCompatActivity {
     // TELE CHOICE HANDLERS (ALL 18)
     // ----------------------------------------------------------
 
+<<<<<<< HEAD
     public void telechoice1(View view) {
         if (telechoice1.isChecked()) {
             telechoice2.setChecked(false);
@@ -361,5 +362,363 @@ public class Tele extends AppCompatActivity {
             telegroup9 = null;
         }
         saveDataTele();
+=======
+    public void saveData() {
+        Intent AUTOsave= new Intent(this, RecordsActivity.class);
+        RecordsActivity.Info.teleNetZoneText = Byte.parseByte(teleNetZoneText.getText().toString());            Log.d("tAput",teleNetZoneText.getText().toString()); Log.d("tAput", String.valueOf(RecordsActivity.Info.teleNetZoneText));
+        AUTOsave.putExtra("telenetZoneText",  teleNetZoneText.getText().toString());
+        RecordsActivity.Info.teleLowBasketText = Byte.parseByte(teleLowBasketText.getText().toString());        Log.d("tAput",teleLowBasketText.getText().toString()); Log.d("tAput", String.valueOf(RecordsActivity.Info.teleLowBasketText));
+        AUTOsave.putExtra("telelowBasketText",  teleLowBasketText.getText().toString());
+        RecordsActivity.Info.teleHighBasketText = Byte.parseByte(teleHighBasketText.getText().toString());      Log.d("tAput",teleHighBasketText.getText().toString()); Log.d("tAput", String.valueOf(RecordsActivity.Info.teleHighBasketText));
+        AUTOsave.putExtra("telehighBasketText",  teleHighBasketText.getText().toString());
+        RecordsActivity.Info.teleAscent = teleBotAscent;                                                        Log.d("tAput",teleBotAscent); Log.d("tAput", String.valueOf(RecordsActivity.Info.teleAscent));
+        AUTOsave.putExtra("teleBotAscent", String.valueOf(teleBotAscent));
+        RecordsActivity.Info.teleHighChamber = Byte.parseByte(teleHiChamberText.getText().toString());
+        AUTOsave.putExtra("teleHiChamberText",teleHiChamberText.getText().toString());
+        RecordsActivity.Info.teleSpecimenLowChamber = Byte.parseByte(teleloChamberText.getText().toString());   Log.d("tAloChamber", "save teleLoChamberText = "+(teleloChamberText.getText().toString())); Log.d("save tAloChamber", "teleLoChamberRecords = "+String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));
+        AUTOsave.putExtra("teleloChamberText",teleloChamberText.getText().toString());
+        RecordsActivity.Info.overflowtxtTely=Byte.parseByte(overflowtxt.getText().toString());
+        AUTOsave.putExtra("Tellyoverflow", overflowtxt.getText().toString());
+        RecordsActivity.Info.telyparked =parked;
+        AUTOsave.putExtra("tellyparked",String.valueOf(parked));
+        RecordsActivity.Info.telegrup1 = autogrup1;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup1));
+        RecordsActivity.Info.telegrup2 = autogrup2;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup2));
+        RecordsActivity.Info.telegrup3 = autogrup3;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup3));
+        RecordsActivity.Info.telegrup4 = autogrup4;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup4));
+        RecordsActivity.Info.telegrup5 = autogrup5;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup5));
+        RecordsActivity.Info.telegrup6 = autogrup6;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup6));
+        RecordsActivity.Info.telegrup7 = autogrup7;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup7));
+        RecordsActivity.Info.telegrup8 = autogrup8;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup8));
+        RecordsActivity.Info.telegrup9 = autogrup9;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup9));
+        RecordsActivity.Info.telegrup10 = autogrup10;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup10));
+        RecordsActivity.Info.telegrup11 = autogrup11;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup11));
+        RecordsActivity.Info.telegrup12 = autogrup12;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup12));
+        RecordsActivity.Info.telegrup13 = autogrup13;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup13));
+        RecordsActivity.Info.telegrup14 = autogrup14;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup14));
+        RecordsActivity.Info.telegrup15 = autogrup15;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup15));
+        RecordsActivity.Info.telegrup16 = autogrup16;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup16));
+        RecordsActivity.Info.telegrup17 = autogrup17;
+        AUTOsave.putExtra("Green", String.valueOf(autogrup17));
+        RecordsActivity.Info.telegrup18 = autogrup18;
+        AUTOsave.putExtra("purple", String.valueOf(autogrup18));
+
+    }
+
+    public void backAuto(View view) {
+        Intent back = new Intent(this, AutoActivity.class);
+        saveData();
+        startActivity(back);
+    }
+
+    public void TeleNetZoneIncrease(View view) {
+        //findViewById(R.id.spesamenNetSubtract).setVisibility(VISIBLE);
+
+        teleNetZone++;
+        teleNetZoneText.setText(String.valueOf(teleNetZone));
+        if (teleNetZone > 0){
+            findViewById(R.id.spesamenNetSubtract).setVisibility(VISIBLE);
+        }
+    }
+    public void overflowIncreas(View view){
+        Overflow++;
+        overflowtxt.setText(String.valueOf(Overflow));
+        if ( Overflow>0){
+            findViewById(R.id.overflowMin).setVisibility(VISIBLE);
+        }
+    }
+    public void overflowDecres(View view){
+        if (Overflow >0){
+            Overflow--;
+            overflowtxt.setText(String.valueOf(Overflow));
+        }
+        if (Overflow<=0){
+            findViewById(R.id.overflowMin).setVisibility(GONE);
+        }
+
+    }
+
+
+
+    public void TeleNetZoneDecrease(View view) {
+        if (teleNetZone > 0) {
+            teleNetZone--;
+            teleNetZoneText.setText(String.valueOf(teleNetZone));
+        }
+        if (teleNetZone <=0){
+            findViewById(R.id.spesamenNetSubtract).setVisibility(GONE);
+        }
+    }
+    public void TelelowChamberIncrease(View view){
+        //findViewById(R.id.spesamenLCSubtractionButton).setVisibility(VISIBLE);
+        teleloChamber++;                                                                            Log.d("tAloChamber", "push teleLoChamberByte = "+String.valueOf(teleloChamber)); Log.d("tAloChamber", "push teleLoChamberRecords = "+String.valueOf(RecordsActivity.Info.teleSpecimenLowChamber));
+        teleloChamberText.setText(String.valueOf(teleloChamber));                                   Log.d("tAloChamber", "push teleLoChamberByte = "+String.valueOf(teleloChamber)); Log.d("tAloChamber", "push teleloChamberText = "+teleloChamberText.getText().toString());
+
+        if (teleloChamber > 0){
+            findViewById(R.id.spesamenLCSubtractionButton).setVisibility(VISIBLE);                  Log.d("tAloChamber", "VISIBLE");
+        }
+    }
+    public void TelelowChamberDecrease(View view){
+        if (teleloChamber > 0) {
+            teleloChamber--;
+            teleloChamberText.setText(String.valueOf(teleloChamber));
+        }
+        if (teleloChamber <=0){
+            findViewById(R.id.spesamenLCSubtractionButton).setVisibility(GONE);                     Log.d("tAloChamber", "INVISIBLE");
+        }
+    }
+    public void TelelowBasketIncrease(View view) {
+        findViewById(R.id.spesamenLowBasketSubtract).setVisibility(VISIBLE);
+        teleLowBasket++;
+        teleLowBasketText.setText(String.valueOf(teleLowBasket));
+        if (teleLowBasket > 0){
+            findViewById(R.id.spesamenLowBasketSubtract).setVisibility(VISIBLE);
+        }
+    }
+    public void TelehighChamberIncrease(View view) {
+        findViewById(R.id.spesamenHCSubtractionButton).setVisibility(VISIBLE);
+        teleHiChamber++;
+        teleHiChamberText.setText(String.valueOf(teleHiChamber));
+        if (teleHiChamber > 0){
+            findViewById(R.id.spesamenHCSubtractionButton).setVisibility(VISIBLE);
+        }
+    }
+    public void TelehighChamberDecrease(View view) {
+        if (teleHiChamber > 0) {
+            teleHiChamber--;
+            teleHiChamberText.setText(String.valueOf(teleHiChamber));
+        }
+        if (teleHiChamber <=0){
+            findViewById(R.id.spesamenHCSubtractionButton).setVisibility(GONE);
+        }
+    }
+
+    public void TelelowBasketDecrease(View view) {
+        if (teleLowBasket > 0) {
+            teleLowBasket--;
+            teleLowBasketText.setText(String.valueOf(teleLowBasket));
+        }
+        if (teleLowBasket <=0){
+            findViewById(R.id.spesamenLowBasketSubtract).setVisibility(GONE);
+        }
+    }
+    public void TelehighBasketIncrease(View view) {
+        findViewById(R.id.spesamenHighBasketSubtract).setVisibility(VISIBLE);
+        teleHighBasket++;
+        teleHighBasketText.setText(String.valueOf(teleHighBasket));
+        if (teleHighBasket > 0){
+            findViewById(R.id.spesamenHighBasketSubtract).setVisibility(VISIBLE);
+        }
+    }
+    public void TelehighBasketDecrease(View view) {
+        if (teleHighBasket > 0) {
+            teleHighBasket--;
+            teleHighBasketText.setText(String.valueOf(teleHighBasket));
+        }
+        if (teleHighBasket <=0){
+            findViewById(R.id.spesamenHighBasketSubtract).setVisibility(GONE);
+        }
+    }
+    public void TeleClickPark(View view){
+        noPark.setChecked(false);
+        LevleOne.setChecked(false);
+        LevleTwo.setChecked(false);
+        LevleThree.setChecked(false);
+        park.setChecked(true);
+        teleBotAscent ="park";
+    }
+
+    public void TeleClickNoPark(View view) {
+        Log.d("NoParkClick", "starting method");
+        park.setChecked(false);             Log.d("NoParkClick", "set Park false");
+        LevleOne.setChecked(false);         Log.d("NoParkClick", "set levleOne true");
+        LevleTwo.setChecked(false);
+        LevleThree.setChecked(false);
+        noPark.setChecked(true);            Log.d("NoParkClick", "set NoPark true");
+        teleBotAscent="noPark";
+    }
+    public void TeleClickLvlOne(View view){
+        park.setChecked(false);         Log.d("LevleOne", "set park false");
+        noPark.setChecked(false);Log.d("LevleOne", "set noPark false");
+        LevleTwo.setChecked(false);
+        LevleThree.setChecked(false);
+        LevleOne.setChecked(true);      Log.d("LevleOne", "set LevleOne true");
+
+        teleBotAscent="lvlOne";  Log.d("levleOne", teleBotAscent);
+        Log.d("levleOne", String.valueOf(teleBotAscent));
+    }
+
+    public void TeleClicklvl2(View view) {
+        Log.d("NoParkClick", "starting method");
+        park.setChecked(false);
+        Log.d("NoParkClick", "set Park false");
+        LevleOne.setChecked(false);
+        Log.d("NoParkClick", "set levleOne true");
+        LevleThree.setChecked(false);
+        noPark.setChecked(false);
+        Log.d("NoParkClick", "set NoPark true");
+        LevleTwo.setChecked(true);
+        teleBotAscent = "LvlTwo";
+    }
+    public void TeleClicklvl3(View view) {
+        Log.d("NoParkClick", "starting method");
+        park.setChecked(false);             Log.d("NoParkClick", "set Park false");
+        LevleOne.setChecked(false);         Log.d("NoParkClick", "set levleOne true");
+        noPark.setChecked(false);            Log.d("NoParkClick", "set NoPark true");
+        LevleTwo.setChecked(false);
+        LevleThree.setChecked(true);
+        teleBotAscent="LvlThree";
+    }
+    public void clickdidnotparked(View view){
+        barlyparked.setChecked(false);
+        fullparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(true);
+        parked="noparked";
+    }
+    public void clickbarlyparked(View view){
+        fullparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(false);
+        barlyparked.setChecked(true);
+        parked="barlyparked";
+    }
+    public void clickfullparked(View view){
+        barlyparked.setChecked(false);
+        parkedwithothers.setChecked(false);
+        noparked.setChecked(false);
+        fullparked.setChecked(true);
+        parked="fullparked";
+    }
+    public void clickparkedwithothers(View view){
+        barlyparked.setChecked(false);
+        fullparked.setChecked(false);
+        noparked.setChecked(false);
+        parkedwithothers.setChecked(true);
+        parked="parkedwithothers";
+    }
+
+    public void telechoice1(View view) {
+        //telechoice1.setChecked(true);
+        telechoice2.setChecked(false);
+        autogrup1 = "Green";
+    }
+
+    public void telechoice2(View view) {
+        //telechoice2.setChecked(true);
+        telechoice1.setChecked(false);
+        autogrup1 = "purple";
+    }
+
+    public void telechoice3(View view) {
+        //telechoice3.setChecked(true);
+        telechoice4.setChecked(false);
+        autogrup2 = "Green";
+    }
+
+    public void telechoice4(View view) {
+        //telechoice4.setChecked(true);
+        telechoice3.setChecked(false);
+        autogrup2 = "purple";
+    }
+
+    public void telechoice5(View view) {
+        //telechoice5.setChecked(true);
+        telechoice6.setChecked(false);
+        autogrup3 = "Green";
+    }
+
+    public void telechoice6(View view) {
+        //telechoice6.setChecked(true);
+        telechoice5.setChecked(false);
+        autogrup3 = "purple";
+    }
+
+    public void telechoice7(View view) {
+        //telechoice7.setChecked(true);
+        telechoice8.setChecked(false);
+        autogrup4 = "Green";
+    }
+
+    public void telechoice8(View view) {
+        //telechoice8.setChecked(true);
+        telechoice7.setChecked(false);
+        autogrup4 = "purple";
+    }
+
+    public void telechoice9(View view) {
+        //telechoice9.setChecked(true);
+        telechoice10.setChecked(false);
+        autogrup5 = "Green";
+    }
+
+    public void telechoice10(View view) {
+        //telechoice10.setChecked(true);
+        telechoice9.setChecked(false);
+        autogrup5 = "purple";
+    }
+
+    public void telechoice11(View view) {
+        //telechoice11.setChecked(true);
+        telechoice12.setChecked(false);
+        autogrup6 = "Green";
+    }
+
+    public void telechoice12(View view) {
+        //telechoice12.setChecked(true);
+        telechoice11.setChecked(false);
+        autogrup6 = "purple";
+    }
+
+    public void telechoice13(View view) {
+        //telechoice13.setChecked(true);
+        telechoice14.setChecked(false);
+        autogrup7 = "Green";
+    }
+
+    public void telechoice14(View view) {
+        //telechoice14.setChecked(true);
+        telechoice13.setChecked(false);
+        autogrup7 = "purple";
+    }
+
+    public void telechoice15(View view) {
+        //telechoice15.setChecked(true);
+        telechoice16.setChecked(false);
+        autogrup8 = "Green";
+    }
+
+    public void telechoice16(View view) {
+        // telechoice16.setChecked(true);
+        telechoice15.setChecked(false);
+        autogrup8 = "purple";
+    }
+
+    public void telechoice17(View view) {
+        //telechoice17.setChecked(true);
+        telechoice18.setChecked(false);
+        autogrup9 = "Green";
+    }
+
+    public void telechoice18(View view) {
+        //telechoice18.setChecked(true);
+        telechoice17.setChecked(false);
+        autogrup9 = "purple";
+>>>>>>> parent of f010446 (Expand auto group choices and update variable names)
     }
 }
