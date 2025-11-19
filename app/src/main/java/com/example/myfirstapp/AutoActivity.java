@@ -709,38 +709,69 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void autochoice1(View view) {
         //autochoice1.setChecked(true);
-        autochoice2.setChecked(false);
-        autogrup1 = "Green";
+        //autochoice2.setChecked(false);
+        //autogrup1 = "Green";
+        if (autochoice1.isChecked()) {
+            autochoice2.setChecked(false);
+            autogrup1 = "Green";
+        } else {
+            autogrup1 = null;
+        }
     }
 
     public void autochoice2(View view) {
         //autochoice2.setChecked(true);
-        autochoice1.setChecked(false);
-        autogrup1 = "Purple";
+        //autochoice1.setChecked(false);
+        //autogrup1 = "Purple";
+        if (autochoice2.isChecked()) {
+            autochoice1.setChecked(false);
+            autogrup1 = "Green";
+        } else {
+            autogrup1 = null;
+        }
     }
 
     public void autochoice3(View view) {
         //autochoice3.setChecked(true);
-        autochoice4.setChecked(false);
-        autogrup2 = "Green";
+        //autochoice4.setChecked(false);
+        //autogrup2 = "Green";
+        if (autochoice3.isChecked()) {
+            autochoice4.setChecked(false);
+            autogrup2 = "Green";
+        } else {
+            autogrup2 = null;
+        }
     }
 
     public void autochoice4(View view) {
         //autochoice4.setChecked(true);
-        autochoice3.setChecked(false);
-        autogrup2 = "Purple";
+        //autochoice3.setChecked(false);
+        //autogrup2 = "Purple";
+        if (autochoice4.isChecked()) {
+            autochoice3.setChecked(false);
+            autogrup2 = "Green";
+        } else {
+            autogrup2 = null;
+        }
     }
 
     public void autochoice5(View view) {
         //autochoice5.setChecked(true);
-        autochoice6.setChecked(false);
-        autogrup3 = "Green";
+        //autochoice6.setChecked(false);
+        //autogrup3 = "Green";
+        if (autochoice5.isChecked()) {
+            autochoice6.setChecked(false);
+            autogrup3 = "Green";
+        } else {
+            autogrup3 = null;
+        }
     }
 
     public void autochoice6(View view) {
        // autochoice6.setChecked(true);
         autochoice5.setChecked(false);
         autogrup3 = "Purple";
+        
     }
 
     public void autochoice7(View view) {
