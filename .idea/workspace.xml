@@ -70,7 +70,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\calia\.android\avd\fixed.avd)]" />
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\naomi\.android\avd\Medium_Phone.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -399,12 +398,12 @@
       <map>
         <entry key="com.example.myfirstapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1763213673230" />
+            <CheckInfo lastCheckTimestamp="1763506791986" />
           </value>
         </entry>
         <entry key="com.example.myfirstapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1763213673231" />
+            <CheckInfo lastCheckTimestamp="1763506791986" />
           </value>
         </entry>
       </map>
