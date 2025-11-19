@@ -17,6 +17,8 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 public class AutoActivity<pri> extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers, ppg, gpp, pgp;
     TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt,OverallpointS, text1,text2,text3,text4,text5,text6,text7,text8,text9;
@@ -43,7 +45,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         LevleOne = findViewById(R.id.endLevel1);
         noparked = findViewById(R.id.autopark1);
         barlyparked = findViewById(R.id.autobparled);
-        fullparked = findViewById(R.id.autofullpared);
+        fullparked = findViewById(R.id.autofullparked);
         ppg = findViewById(R.id.ppg);
         gpp = findViewById(R.id.gpp);
         pgp = findViewById(R.id.pgp);
