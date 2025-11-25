@@ -725,7 +725,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         //autogrup1 = "Purple";
         if (autochoice2.isChecked()) {
             autochoice1.setChecked(false);
-            autogrup1 = "Green";
+            autogrup1 = "Purple";
         } else {
             autogrup1 = null;
         }
@@ -749,7 +749,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         //autogrup2 = "Purple";
         if (autochoice4.isChecked()) {
             autochoice3.setChecked(false);
-            autogrup2 = "Green";
+            autogrup2 = "Purple";
         } else {
             autogrup2 = null;
         }
@@ -769,81 +769,158 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void autochoice6(View view) {
        // autochoice6.setChecked(true);
-        autochoice5.setChecked(false);
-        autogrup3 = "Purple";
-        
+        //autochoice5.setChecked(false);
+       // autogrup3 = "Purple";
+        if (autochoice6.isChecked()) {
+            autochoice5.setChecked(false);
+            autogrup3 = "Purple";
+        } else {
+            autogrup3 = null;
+        }
     }
 
     public void autochoice7(View view) {
        // autochoice7.setChecked(true);
-        autochoice8.setChecked(false);
-        autogrup4 = "Green";
+       // autochoice8.setChecked(false);
+       // autogrup4 = "Green";
+        if (autochoice7.isChecked()) {
+            autochoice8.setChecked(false);
+            autogrup4 = "Green";
+        } else {
+            autogrup4 = null;
+        }
     }
 
     public void autochoice8(View view) {
        // autochoice8.setChecked(true);
-        autochoice7.setChecked(false);
-        autogrup4 = "Purple";
+        //autochoice7.setChecked(false);
+       // autogrup4 = "Purple";
+        if (autochoice8.isChecked()) {
+            autochoice7.setChecked(false);
+            autogrup4 = "Purple";
+        } else {
+            autogrup4 = null;
+        }
     }
 
     public void autochoice9(View view) {
        // autochoice9.setChecked(true);
-        autochoice10.setChecked(false);
-        autogrup5 = "Green";
+        //autochoice10.setChecked(false);
+        //autogrup5 = "Green";
+        if (autochoice9.isChecked()) {
+            autochoice10.setChecked(false);
+            autogrup5 = "Green";
+        } else {
+            autogrup5 = null;
+        }
     }
 
     public void autochoice10(View view) {
        // autochoice10.setChecked(true);
-        autochoice9.setChecked(false);
-        autogrup5 = "Purple";
+        //autochoice9.setChecked(false);
+        //autogrup5 = "Purple";
+        if (autochoice10.isChecked()) {
+            autochoice9.setChecked(false);
+            autogrup5 = "Purple";
+        } else {
+            autogrup5 = null;
+        }
     }
 
     public void autochoice11(View view) {
        // autochoice11.setChecked(true);
-        autochoice12.setChecked(false);
-        autogrup6 = "Green";
+       // autochoice12.setChecked(false);
+       //autogrup6 = "Green";
+        if (autochoice11.isChecked()) {
+            autochoice12.setChecked(false);
+            autogrup6 = "Green";
+        } else {
+            autogrup6 = null;
+        }
     }
 
     public void autochoice12(View view) {
        // autochoice12.setChecked(true);
-        autochoice11.setChecked(false);
-        autogrup6 = "Purple";
+       // autochoice11.setChecked(false);
+       // autogrup6 = "Purple";
+        if (autochoice12.isChecked()) {
+            autochoice11.setChecked(false);
+            autogrup6 = "Purple";
+        } else {
+            autogrup6 = null;
+        }
     }
 
     public void autochoice13(View view) {
        // autochoice13.setChecked(true);
-        autochoice14.setChecked(false);
-        autogrup7 = "Green";
+       // autochoice14.setChecked(false);
+       // autogrup7 = "Green";
+        if (autochoice13.isChecked()) {
+            autochoice14.setChecked(false);
+            autogrup7 = "Green";
+        } else {
+            autogrup7 = null;
+        }
     }
 
     public void autochoice14(View view) {
        // autochoice14.setChecked(true);
-        autochoice13.setChecked(false);
-        autogrup7 = "Purple";
+       // autochoice13.setChecked(false);
+       // autogrup7 = "Purple";
+        if (autochoice14.isChecked()) {
+            autochoice13.setChecked(false);
+            autogrup7 = "Purple";
+        } else {
+            autogrup7 = null;
+        }
     }
 
     public void autochoice15(View view) {
        // autochoice15.setChecked(true);
-        autochoice16.setChecked(false);
-        autogrup8 = "Green";
+       //autochoice16.setChecked(false);
+       //autogrup8 = "Green";
+        if (autochoice15.isChecked()) {
+            autochoice16.setChecked(false);
+            autogrup8 = "Green";
+        } else {
+            autogrup8 = null;
+        }
     }
 
     public void autochoice16(View view) {
        // autochoice16.setChecked(true);
-        autochoice15.setChecked(false);
-        autogrup8 = "Purple";
+       // autochoice15.setChecked(false);
+       // autogrup8 = "Purple";
+        if (autochoice16.isChecked()) {
+            autochoice15.setChecked(false);
+            autogrup8 = "Purple";
+        } else {
+            autogrup8 = null;
+        }
     }
 
     public void autochoice17(View view) {
        // autochoice17.setChecked(true);
-        autochoice18.setChecked(false);
-        autogrup9 = "Green";
+       // autochoice18.setChecked(false);
+       // autogrup9 = "Green";
+        if (autochoice17.isChecked()) {
+            autochoice18.setChecked(false);
+            autogrup9 = "Green";
+        } else {
+            autogrup9 = null;
+        }
     }
 
     public void autochoice18(View view) {
         //autochoice18.setChecked(true);
-        autochoice17.setChecked(false);
-        autogrup9 = "Purple";
+        //autochoice17.setChecked(false);
+        //autogrup9 = "Purple";
+        if (autochoice18.isChecked()) {
+            autochoice17.setChecked(false);
+            autogrup9 = "Purple";
+        } else {
+            autogrup9 = null;
+        }
     }
     //public void Autoclear(View view){
     //    autochoice18.setChecked(false);

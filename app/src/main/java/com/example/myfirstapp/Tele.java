@@ -556,110 +556,218 @@ public class Tele extends AppCompatActivity {
 
     public void telechoice1(View view) {
         //telechoice1.setChecked(true);
-        telechoice2.setChecked(false);
-        autogrup1 = "Green";
+        //telechoice2.setChecked(false);
+        //autogrup1 = "Green";
+        if (telechoice1.isChecked()) {
+            telechoice2.setChecked(false);
+            autogrup1 = "Green";
+        } else {
+            autogrup1 = null;
+        }
     }
 
     public void telechoice2(View view) {
         //telechoice2.setChecked(true);
-        telechoice1.setChecked(false);
-        autogrup1 = "Purple";
+        //telechoice1.setChecked(false);
+        //autogrup1 = "Purple";
+        if (telechoice2.isChecked()) {
+            telechoice1.setChecked(false);
+            autogrup1 = "Purple";
+        } else {
+            autogrup1 = null;
+        }
     }
 
     public void telechoice3(View view) {
         //telechoice3.setChecked(true);
-        telechoice4.setChecked(false);
-        autogrup2 = "Green";
+        //telechoice4.setChecked(false);
+        //autogrup2 = "Green";
+        if (telechoice3.isChecked()) {
+            telechoice4.setChecked(false);
+            autogrup2 = "Green";
+        } else {
+            autogrup2 = null;
+        }
     }
 
     public void telechoice4(View view) {
         //telechoice4.setChecked(true);
-        telechoice3.setChecked(false);
-        autogrup2 = "Purple";
+        //telechoice3.setChecked(false);
+        //autogrup2 = "Purple";
+        if (telechoice4.isChecked()) {
+            telechoice3.setChecked(false);
+            autogrup2 = "Purple";
+        } else {
+            autogrup2 = null;
+        }
     }
 
     public void telechoice5(View view) {
         //telechoice5.setChecked(true);
-        telechoice6.setChecked(false);
-        autogrup3 = "Green";
+        //telechoice6.setChecked(false);
+        //autogrup3 = "Green";
+        if (telechoice5.isChecked()) {
+            telechoice6.setChecked(false);
+            autogrup3 = "Green";
+        } else {
+            autogrup3 = null;
+        }
     }
 
     public void telechoice6(View view) {
         //telechoice6.setChecked(true);
-        telechoice5.setChecked(false);
-        autogrup3 = "Purple";
+        //telechoice5.setChecked(false);
+        //autogrup3 = "Purple";
+        if (telechoice6.isChecked()) {
+            telechoice5.setChecked(false);
+            autogrup3 = "Purple";
+        } else {
+            autogrup3 = null;
+        }
     }
 
     public void telechoice7(View view) {
         //telechoice7.setChecked(true);
-        telechoice8.setChecked(false);
-        autogrup4 = "Green";
+        //telechoice8.setChecked(false);
+        //autogrup4 = "Green";
+        if (telechoice7.isChecked()) {
+            telechoice8.setChecked(false);
+            autogrup4 = "Green";
+        } else {
+            autogrup4 = null;
+        }
     }
 
     public void telechoice8(View view) {
         //telechoice8.setChecked(true);
-        telechoice7.setChecked(false);
-        autogrup4 = "Purple";
+        //telechoice7.setChecked(false);
+        //autogrup4 = "Purple";
+        if (telechoice8.isChecked()) {
+            telechoice7.setChecked(false);
+            autogrup4 = "Purple";
+        } else {
+            autogrup4 = null;
+        }
     }
 
     public void telechoice9(View view) {
         //telechoice9.setChecked(true);
-        telechoice10.setChecked(false);
-        autogrup5 = "Green";
+        //telechoice10.setChecked(false);
+        //autogrup5 = "Green";
+        if (telechoice9.isChecked()) {
+            telechoice10.setChecked(false);
+            autogrup5 = "Green";
+        } else {
+            autogrup5 = null;
+        }
     }
 
     public void telechoice10(View view) {
         //telechoice10.setChecked(true);
-        telechoice9.setChecked(false);
-        autogrup5 = "Purple";
+        //telechoice9.setChecked(false);
+        //autogrup5 = "Purple";
+        if (telechoice10.isChecked()) {
+            telechoice9.setChecked(false);
+            autogrup5 = "Purple";
+        } else {
+            autogrup5 = null;
+        }
     }
 
     public void telechoice11(View view) {
         //telechoice11.setChecked(true);
-        telechoice12.setChecked(false);
-        autogrup6 = "Green";
+        //telechoice12.setChecked(false);
+        //autogrup6 = "Green";
+        if (telechoice11.isChecked()) {
+            telechoice12.setChecked(false);
+            autogrup6 = "Green";
+        } else {
+            autogrup6 = null;
+        }
     }
 
     public void telechoice12(View view) {
         //telechoice12.setChecked(true);
-        telechoice11.setChecked(false);
-        autogrup6 = "Purple";
+        //telechoice11.setChecked(false);
+        //autogrup6 = "Purple";
+        if (telechoice12.isChecked()) {
+            telechoice11.setChecked(false);
+            autogrup6 = "Purple";
+        } else {
+            autogrup6 = null;
+        }
     }
 
     public void telechoice13(View view) {
         //telechoice13.setChecked(true);
-        telechoice14.setChecked(false);
-        autogrup7 = "Green";
+        //telechoice14.setChecked(false);
+        //autogrup7 = "Green";
+        if (telechoice13.isChecked()) {
+            telechoice14.setChecked(false);
+            autogrup7 = "Green";
+        } else {
+            autogrup7 = null;
+        }
     }
 
     public void telechoice14(View view) {
         //telechoice14.setChecked(true);
-        telechoice13.setChecked(false);
-        autogrup7 = "Purple";
+        //telechoice13.setChecked(false);
+        //autogrup7 = "Purple";
+        if (telechoice14.isChecked()) {
+            telechoice13.setChecked(false);
+            autogrup7 = "Purple";
+        } else {
+            autogrup7 = null;
+        }
     }
 
     public void telechoice15(View view) {
         //telechoice15.setChecked(true);
-        telechoice16.setChecked(false);
-        autogrup8 = "Green";
+        //telechoice16.setChecked(false);
+       // autogrup8 = "Green";
+        if (telechoice15.isChecked()) {
+            telechoice16.setChecked(false);
+            autogrup8 = "Green";
+        } else {
+            autogrup8 = null;
+        }
     }
 
     public void telechoice16(View view) {
         // telechoice16.setChecked(true);
-        telechoice15.setChecked(false);
-        autogrup8 = "Purple";
+//        telechoice15.setChecked(false);
+//        autogrup8 = "Purple";
+        if (telechoice16.isChecked()) {
+            telechoice15.setChecked(false);
+            autogrup8 = "Purple";
+        } else {
+            autogrup8 = null;
+        }
     }
 
     public void telechoice17(View view) {
         //telechoice17.setChecked(true);
-        telechoice18.setChecked(false);
-        autogrup9 = "Green";
+        //telechoice18.setChecked(false);
+        //autogrup9 = "Green";
+        if (telechoice17.isChecked()) {
+            telechoice18.setChecked(false);
+            autogrup9 = "Green";
+        } else {
+            autogrup9 = null;
+        }
     }
 
     public void telechoice18(View view) {
         //telechoice18.setChecked(true);
-        telechoice17.setChecked(false);
-        autogrup9 = "Purple";
+        //telechoice17.setChecked(false);
+        //autogrup9 = "Purple";
+        if (telechoice18.isChecked()) {
+            telechoice17.setChecked(false);
+            autogrup9 = "Purple";
+        } else {
+            autogrup9 = null;
+        }
     }
     public void teleclear(View view){
         if (telechoice1 != null) telechoice1.setChecked(false);
