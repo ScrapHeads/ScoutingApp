@@ -383,15 +383,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
-          <line>709</line>
-          <properties class="com.example.myfirstapp.AutoActivity" method="autochoice1">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/Tele.java</url>
           <line>556</line>
           <properties class="com.example.myfirstapp.Tele" method="telechoice1">

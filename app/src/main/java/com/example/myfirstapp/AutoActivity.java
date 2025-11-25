@@ -17,6 +17,8 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 public class AutoActivity<pri> extends AppCompatActivity {
     RadioButton park, noPark, LevleOne, noparked, barlyparked, fullparked, parkedwithothers, ppg, gpp, pgp;
     TextView autoNetZoneText, autoLowBasketText, autoHighBasketText, AutoHiChamberText, AutoloChamberText, overflowtxt,OverallpointS, text1,text2,text3,text4,text5,text6,text7,text8,text9;
@@ -24,6 +26,10 @@ public class AutoActivity<pri> extends AppCompatActivity {
     String autoBotAscent, parked, pgpppggpp, autogrup1, autogrup2, autogrup3, autogrup4, autogrup5, autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
     CheckBox autochoice1, autochoice2, autochoice3, autochoice4, autochoice5, autochoice6, autochoice7, autochoice8, autochoice9, autochoice10, autochoice11, autochoice12, autochoice13, autochoice14, autochoice15, autochoice16, autochoice17, autochoice18;
     private Switch hasAuto;
+    private CheckBox[] upperCheckBox = new CheckBox[9];
+    private CheckBox[] lowerCheckBox = new CheckBox[9];
+    
+    private String[] currentSelection = new String[9];
     private boolean doWeHaveAuto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,17 +80,62 @@ public class AutoActivity<pri> extends AppCompatActivity {
         text7=findViewById(R.id.textView35);
         text8=findViewById(R.id.textView41);
         text9=findViewById(R.id.textView42);
-
-
-
-
-
+        
+        
+        CheckBox[] upperCheckBox = new CheckBox[9];
+        CheckBox[] lowerCheckBox = new CheckBox[9];
+        upperCheckBox[0] = findViewById(R.id.autocheckbox1);
+        lowerCheckBox[0] = findViewById(R.id.autocheckbox2);
+        
+        upperCheckBox[1] = findViewById(R.id.autocheckbox3);
+        lowerCheckBox[1] = findViewById(R.id.autocheckbox4);
+        
+        upperCheckBox[2] = findViewById(R.id.autocheckbox5);
+        lowerCheckBox[2] = findViewById(R.id.autocheckbox6);
+        
+        upperCheckBox[3] = findViewById(R.id.autocheckbox7);
+        lowerCheckBox[3] = findViewById(R.id.autocheckbox8);
+        
+        upperCheckBox[4] = findViewById(R.id.autocheckbox9);
+        lowerCheckBox[4] = findViewById(R.id.autocheckbox10);
+        
+        upperCheckBox[5] = findViewById(R.id.autocheckbox11);
+        lowerCheckBox[5] = findViewById(R.id.autocheckbox12);
+        
+        upperCheckBox[6] = findViewById(R.id.autocheckbox13);
+        lowerCheckBox[6] = findViewById(R.id.autocheckbox14);
+        
+        upperCheckBox[7] = findViewById(R.id.autocheckbox15);
+        lowerCheckBox[7] = findViewById(R.id.autocheckbox16);
+        
+        upperCheckBox[8] = findViewById(R.id.autocheckbox17);
+        lowerCheckBox[8] = findViewById(R.id.autocheckbox18);
+        
 
         RecordsActivity.Info.doWeHaveAuto = false;
         hasAuto = findViewById(R.id.switch1);
         setPrevious();
     }
-
+    
+    private final ArrayList<String[]> allRuns = new ArrayList<>();
+    
+    
+    
+    private void setGreen(int index) {
+        currentSelection[index] = "G";
+        lowerCheckBox[index].setChecked(false);
+    }
+    
+    private void setPurple(int index) {
+        currentSelection[index] = "P";
+        upperCheckBox[index].setChecked(false);
+    }
+    
+    
+    
+    
+    
+    
 
     public void toSpecimen(View view) {
         Intent next = new Intent(this, Tele.class);
@@ -705,223 +756,252 @@ public class AutoActivity<pri> extends AppCompatActivity {
         pgp.setChecked(false);
         pgpppggpp = "gpp";
     }
-
-
-    public void autochoice1(View view) {
-        //autochoice1.setChecked(true);
-        //autochoice2.setChecked(false);
-        //autogrup1 = "Green";
-        if (autochoice1.isChecked()) {
-            autochoice2.setChecked(false);
-            autogrup1 = "Green";
+    
+    
+    
+    
+    
+    public void autochoice5(View view) {
+        int index = 2;
+        
+        if (((CheckBox)view).isChecked()) {
+            setGreen(index);
         } else {
-            autogrup1 = null;
+            currentSelection[index] = null;
         }
     }
+    
+    public void autochoice6(View view) {
+        int index = 2;
+        
+        if (((CheckBox)view).isChecked()) {
+            setPurple(index);
+        } else {
+            currentSelection[index] = null;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+   // public void autochoice1(View view) {
+     //   //autochoice1.setChecked(true);
+       // //autochoice2.setChecked(false);
+        //autogrup1 = "Green";
+    //    if (autochoice1.isChecked()) {
+     //       autochoice2.setChecked(false);
+     //       autogrup1 = "Green";
+     //   } else {
+      //      autogrup1 = null;
+        //}
+    //}
 
-    public void autochoice2(View view) {
+//    public void autochoice2(View view) {
         //autochoice2.setChecked(true);
         //autochoice1.setChecked(false);
         //autogrup1 = "Purple";
-        if (autochoice2.isChecked()) {
-            autochoice1.setChecked(false);
-            autogrup1 = "Purple";
-        } else {
-            autogrup1 = null;
-        }
-    }
+//        if (autochoice2.isChecked()) {
+//            autochoice1.setChecked(false);
+//            autogrup1 = "Purple";
+//        } else {
+//            autogrup1 = null;
+//        }
+//    }
 
-    public void autochoice3(View view) {
-        //autochoice3.setChecked(true);
-        //autochoice4.setChecked(false);
-        //autogrup2 = "Green";
-        if (autochoice3.isChecked()) {
-            autochoice4.setChecked(false);
-            autogrup2 = "Green";
-        } else {
-            autogrup2 = null;
-        }
-    }
+//    public void autochoice3(View view) {
+//        //autochoice3.setChecked(true);
+//        //autochoice4.setChecked(false);
+//        //autogrup2 = "Green";
+//        if (autochoice3.isChecked()) {
+//            autochoice4.setChecked(false);
+//            autogrup2 = "Green";
+//        } else {
+//            autogrup2 = null;
+//        }
+//    }
 
-    public void autochoice4(View view) {
-        //autochoice4.setChecked(true);
-        //autochoice3.setChecked(false);
-        //autogrup2 = "Purple";
-        if (autochoice4.isChecked()) {
-            autochoice3.setChecked(false);
-            autogrup2 = "Purple";
-        } else {
-            autogrup2 = null;
-        }
-    }
+//    public void autochoice4(View view) {
+//        //autochoice4.setChecked(true);
+//        //autochoice3.setChecked(false);
+//        //autogrup2 = "Purple";
+//        if (autochoice4.isChecked()) {
+//            autochoice3.setChecked(false);
+//            autogrup2 = "Purple";
+//        } else {
+//            autogrup2 = null;
+//        }
+//    }
 
-    public void autochoice5(View view) {
-        //autochoice5.setChecked(true);
-        //autochoice6.setChecked(false);
-        //autogrup3 = "Green";
-        if (autochoice5.isChecked()) {
-            autochoice6.setChecked(false);
-            autogrup3 = "Green";
-        } else {
-            autogrup3 = null;
-        }
-    }
+//    public void autochoice5(View view) {
+//        //autochoice5.setChecked(true);
+//        //autochoice6.setChecked(false);
+//        //autogrup3 = "Green";
+//        if (autochoice5.isChecked()) {
+//            autochoice6.setChecked(false);
+//            autogrup3 = "Green";
+//        } else {
+//            autogrup3 = null;
+//        }
+//    }
 
-    public void autochoice6(View view) {
-       // autochoice6.setChecked(true);
-        //autochoice5.setChecked(false);
-       // autogrup3 = "Purple";
-        if (autochoice6.isChecked()) {
-            autochoice5.setChecked(false);
-            autogrup3 = "Purple";
-        } else {
-            autogrup3 = null;
-        }
-    }
+//    public void autochoice6(View view) {
+//       // autochoice6.setChecked(true);
+//        //autochoice5.setChecked(false);
+//       // autogrup3 = "Purple";
+//        if (autochoice6.isChecked()) {
+//            autochoice5.setChecked(false);
+//            autogrup3 = "Purple";
+//        } else {
+//            autogrup3 = null;
+//        }
+//    }
 
-    public void autochoice7(View view) {
-       // autochoice7.setChecked(true);
-       // autochoice8.setChecked(false);
-       // autogrup4 = "Green";
-        if (autochoice7.isChecked()) {
-            autochoice8.setChecked(false);
-            autogrup4 = "Green";
-        } else {
-            autogrup4 = null;
-        }
-    }
+//    public void autochoice7(View view) {
+//       // autochoice7.setChecked(true);
+//       // autochoice8.setChecked(false);
+//       // autogrup4 = "Green";
+//        if (autochoice7.isChecked()) {
+//            autochoice8.setChecked(false);
+//            autogrup4 = "Green";
+//        } else {
+//            autogrup4 = null;
+//        }
+//    }
 
-    public void autochoice8(View view) {
-       // autochoice8.setChecked(true);
-        //autochoice7.setChecked(false);
-       // autogrup4 = "Purple";
-        if (autochoice8.isChecked()) {
-            autochoice7.setChecked(false);
-            autogrup4 = "Purple";
-        } else {
-            autogrup4 = null;
-        }
-    }
+//    public void autochoice8(View view) {
+//       // autochoice8.setChecked(true);
+//        //autochoice7.setChecked(false);
+//       // autogrup4 = "Purple";
+//        if (autochoice8.isChecked()) {
+//                autochoice7.setChecked(false);
+//            autogrup4 = "Purple";
+//        } else {
+//            autogrup4 = null;
+//        }
+//    }
 
-    public void autochoice9(View view) {
-       // autochoice9.setChecked(true);
-        //autochoice10.setChecked(false);
-        //autogrup5 = "Green";
-        if (autochoice9.isChecked()) {
-            autochoice10.setChecked(false);
-            autogrup5 = "Green";
-        } else {
-            autogrup5 = null;
-        }
-    }
+//    public void autochoice9(View view) {
+//       // autochoice9.setChecked(true);
+//        //autochoice10.setChecked(false);
+//        //autogrup5 = "Green";
+//        if (autochoice9.isChecked()) {
+//            autochoice10.setChecked(false);
+//            autogrup5 = "Green";
+//        } else {
+//            autogrup5 = null;
+//        }
+//    }
+//
+//    public void autochoice10(View view) {
+//       // autochoice10.setChecked(true);
+//        //autochoice9.setChecked(false);
+//        //autogrup5 = "Purple";
+//        if (autochoice10.isChecked()) {
+//            autochoice9.setChecked(false);
+//            autogrup5 = "Purple";
+//        } else {
+//            autogrup5 = null;
+//        }
+//    }
 
-    public void autochoice10(View view) {
-       // autochoice10.setChecked(true);
-        //autochoice9.setChecked(false);
-        //autogrup5 = "Purple";
-        if (autochoice10.isChecked()) {
-            autochoice9.setChecked(false);
-            autogrup5 = "Purple";
-        } else {
-            autogrup5 = null;
-        }
-    }
+//    public void autochoice11(View view) {
+//       // autochoice11.setChecked(true);
+//       // autochoice12.setChecked(false);
+//       //autogrup6 = "Green";
+//        if (autochoice11.isChecked()) {
+//            autochoice12.setChecked(false);
+//            autogrup6 = "Green";
+//        } else {
+//            autogrup6 = null;
+//        }
+//    }
 
-    public void autochoice11(View view) {
-       // autochoice11.setChecked(true);
-       // autochoice12.setChecked(false);
-       //autogrup6 = "Green";
-        if (autochoice11.isChecked()) {
-            autochoice12.setChecked(false);
-            autogrup6 = "Green";
-        } else {
-            autogrup6 = null;
-        }
-    }
+//    public void autochoice12(View view) {
+//       // autochoice12.setChecked(true);
+//       // autochoice11.setChecked(false);
+//       // autogrup6 = "Purple";
+//        if (autochoice12.isChecked()) {
+//            autochoice11.setChecked(false);
+//            autogrup6 = "Purple";
+//        } else {
+//            autogrup6 = null;
+//        }
+//    }
 
-    public void autochoice12(View view) {
-       // autochoice12.setChecked(true);
-       // autochoice11.setChecked(false);
-       // autogrup6 = "Purple";
-        if (autochoice12.isChecked()) {
-            autochoice11.setChecked(false);
-            autogrup6 = "Purple";
-        } else {
-            autogrup6 = null;
-        }
-    }
+//    public void autochoice13(View view) {
+//       // autochoice13.setChecked(true);
+//       // autochoice14.setChecked(false);
+//       // autogrup7 = "Green";
+//        if (autochoice13.isChecked()) {
+//            autochoice14.setChecked(false);
+//            autogrup7 = "Green";
+//        } else {
+//            autogrup7 = null;
+//        }
+//    }
 
-    public void autochoice13(View view) {
-       // autochoice13.setChecked(true);
-       // autochoice14.setChecked(false);
-       // autogrup7 = "Green";
-        if (autochoice13.isChecked()) {
-            autochoice14.setChecked(false);
-            autogrup7 = "Green";
-        } else {
-            autogrup7 = null;
-        }
-    }
+//    public void autochoice14(View view) {
+//       // autochoice14.setChecked(true);
+//       // autochoice13.setChecked(false);
+//       // autogrup7 = "Purple";
+//        if (autochoice14.isChecked()) {
+//            autochoice13.setChecked(false);
+//            autogrup7 = "Purple";
+//        } else {
+//            autogrup7 = null;
+//        }
+//    }
 
-    public void autochoice14(View view) {
-       // autochoice14.setChecked(true);
-       // autochoice13.setChecked(false);
-       // autogrup7 = "Purple";
-        if (autochoice14.isChecked()) {
-            autochoice13.setChecked(false);
-            autogrup7 = "Purple";
-        } else {
-            autogrup7 = null;
-        }
-    }
+//    public void autochoice15(View view) {
+//       // autochoice15.setChecked(true);
+//       //autochoice16.setChecked(false);
+//       //autogrup8 = "Green";
+//        if (autochoice15.isChecked()) {
+//            autochoice16.setChecked(false);
+//            autogrup8 = "Green";
+//        } else {
+//            autogrup8 = null;
+//        }
+//    }
 
-    public void autochoice15(View view) {
-       // autochoice15.setChecked(true);
-       //autochoice16.setChecked(false);
-       //autogrup8 = "Green";
-        if (autochoice15.isChecked()) {
-            autochoice16.setChecked(false);
-            autogrup8 = "Green";
-        } else {
-            autogrup8 = null;
-        }
-    }
+//    public void autochoice16(View view) {
+//       // autochoice16.setChecked(true);
+//       // autochoice15.setChecked(false);
+//       // autogrup8 = "Purple";
+//        if (autochoice16.isChecked()) {
+//            autochoice15.setChecked(false);
+//            autogrup8 = "Purple";
+//        } else {
+//            autogrup8 = null;
+//        }
+//    }
 
-    public void autochoice16(View view) {
-       // autochoice16.setChecked(true);
-       // autochoice15.setChecked(false);
-       // autogrup8 = "Purple";
-        if (autochoice16.isChecked()) {
-            autochoice15.setChecked(false);
-            autogrup8 = "Purple";
-        } else {
-            autogrup8 = null;
-        }
-    }
+//    public void autochoice17(View view) {
+//       // autochoice17.setChecked(true);
+//       // autochoice18.setChecked(false);
+//       // autogrup9 = "Green";
+//        if (autochoice17.isChecked()) {
+//            autochoice18.setChecked(false);
+//            autogrup9 = "Green";
+//        } else {
+//            autogrup9 = null;
+//        }
+//    }
 
-    public void autochoice17(View view) {
-       // autochoice17.setChecked(true);
-       // autochoice18.setChecked(false);
-       // autogrup9 = "Green";
-        if (autochoice17.isChecked()) {
-            autochoice18.setChecked(false);
-            autogrup9 = "Green";
-        } else {
-            autogrup9 = null;
-        }
-    }
-
-    public void autochoice18(View view) {
-        //autochoice18.setChecked(true);
+//    public void autochoice18(View view) {
+//        //autochoice18.setChecked(true);
         //autochoice17.setChecked(false);
         //autogrup9 = "Purple";
-        if (autochoice18.isChecked()) {
-            autochoice17.setChecked(false);
-            autogrup9 = "Purple";
-        } else {
-            autogrup9 = null;
-        }
-    }
+//        if (autochoice18.isChecked()) {
+//            autochoice17.setChecked(false);
+//            autogrup9 = "Purple";
+//        } else {
+//            autogrup9 = null;
+//        }
+//    }
     //public void Autoclear(View view){
     //    autochoice18.setChecked(false);
     //    autochoice17.setChecked(false);
