@@ -170,7 +170,7 @@
         android:onClick="tipped"
         android:scaleX="1.2"
         android:scaleY="1.2"
-        android:text="lifting bot?"
+        android:text="Lifting bot?"
         android:textColor="@color/scraphead_yellow"
         android:textSize="20sp"
         android:visibility="visible"

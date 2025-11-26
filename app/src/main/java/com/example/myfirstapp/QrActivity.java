@@ -25,58 +25,63 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
+import org.json.JSONArray;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
 public class QrActivity extends AppCompatActivity {
-
+    
     private static final int STORAGE_PERMISSION_CODE = 1001;
-
+    
     private ImageView qrCodeIV;
     private TextView resetbut;
     private String qrString;
     private Bitmap Qrbmp;
     
-
+    // Prevent loops
+    private boolean qrGeneratedOnce = false;
+    private boolean qrSavedOnce = false;
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
+        
         qrCodeIV = findViewById(R.id.qrImage);
         resetbut = findViewById(R.id.generateQrBtn);
-
+        
         // Request storage permission for Android 9 and below
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
             checkStoragePermission();
         }
-
-        // Build QR data string
-        String json = (RecordsActivity.Info.scoutName);
-        json += ("\t " + RecordsActivity.Info.teamNumber);
-        json += ("\t" + RecordsActivity.Info.matchNumber);
-        json += ("\t " + RecordsActivity.Info.alliance);
-        json += (" \t " + RecordsActivity.Info.fieldPositionNuw);
-
-        // Auto
-        json += (" \t " + RecordsActivity.Info.overflowtxtauto);
-        json += (" \t"+ RecordsActivity.Info.AutoOverallpoint);
-        json += (" \t " + RecordsActivity.Info.parkedAuto);
-        json += (" \t " + RecordsActivity.Info.ppggpppgp);
-        // ======== AUTO GRID VALUES ========
         
-        json += "\t AUTO_CURRENT_variables:";
+        // Build QR JSON payload
+        String json = RecordsActivity.Info.scoutName;
+        json += ("\t " + RecordsActivity.Info.teamNumber);
+        json += ("\t " + RecordsActivity.Info.matchNumber);
+        json += ("\t " + RecordsActivity.Info.alliance);
+        json += ("\t " + RecordsActivity.Info.fieldPositionNuw);
+        
+        // Auto basic
+        json += ("\t " + RecordsActivity.Info.overflowtxtauto);
+        json += ("\t " + RecordsActivity.Info.AutoOverallpoint);
+        json += ("\t " + RecordsActivity.Info.parkedAuto);
+        json += ("\t " + RecordsActivity.Info.ppggpppgp);
+        
+        // Auto grids
+        json += "\t ";
         for (int i = 0; i < RecordsActivity.Info.autoGrids.length; i++) {
             String v = RecordsActivity.Info.autoGrids[i];
             json += (v == null ? "-" : v);
             if (i < RecordsActivity.Info.autoGrids.length - 1) json += ",";
         }
         
-        json += "\t AUTO_PAST:[";
-        
+        json += "\t ";
         for (int r = 0; r < RecordsActivity.Info.autoRuns.size(); r++) {
             String[] run = RecordsActivity.Info.autoRuns.get(r);
             json += "[";
@@ -87,21 +92,12 @@ public class QrActivity extends AppCompatActivity {
             json += "]";
             if (r < RecordsActivity.Info.autoRuns.size() - 1) json += ",";
         }
-        
         json += "]";
-//        json += (" \t " + RecordsActivity.Info.autogrup1);
-//        json += (" \t " + RecordsActivity.Info.autogrup2);
-//        json += (" \t " + RecordsActivity.Info.autogrup3);
-//        json += (" \t " + RecordsActivity.Info.autogrup5);
-//        json += (" \t " + RecordsActivity.Info.autogrup6);
-//        json += (" \t " + RecordsActivity.Info.autogrup7);
-//        json += (" \t " + RecordsActivity.Info.autogrup8);
-//        json += (" \t " + RecordsActivity.Info.autogrup9);
-
-        // Tele
-        json += (" \t " + RecordsActivity.Info.overflowtxtTely);
-        json += (" \t "+ RecordsActivity.Info.teleOverallpoint);
-        json += (" \t " + RecordsActivity.Info.telyparked);
+        
+        // Tele-op
+        json += ("\t " + RecordsActivity.Info.overflowtxtTely);
+        json += ("\t " + RecordsActivity.Info.teleOverallpoint);
+        json += ("\t " + RecordsActivity.Info.telyparked);
         
         json += "\t TELE_CURRENT_variables:";
         for (int i = 0; i < RecordsActivity.Info.teleGrids.length; i++) {
@@ -110,8 +106,7 @@ public class QrActivity extends AppCompatActivity {
             if (i < RecordsActivity.Info.teleGrids.length - 1) json += ",";
         }
         
-        json += "\t TELE_Past:[";
-        
+        json += "\t TELE_PAST:[";
         for (int r = 0; r < RecordsActivity.Info.teleRuns.size(); r++) {
             String[] run = RecordsActivity.Info.teleRuns.get(r);
             json += "[";
@@ -122,150 +117,160 @@ public class QrActivity extends AppCompatActivity {
             json += "]";
             if (r < RecordsActivity.Info.teleRuns.size() - 1) json += ",";
         }
-        
         json += "]";
-//        json += (" \t " + RecordsActivity.Info.telegrup1);
-//        json += (" \t " + RecordsActivity.Info.telegrup2);
-//        json += (" \t " + RecordsActivity.Info.telegrup3);
-//        json += (" \t " + RecordsActivity.Info.telegrup4);
-//        json += (" \t " + RecordsActivity.Info.telegrup5);
-//        json += (" \t " + RecordsActivity.Info.telegrup6);
-//        json += (" \t " + RecordsActivity.Info.telegrup7);
-//        json += (" \t " + RecordsActivity.Info.telegrup8);
-//        json += (" \t " + RecordsActivity.Info.telegrup9);
-//        json += (" \t " + RecordsActivity.Info.telegrup10);
-//        json += (" \t " + RecordsActivity.Info.telegrup11);
-//        json += (" \t " + RecordsActivity.Info.telegrup12);
-//        json += (" \t " + RecordsActivity.Info.telegrup13);
-//        json += (" \t " + RecordsActivity.Info.telegrup14);
-//        json += (" \t " + RecordsActivity.Info.telegrup15);
-//        json += (" \t " + RecordsActivity.Info.telegrup16);
-//        json += (" \t " + RecordsActivity.Info.telegrup17);
-//        json += (" \t " + RecordsActivity.Info.telegrup18);
-
+        
         // Match notes
-        json += (" \t " + RecordsActivity.Info.tipped);
-        json += (" \t " + RecordsActivity.Info.droppedPieces);
-        json += (" \t " + RecordsActivity.Info.BotDied);
-        json += (" \t " + RecordsActivity.Info.ArmWorksSlowly);
-        json += (" \t " + RecordsActivity.Info.BotMovesSlow);
-        json += (" \t " + RecordsActivity.Info.MinorFoul);
-        json += (" \t " + RecordsActivity.Info.MajorFoul);
-        json += (" \t " + RecordsActivity.Info.endCommitBox);
-
-
+        json += ("\t " + RecordsActivity.Info.tipped);
+        //json += ("\t " + RecordsActivity.Info.droppedPieces);
+        json += ("\t " + RecordsActivity.Info.BotDied);
+        //json += ("\t " + RecordsActivity.Info.ArmWorksSlowly);
+        json += ("\t " + RecordsActivity.Info.BotMovesSlow);
+        json += ("\t " + RecordsActivity.Info.MinorFoul);
+        json += ("\t " + RecordsActivity.Info.MajorFoul);
+        json += ("\t"+RecordsActivity.Info.MakesAGoodAlliancePartener);
+        json += ("\t " + RecordsActivity.Info.endCommitBox);
         
-        
-
-        Log.d("rAjson", json);
         qrString = json;
-        generateQRCode(qrString);
-        generateQRCode(json);
+        Log.d("rAjson", json);
+        
+        if (!qrGeneratedOnce) {
+            qrGeneratedOnce = true;
+            generateQRCode(qrString);
+        }
     }
-
+    
+    
+    // --------------------------
+    // Permissions
+    // --------------------------
     private void checkStoragePermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
+            
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     STORAGE_PERMISSION_CODE);
         }
     }
-
+    
+    
+    // --------------------------
+    // QR CODE GENERATOR
+    // --------------------------
     private void generateQRCode(String text) {
         Log.d("qAgen", "Start Code Generation");
         try {
             BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
             Bitmap bitmap = barcodeEncoder.encodeBitmap(text, BarcodeFormat.QR_CODE, 400, 400);
+            
             qrCodeIV.setImageBitmap(bitmap);
             Qrbmp = bitmap;
-
-            // Optionally auto-save on creation
-            new Thread(() -> {
-                try {
-                    saveImage(bitmap);
-                    runOnUiThread(() ->
-                            Toast.makeText(this, "QR saved to DCIM/QR", Toast.LENGTH_SHORT).show());
-                } catch (IOException e) {
-                    Log.e("QR_SAVE", "Error saving QR", e);
-                }
-            }).start();
-
+            
+            // Save ONLY once
+            if (!qrSavedOnce) {
+                qrSavedOnce = true;
+                saveQrOnce(bitmap);
+            }
+            
         } catch (WriterException e) {
             e.printStackTrace();
         }
     }
-
-    public void TheLastBack(View view) {
-        Intent Back = new Intent(this, match_notes_Activity.class);
-        startActivity(Back);
+    
+    
+    // --------------------------
+    // AUTO-SAVE ONE TIME
+    // --------------------------
+    private void saveQrOnce(Bitmap b) {
+        new Thread(() -> {
+            try {
+                saveImage(b);
+                runOnUiThread(() ->
+                        Toast.makeText(this, "QR saved!", Toast.LENGTH_SHORT).show()
+                );
+            } catch (Exception e) {
+                Log.e("QR_SAVE", "Error saving QR", e);
+            }
+        }).start();
     }
-
+    
+    
+    // --------------------------
+    // MANUAL SAVE BUTTON
+    // --------------------------
     public void setGenerateQrBtn(View view) {
-        Log.d("qAgen", "button pushed");
+        Log.d("qAgen", "Manual save button pushed");
         if (Qrbmp != null) {
             new Thread(() -> {
                 try {
                     saveImage(Qrbmp);
                     runOnUiThread(() ->
-                            Toast.makeText(this, "QR saved manually!", Toast.LENGTH_SHORT).show());
+                            Toast.makeText(this, "QR saved manually!", Toast.LENGTH_SHORT).show()
+                    );
                 } catch (IOException e) {
-                    Log.e("QR_SAVE", "Error saving on button press", e);
+                    Log.e("QR_SAVE", "Manual save error", e);
                 }
             }).start();
         } else {
             Toast.makeText(this, "QR not generated yet!", Toast.LENGTH_SHORT).show();
         }
     }
-
+    
+    
+    // --------------------------
+    // SAVE TO STORAGE
+    // --------------------------
     public boolean saveImage(Bitmap bitmap) throws IOException {
+        
         if (bitmap == null) return false;
-        OutputStream fos = null;
-        boolean saved;
-
+        
+        OutputStream fos;
+        
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            ContentValues contentValues = new ContentValues();
-            contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME, System.currentTimeMillis() + ".png");
-            contentValues.put(MediaStore.MediaColumns.MIME_TYPE, "image/png");
-            contentValues.put(MediaStore.MediaColumns.RELATIVE_PATH, "DCIM/QR");
-
-            Uri imageUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
-            if (imageUri != null) {
-                fos = getContentResolver().openOutputStream(imageUri);
-            } else {
-                Log.e("QR_SAVE", "Failed to create image URI");
-                return false;
-            }
+            ContentValues cv = new ContentValues();
+            cv.put(MediaStore.MediaColumns.DISPLAY_NAME, System.currentTimeMillis() + ".png");
+            cv.put(MediaStore.MediaColumns.MIME_TYPE, "image/png");
+            cv.put(MediaStore.MediaColumns.RELATIVE_PATH, "DCIM/QR");
+            
+            Uri imageUri = getContentResolver()
+                    .insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, cv);
+            
+            if (imageUri == null) return false;
+            
+            fos = getContentResolver().openOutputStream(imageUri);
         } else {
             File dir = new File(Environment.getExternalStoragePublicDirectory(
                     Environment.DIRECTORY_DCIM), "QR");
             if (!dir.exists()) dir.mkdirs();
-
+            
             File image = new File(dir, System.currentTimeMillis() + ".png");
             fos = new FileOutputStream(image);
         }
-
-        saved = bitmap.compress(Bitmap.CompressFormat.PNG, 90, fos);
-        if (fos != null) {
-            fos.flush();
-            fos.close();
-        }
-
+        
+        boolean saved = bitmap.compress(Bitmap.CompressFormat.PNG, 90, fos);
+        fos.flush();
+        fos.close();
         return saved;
     }
     
+    
+    public void TheLastBack(View view) {
+        startActivity(new Intent(this, match_notes_Activity.class));
+    }
+    
+    
+    // --------------------------
+    // RESET ALL DATA
+    // --------------------------
     public void resetAllData() {
         
-        // Clear Auto Grid
         RecordsActivity.Info.autoGrids = new String[9];
-        
-        // Clear Auto Runs
         if (RecordsActivity.Info.autoRuns != null)
             RecordsActivity.Info.autoRuns.clear();
         
-        // If you later store tele data:
-        // RecordsActivity.Info.teleGrids = new String[18];
-        // RecordsActivity.Info.teleRuns.clear();
+        RecordsActivity.Info.teleGrids = new String[18];
+        if (RecordsActivity.Info.teleRuns != null)
+            RecordsActivity.Info.teleRuns.clear();
         
         Toast.makeText(this, "All scouting data cleared.", Toast.LENGTH_SHORT).show();
     }
@@ -273,69 +278,28 @@ public class QrActivity extends AppCompatActivity {
     
     public void clear(View view) {
         Log.d("qAClr", "Clear Called");
-        Intent news = new Intent(this, preGameInfo.class);
         
         resetAllData();
         
-
+        Intent news = new Intent(this, preGameInfo.class);
+        
+        // Increment match #
         try {
-            RecordsActivity.Info.matchNumber = Integer.toString(Integer.parseInt(RecordsActivity.Info.matchNumber) + 1);
+            RecordsActivity.Info.matchNumber =
+                    Integer.toString(Integer.parseInt(RecordsActivity.Info.matchNumber) + 1);
         } catch (Exception e) {
             RecordsActivity.Info.matchNumber = "1";
         }
-        //currentSelection = new String[9];
-
+        
+        // Clear all fields
         RecordsActivity.Info.teamNumber = "";
-        //RecordsActivity.Info.preload = "";
         RecordsActivity.Info.fieldPositionNuw = "";
-
-        RecordsActivity.Info.overflowtxtauto=0;
-        RecordsActivity.Info.parkedAuto="";
-        RecordsActivity.Info.ppggpppgp="";
-        RecordsActivity.Info.autogrup1="";
-        RecordsActivity.Info.autogrup2="";
-        RecordsActivity.Info.autogrup3="";
-        RecordsActivity.Info.autogrup5="";
-        RecordsActivity.Info.autogrup6="";
-        RecordsActivity.Info.autogrup7="";
-        RecordsActivity.Info.autogrup8="";
-        RecordsActivity.Info.autogrup9="";
-        RecordsActivity.Info.overflowtxtTely=0;
-        RecordsActivity.Info.telyparked="";
-        RecordsActivity.Info.telegrup1="";
-        RecordsActivity.Info.telegrup2="";
-        RecordsActivity.Info.telegrup3="";
-        RecordsActivity.Info.telegrup4="";
-        RecordsActivity.Info.telegrup5="";
-        RecordsActivity.Info.telegrup6="";
-        RecordsActivity.Info.telegrup7="";
-        RecordsActivity.Info.telegrup8="";
-        RecordsActivity.Info.telegrup9="";
-        RecordsActivity.Info.telegrup10="";
-        RecordsActivity.Info.telegrup11="";
-        RecordsActivity.Info.telegrup12="";
-        RecordsActivity.Info.telegrup13="";
-        RecordsActivity.Info.telegrup14="";
-        RecordsActivity.Info.telegrup15="";
-        RecordsActivity.Info.telegrup16="";
-        RecordsActivity.Info.telegrup17="";
-        RecordsActivity.Info.telegrup18="";
-
-
-        //RecordsActivity.Info.autoLowChamberText = 0;
-        //RecordsActivity.Info.autoHighChamberText = 0;
-        //RecordsActivity.Info.autoNetZoneText = 0;
-        //RecordsActivity.Info.autoLowBasketText = 0;
-        //RecordsActivity.Info.autoHighBasketText = 0;
-        //RecordsActivity.Info.AutoAscent = "";
-
-        //RecordsActivity.Info.teleSpecimenLowChamber = 0;
-        //RecordsActivity.Info.teleHighChamber = 0;
-        //RecordsActivity.Info.teleNetZoneText = 0;
-        //RecordsActivity.Info.teleLowBasketText = 0;
-        //RecordsActivity.Info.teleHighBasketText = 0;
-        //RecordsActivity.Info.teleAscent = "";
-
+        RecordsActivity.Info.overflowtxtauto = 0;
+        RecordsActivity.Info.parkedAuto = "";
+        RecordsActivity.Info.ppggpppgp = "";
+        RecordsActivity.Info.overflowtxtTely = 0;
+        RecordsActivity.Info.telyparked = "";
+        
         RecordsActivity.Info.skillLvl = 0;
         RecordsActivity.Info.tipped = false;
         RecordsActivity.Info.droppedPieces = false;
@@ -346,63 +310,7 @@ public class QrActivity extends AppCompatActivity {
         RecordsActivity.Info.MinorFoul = 0;
         RecordsActivity.Info.MajorFoul = 0;
         RecordsActivity.Info.endCommitBox = "";
-
-        RecordsActivity.Info.pitTeamNumber = "";
-        RecordsActivity.Info.pitBotTipe = "";
-        RecordsActivity.Info.pitTask = "";
-        RecordsActivity.Info.pitAuto = "";
-        RecordsActivity.Info.pitAutoTipe = "";
-
+        
         startActivity(news);
     }
-    //String json = (RecordsActivity.Info.scoutName);
-    //json += ("\t " + RecordsActivity.Info.teamNumber);
-    //json += ("\t" + RecordsActivity.Info.matchNumber);
-    //json += ("\t " + RecordsActivity.Info.alliance);
-    //json += (" \t " + RecordsActivity.Info.fieldPositionNuw);
-
-    // Auto
-    //json += (" \t " + RecordsActivity.Info.overflowtxtauto);
-    //json += (" \t " + RecordsActivity.Info.parkedAuto);
-    //json += (" \t " + RecordsActivity.Info.ppggpppgp);
-    //json += (" \t " + RecordsActivity.Info.autogrup1);
-    //json += (" \t " + RecordsActivity.Info.autogrup2);
-    //json += (" \t " + RecordsActivity.Info.autogrup3);
-    //json += (" \t " + RecordsActivity.Info.autogrup5);
-    //json += (" \t " + RecordsActivity.Info.autogrup6);
-    //json += (" \t " + RecordsActivity.Info.autogrup7);
-    //json += (" \t " + RecordsActivity.Info.autogrup8);
-    //json += (" \t " + RecordsActivity.Info.autogrup9);
-
-    // Tele
-    //json += (" \t " + RecordsActivity.Info.overflowtxtTely);
-    //json += (" \t " + RecordsActivity.Info.telyparked);
-    /*json += (" \t " + RecordsActivity.Info.telegrup1);
-    json += (" \t " + RecordsActivity.Info.telegrup2);
-    json += (" \t " + RecordsActivity.Info.telegrup3);
-    json += (" \t " + RecordsActivity.Info.telegrup4);
-    json += (" \t " + RecordsActivity.Info.telegrup5);
-    json += (" \t " + RecordsActivity.Info.telegrup6);
-    json += (" \t " + RecordsActivity.Info.telegrup7);
-    json += (" \t " + RecordsActivity.Info.telegrup8);
-    json += (" \t " + RecordsActivity.Info.telegrup9);
-    json += (" \t " + RecordsActivity.Info.telegrup10);
-    json += (" \t " + RecordsActivity.Info.telegrup11);
-    json += (" \t " + RecordsActivity.Info.telegrup12);
-    json += (" \t " + RecordsActivity.Info.telegrup13);
-    json += (" \t " + RecordsActivity.Info.telegrup14);
-    json += (" \t " + RecordsActivity.Info.telegrup15);
-    json += (" \t " + RecordsActivity.Info.telegrup16);
-    json += (" \t " + RecordsActivity.Info.telegrup17);
-    json += (" \t " + RecordsActivity.Info.telegrup18);
-
-    // Match notes
-    json += (" \t " + RecordsActivity.Info.tipped);
-    json += (" \t " + RecordsActivity.Info.droppedPieces);
-    json += (" \t " + RecordsActivity.Info.BotDied);
-    json += (" \t " + RecordsActivity.Info.ArmWorksSlowly);
-    json += (" \t " + RecordsActivity.Info.BotMovesSlow);
-    json += (" \t " + RecordsActivity.Info.MinorFoul);
-    json += (" \t " + RecordsActivity.Info.MajorFoul);
-    json += (" \t " + RecordsActivity.Info.endCommitBox);*/
 }

@@ -231,19 +231,19 @@ public class AutoActivity<pri> extends AppCompatActivity {
             park.setChecked(false);
             LevleOne.setChecked(true);
         }
-        if (parked == "noparked") {
+        if (parked == "no parked") {
             //barlyparked.setChecked(false);
             fullparked.setChecked(false);
             //parkedwithothers.setChecked(false);
             noparked.setChecked(true);
         }
-        if (parked == "barlyparked") {
+        if (parked == "barly parked") {
             fullparked.setChecked(false);
             //parkedwithothers.setChecked(false);
             noparked.setChecked(false);
             //barlyparked.setChecked(true);
         }
-        if (parked == "fullparked") {
+        if (parked == "full parked") {
             //barlyparked.setChecked(false);
            // parkedwithothers.setChecked(false);
             noparked.setChecked(false);
@@ -275,7 +275,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         }
 
 
-        if (pgpppggpp == "pgp") {
+        if (pgpppggpp == "PGP") {
             pgp.setChecked(true);
             gpp.setChecked(false);
             ppg.setChecked(false);
@@ -289,7 +289,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
             text8.setText("G");
             text9.setText("P");
         }
-        if (pgpppggpp == "ppg") {
+        if (pgpppggpp == "PPG") {
             ppg.setChecked(true);
             gpp.setChecked(false);
             pgp.setChecked(false);
@@ -303,7 +303,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
             text8.setText("P");
             text9.setText("G");
         }
-        if (pgpppggpp == "gpp") {
+        if (pgpppggpp == "GPP") {
             gpp.setChecked(true);
             pgp.setChecked(false);
             ppg.setChecked(false);
@@ -675,7 +675,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         Log.d("NoParkClick", "set levleOne true");
         noPark.setChecked(true);
         Log.d("NoParkClick", "set NoPark true");
-        autoBotAscent = "noPark";
+        autoBotAscent = "no Park";
     }
 
     public void ClickLevleOne(View view) {
@@ -687,7 +687,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         LevleOne.setChecked(true);
         Log.d("LevleOne", "set LevleOne true");
 
-        autoBotAscent = "LevleOne";
+        autoBotAscent = "Levle One";
         Log.d("LevleOne", String.valueOf(autoBotAscent));
         Log.d("LevleOne", String.valueOf(autoBotAscent));
     }
@@ -732,7 +732,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         fullparked.setChecked(false);
         //parkedwithothers.setChecked(false);
         noparked.setChecked(true);
-        parked = "noparked";
+        parked = "no parked";
     }
 
     //public void clickbarlyparked(View view) {
@@ -740,7 +740,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
       //  parkedwithothers.setChecked(false);
       //  noparked.setChecked(false);
       //  barlyparked.setChecked(true);
-      //  parked = "barlyparked";
+      //  parked = "barly parked";
     //}
 
     public void clickfullparked(View view) {
@@ -748,7 +748,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         //parkedwithothers.setChecked(false);
         noparked.setChecked(false);
         fullparked.setChecked(true);
-        parked = "fullparked";
+        parked = "full parked";
     }
 
     //public void clickparkedwithothers(View view) {
@@ -772,7 +772,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         text7.setText("P");
         text8.setText("P");
         text9.setText("G");
-        pgpppggpp = "ppg";
+        pgpppggpp = "PPG";
     }
 
     public void pgp(View view) {
@@ -788,7 +788,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         text7.setText("P");
         text8.setText("G");
         text9.setText("P");
-        pgpppggpp = "pgp";
+        pgpppggpp = "PGP";
     }
 
     public void gpp(View view) {
@@ -804,7 +804,7 @@ public class AutoActivity<pri> extends AppCompatActivity {
         text7.setText("G");
         text8.setText("P");
         text9.setText("P");
-        pgpppggpp = "gpp";
+        pgpppggpp = "GPP";
     }
     
     
