@@ -237,7 +237,7 @@
             android:id="@+id/telypark1"
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:onClick="clickdidnotparked"
+            android:onClick="tclickdidnotparked"
             android:text="Didn't Park"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
@@ -246,7 +246,7 @@
             android:id="@+id/telybparled"
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:onClick="clickbarlyparked"
+            android:onClick="tclickbarlyparked"
             android:text="Barely Parked"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
@@ -255,7 +255,7 @@
             android:id="@+id/telyfullpared"
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:onClick="clickfullparked"
+            android:onClick="tclickfullparked"
             android:text="Fully Parked"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp" />
@@ -264,7 +264,7 @@
             android:id="@+id/telyparkedwithothers"
             android:layout_width="match_parent"
             android:layout_height="79dp"
-            android:onClick="clickparkedwithothers"
+            android:onClick="tclickparkedwithothers"
             android:text="Parked With Other Bot"
             android:textColor="@color/scraphead_yellow"
             android:textSize="20sp"

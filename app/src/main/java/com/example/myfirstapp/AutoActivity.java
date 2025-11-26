@@ -228,28 +228,28 @@ public class AutoActivity<pri> extends AppCompatActivity {
             LevleOne.setChecked(true);
         }
         if (parked == "noparked") {
-            barlyparked.setChecked(false);
+            //barlyparked.setChecked(false);
             fullparked.setChecked(false);
-            parkedwithothers.setChecked(false);
+            //parkedwithothers.setChecked(false);
             noparked.setChecked(true);
         }
         if (parked == "barlyparked") {
             fullparked.setChecked(false);
-            parkedwithothers.setChecked(false);
+            //parkedwithothers.setChecked(false);
             noparked.setChecked(false);
-            barlyparked.setChecked(true);
+            //barlyparked.setChecked(true);
         }
         if (parked == "fullparked") {
-            barlyparked.setChecked(false);
-            parkedwithothers.setChecked(false);
+            //barlyparked.setChecked(false);
+           // parkedwithothers.setChecked(false);
             noparked.setChecked(false);
             fullparked.setChecked(true);
         }
         if (parked == "parkedwithothers") {
-            barlyparked.setChecked(false);
+            //barlyparked.setChecked(false);
             fullparked.setChecked(false);
             noparked.setChecked(false);
-            parkedwithothers.setChecked(true);
+            //parkedwithothers.setChecked(true);
         }
 
         overflow = Byte.parseByte(overflowtxt.getText().toString());
@@ -388,43 +388,43 @@ public class AutoActivity<pri> extends AppCompatActivity {
             findViewById(R.id.sampleNetSubtract).setVisibility(VISIBLE);
             Log.d("AASet Previous", "VISIBLE");
         }
-        AutoloChamber = Byte.parseByte(AutoloChamberText.getText().toString());
-        if (AutoloChamber == 0) {
-            findViewById(R.id.specimenLCSubtractionButton).setVisibility(GONE);
-        }
-        if (AutoloChamber > 0) {
-            Log.d("AASet Previous", String.valueOf(autoNetZone));
-            findViewById(R.id.specimenLCSubtractionButton).setVisibility(VISIBLE);
-            Log.d("AASet Previous", "VISIBLE");
-        }
-        AutoHiChamber = Byte.parseByte(AutoHiChamberText.getText().toString());
-        if (AutoHiChamber == 0) {
-            findViewById(R.id.specimenHCSubtractionButton4).setVisibility(GONE);
-        }
-        if (AutoHiChamber > 0) {
-            Log.d("AASet Previous", String.valueOf(autoNetZone));
-            findViewById(R.id.specimenHCSubtractionButton4).setVisibility(VISIBLE);
-            Log.d("AASet Previous", "VISIBLE");
-        }
-        autoLowBasket = Byte.parseByte(autoLowBasketText.getText().toString());
-        if (autoLowBasket == 0) {
-            findViewById(R.id.sampleLowBasketSubtract).setVisibility(GONE);
-        }
-        if (autoLowBasket > 0) {
-            Log.d("AASet Previous", String.valueOf(autoNetZone));
-            findViewById(R.id.sampleLowBasketSubtract).setVisibility(VISIBLE);
-            Log.d("AASet Previous", "VISIBLE");
-        }
-        autoHighbasket = Byte.parseByte(autoHighBasketText.getText().toString());
-        if (autoHighbasket == 0) {
-            findViewById(R.id.sampleHighBasketSubtract).setVisibility(GONE);
-        }
-        if (autoHighbasket > 0) {
-            Log.d("AASet Previous", String.valueOf(autoNetZone));
-            findViewById(R.id.sampleHighBasketSubtract).setVisibility(VISIBLE);
-            Log.d("AASet Previous", "VISIBLE");
-        }
-        Log.d("AASet Previous", "Exit Set Previous");
+//        AutoloChamber = Byte.parseByte(AutoloChamberText.getText().toString());
+//        if (AutoloChamber == 0) {
+//            findViewById(R.id.specimenLCSubtractionButton).setVisibility(GONE);
+//        }
+//        if (AutoloChamber > 0) {
+//            Log.d("AASet Previous", String.valueOf(autoNetZone));
+//            findViewById(R.id.specimenLCSubtractionButton).setVisibility(VISIBLE);
+//            Log.d("AASet Previous", "VISIBLE");
+//        }
+//        AutoHiChamber = Byte.parseByte(AutoHiChamberText.getText().toString());
+//        if (AutoHiChamber == 0) {
+//            findViewById(R.id.specimenHCSubtractionButton4).setVisibility(GONE);
+//        }
+//        if (AutoHiChamber > 0) {
+//            Log.d("AASet Previous", String.valueOf(autoNetZone));
+//            findViewById(R.id.specimenHCSubtractionButton4).setVisibility(VISIBLE);
+//            Log.d("AASet Previous", "VISIBLE");
+//        }
+//        autoLowBasket = Byte.parseByte(autoLowBasketText.getText().toString());
+//        if (autoLowBasket == 0) {
+//            findViewById(R.id.sampleLowBasketSubtract).setVisibility(GONE);
+//        }
+//        if (autoLowBasket > 0) {
+//            Log.d("AASet Previous", String.valueOf(autoNetZone));
+//            findViewById(R.id.sampleLowBasketSubtract).setVisibility(VISIBLE);
+//            Log.d("AASet Previous", "VISIBLE");
+//        }
+//        autoHighbasket = Byte.parseByte(autoHighBasketText.getText().toString());
+//        if (autoHighbasket == 0) {
+//            findViewById(R.id.sampleHighBasketSubtract).setVisibility(GONE);
+//        }
+////        if (autoHighbasket > 0) {
+////            Log.d("AASet Previous", String.valueOf(autoNetZone));
+//            findViewById(R.id.sampleHighBasketSubtract).setVisibility(VISIBLE);
+//            Log.d("AASet Previous", "VISIBLE");
+//        }
+//        Log.d("AASet Previous", "Exit Set Previous");
     }
 
     public final class Math extends Object {
@@ -703,37 +703,37 @@ public class AutoActivity<pri> extends AppCompatActivity {
         }
     }
 
-    public void clickdidnotparked(View view) {
-        barlyparked.setChecked(false);
+    public void autoclickdidnotparked(View view) {
+        //barlyparked.setChecked(false);
         fullparked.setChecked(false);
-        parkedwithothers.setChecked(false);
+        //parkedwithothers.setChecked(false);
         noparked.setChecked(true);
         parked = "noparked";
     }
 
-    public void clickbarlyparked(View view) {
-        fullparked.setChecked(false);
-        parkedwithothers.setChecked(false);
-        noparked.setChecked(false);
-        barlyparked.setChecked(true);
-        parked = "barlyparked";
-    }
+    //public void clickbarlyparked(View view) {
+      //  fullparked.setChecked(false);
+      //  parkedwithothers.setChecked(false);
+      //  noparked.setChecked(false);
+      //  barlyparked.setChecked(true);
+      //  parked = "barlyparked";
+    //}
 
     public void clickfullparked(View view) {
-        barlyparked.setChecked(false);
-        parkedwithothers.setChecked(false);
+        //barlyparked.setChecked(false);
+        //parkedwithothers.setChecked(false);
         noparked.setChecked(false);
         fullparked.setChecked(true);
         parked = "fullparked";
     }
 
-    public void clickparkedwithothers(View view) {
-        barlyparked.setChecked(false);
-        fullparked.setChecked(false);
-        noparked.setChecked(false);
-        parkedwithothers.setChecked(true);
-        parked = "parkedwithothers";
-    }
+    //public void clickparkedwithothers(View view) {
+    //    barlyparked.setChecked(false);
+    //    fullparked.setChecked(false);
+    //    noparked.setChecked(false);
+    //    parkedwithothers.setChecked(true);
+    //    parked = "parkedwithothers";
+    //}
 
     public void ppg(View view) {
         ppg.setChecked(true);
@@ -1236,35 +1236,71 @@ public class AutoActivity<pri> extends AppCompatActivity {
 //            autogrup9 = null;
 //        }
 //    }
-    //public void Autoclear(View view){
-    //    autochoice18.setChecked(false);
-    //    autochoice17.setChecked(false);
-    //    autochoice16.setChecked(false);
-    //    autochoice15.setChecked(false);
-    //    autochoice14.setChecked(false);
-    //    autochoice13.setChecked(false);
-    //    autochoice12.setChecked(false);
-    //    autochoice11.setChecked(false);
-    //    autochoice10.setChecked(false);
-    //    autochoice9.setChecked(false);
-    //    autochoice8.setChecked(false);
-    //    autochoice7.setChecked(false);
-    //    autochoice6.setChecked(false);
-    //    autochoice5.setChecked(false);
-    //    autochoice4.setChecked(false);
-    //    autochoice3.setChecked(false);
-    //    autochoice1.setChecked(false);
-    //    autochoice2.setChecked(false);
-    //    RecordsActivity.Info.autogrup1="";
-    //    RecordsActivity.Info.autogrup2="";
-    //    RecordsActivity.Info.autogrup3="";
-    //    RecordsActivity.Info.autogrup5="";
-    //    RecordsActivity.Info.autogrup6="";
-    //    RecordsActivity.Info.autogrup7="";
-    //    RecordsActivity.Info.autogrup8="";
-    //    RecordsActivity.Info.autogrup9="";
-    //}
-//
+    public void Autoclear(View view){
+        if (autochoice1 != null) autochoice1.setChecked(false);
+        if (autochoice2 != null) autochoice2.setChecked(false);
+        if (autochoice3 != null) autochoice3.setChecked(false);
+        if (autochoice4 != null) autochoice4.setChecked(false);
+        if (autochoice5 != null) autochoice5.setChecked(false);
+        if (autochoice6 != null) autochoice6.setChecked(false);
+        if (autochoice7 != null) autochoice7.setChecked(false);
+        if (autochoice8 != null) autochoice8.setChecked(false);
+        if (autochoice9 != null) autochoice9.setChecked(false);
+        if (autochoice10 != null) autochoice10.setChecked(false);
+        if (autochoice11 != null) autochoice11.setChecked(false);
+        if (autochoice12 != null) autochoice12.setChecked(false);
+        if (autochoice13 != null) autochoice13.setChecked(false);
+        if (autochoice14 != null) autochoice14.setChecked(false);
+        if (autochoice15 != null) autochoice15.setChecked(false);
+        if (autochoice16 != null) autochoice16.setChecked(false);
+        if (autochoice17 != null) autochoice17.setChecked(false);
+        if (autochoice18 != null) autochoice18.setChecked(false);
+        RecordsActivity.Info.autogrup1="";
+        RecordsActivity.Info.autogrup2="";
+        RecordsActivity.Info.autogrup3="";
+        RecordsActivity.Info.autogrup4="";
+        RecordsActivity.Info.autogrup5="";
+        RecordsActivity.Info.autogrup6="";
+        RecordsActivity.Info.autogrup7="";
+        RecordsActivity.Info.autogrup8="";
+        RecordsActivity.Info.autogrup9="";
+        RecordsActivity.Info.autogrup10="";
+        RecordsActivity.Info.autogrup11="";
+        RecordsActivity.Info.autogrup12="";
+        RecordsActivity.Info.autogrup13="";
+        RecordsActivity.Info.autogrup14="";
+        RecordsActivity.Info.autogrup15="";
+        RecordsActivity.Info.autogrup16="";
+        RecordsActivity.Info.autogrup17="";
+        RecordsActivity.Info.autogrup18="";
+//        autochoice18.setChecked(false);
+//        autochoice17.setChecked(false);
+//        autochoice16.setChecked(false);
+//        autochoice15.setChecked(false);
+//        autochoice14.setChecked(false);
+//        autochoice13.setChecked(false);
+//        autochoice12.setChecked(false);
+//        autochoice11.setChecked(false);
+//        autochoice10.setChecked(false);
+//        autochoice9.setChecked(false);
+//        autochoice8.setChecked(false);
+//        autochoice7.setChecked(false);
+//        autochoice6.setChecked(false);
+//        autochoice5.setChecked(false);
+//        autochoice4.setChecked(false);
+//        autochoice3.setChecked(false);
+//        autochoice1.setChecked(false);
+//        autochoice2.setChecked(false);
+//        RecordsActivity.Info.autogrup1="";
+//        RecordsActivity.Info.autogrup2="";
+//        RecordsActivity.Info.autogrup3="";
+//        RecordsActivity.Info.autogrup5="";
+//        RecordsActivity.Info.autogrup6="";
+//        RecordsActivity.Info.autogrup7="";
+//        RecordsActivity.Info.autogrup8="";
+//        RecordsActivity.Info.autogrup9="";
+    }
+
 
 
 

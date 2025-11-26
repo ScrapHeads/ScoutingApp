@@ -571,28 +571,28 @@ public class Tele extends AppCompatActivity {
         LevleThree.setChecked(true);
         teleBotAscent="LvlThree";
     }
-    public void clickdidnotparked(View view){
+    public void tclickdidnotparked(View view){
         barlyparked.setChecked(false);
         fullparked.setChecked(false);
         parkedwithothers.setChecked(false);
         noparked.setChecked(true);
         parked="noparked";
     }
-    public void clickbarlyparked(View view){
+    public void tclickbarlyparked(View view){
         fullparked.setChecked(false);
         parkedwithothers.setChecked(false);
         noparked.setChecked(false);
         barlyparked.setChecked(true);
         parked="barlyparked";
     }
-    public void clickfullparked(View view){
+    public void tclickfullparked(View view){
         barlyparked.setChecked(false);
         parkedwithothers.setChecked(false);
         noparked.setChecked(false);
         fullparked.setChecked(true);
         parked="fullparked";
     }
-    public void clickparkedwithothers(View view){
+    public void tclickparkedwithothers(View view){
         barlyparked.setChecked(false);
         fullparked.setChecked(false);
         noparked.setChecked(false);
