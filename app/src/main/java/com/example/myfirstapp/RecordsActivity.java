@@ -1,5 +1,7 @@
 package com.example.myfirstapp;
 
+import java.util.ArrayList;
+
 public class RecordsActivity {
     public static class Info {
 
@@ -43,6 +45,8 @@ public class RecordsActivity {
         static String autogrup16 = "";
         static String autogrup17 = "";
         static String autogrup18 = "";
+        public static ArrayList<String[]> autoRuns = new ArrayList<>();
+        public static String[] autoGrids = new String[9];
 
         //Tele activty
         public static byte teleSpecimenLowChamber = 0;
@@ -72,6 +76,8 @@ public class RecordsActivity {
         static String telegrup16 = "";
         static String telegrup17 = "";
         static String telegrup18 = "";
+        public static ArrayList<String[]> teleRuns = new ArrayList<>();
+        public static String[] teleGrids = new String[9];
 
         //Match notes
         public static byte skillLvl = 0;

@@ -177,8 +177,8 @@
         android:id="@+id/textView26"
         android:layout_width="146dp"
         android:layout_height="35dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="576dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="520dp"
         android:text="Overall Balls"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
@@ -190,40 +190,38 @@
         android:id="@+id/button10"
         android:layout_width="44dp"
         android:layout_height="40dp"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:onClick="OverallpointsDecres"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
         app:layout_constraintEnd_toStartOf="@+id/textView27"
-        app:layout_constraintTop_toTopOf="@+id/textView27"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintTop_toTopOf="@+id/button11"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="53dp"
         android:layout_height="47dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="564dp"
+        android:gravity="center_horizontal"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.924" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="44dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:onClick="OverallpointsIncreas"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="@+id/textView27"
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:layout_constraintTop_toTopOf="@+id/textView27"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.571" />
 
     <RadioGroup
         android:layout_width="156dp"
@@ -275,8 +273,8 @@
         android:id="@+id/overflowText"
         android:layout_width="53dp"
         android:layout_height="43dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="448dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="360dp"
         android:gravity="center"
         android:text="0"
         android:textColor="@color/scraphead_yellow"
@@ -288,8 +286,8 @@
         android:id="@+id/textView21"
         android:layout_width="113dp"
         android:layout_height="45dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="420dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="332dp"
         android:text="Overflow"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
@@ -465,12 +463,12 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="556dp"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="468dp"
         android:onClick="teleclear"
-        android:text="clear"
+        android:text="empty ramp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -180,27 +180,27 @@ public class preGameInfo extends AppCompatActivity {
 
     // --- Field Position Buttons ---
     public void bluetopright(View view) {
-        updateFieldPosition("Top 1");
+        updateFieldPosition("Blue GOAL");
     }
 
     public void topmid(View view) {
-        updateFieldPosition("Top 2");
+        updateFieldPosition("Goal Wall");
     }
 
     public void redtopleft(View view) {
-        updateFieldPosition("Top 3");
+        updateFieldPosition("Red Goal");
     }
 
     public void bottomright(View view) {
-        updateFieldPosition("Bottom 4");
+        updateFieldPosition("Small Launch Zone Blue");
     }
 
     public void bottommid(View view) {
-        updateFieldPosition("Bottom 5");
+        updateFieldPosition("Small Launch Zone Middle");
     }
 
     public void bottomleft(View view) {
-        updateFieldPosition("Bottom 6");
+        updateFieldPosition("Small Launch Zone Red");
     }
 
     private void updateFieldPosition(String position) {

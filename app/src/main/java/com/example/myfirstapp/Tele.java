@@ -28,6 +28,7 @@ public class Tele extends AppCompatActivity {
     private CheckBox[] upperCheckBox = new CheckBox[9];
     private CheckBox[] lowerCheckBox = new CheckBox[9];
     private String[] currentSelection = new String[9];
+    String pgpppggpp;
     
     
     @Override
@@ -127,6 +128,10 @@ public class Tele extends AppCompatActivity {
     
     public void toend(View view) {
         Intent next = new Intent(this, match_notes_Activity.class);
+        RecordsActivity.Info.teleGrids = currentSelection.clone();
+
+// Save all runs too
+        RecordsActivity.Info.teleRuns = new ArrayList<>(allRuns);
         saveData();
         startActivity(next);
     }
@@ -220,6 +225,42 @@ public class Tele extends AppCompatActivity {
         Overflow=Byte.parseByte(overflowtxt.getText().toString());
         if (Overflow > 0){
             findViewById(R.id.overflowMin).setVisibility(VISIBLE);
+        }
+        
+        pgpppggpp=RecordsActivity.Info.ppggpppgp;
+        
+        if (pgpppggpp == "pgp") {
+            text1.setText("P");
+            text2.setText("G");
+            text3.setText("P");
+            text4.setText("P");
+            text5.setText("G");
+            text6.setText("P");
+            text7.setText("P");
+            text8.setText("G");
+            text9.setText("P");
+        }
+        if (pgpppggpp == "ppg") {
+            text1.setText("P");
+            text2.setText("P");
+            text3.setText("G");
+            text4.setText("P");
+            text5.setText("P");
+            text6.setText("G");
+            text7.setText("P");
+            text8.setText("P");
+            text9.setText("G");
+        }
+        if (pgpppggpp == "gpp") {
+            text1.setText("G");
+            text2.setText("P");
+            text3.setText("P");
+            text4.setText("G");
+            text5.setText("P");
+            text6.setText("P");
+            text7.setText("G");
+            text8.setText("P");
+            text9.setText("P");
         }
 
 
@@ -961,42 +1002,56 @@ public class Tele extends AppCompatActivity {
         }
     }
     public void teleclear(View view){
-        if (telechoice1 != null) telechoice1.setChecked(false);
-        if (telechoice2 != null) telechoice2.setChecked(false);
-        if (telechoice3 != null) telechoice3.setChecked(false);
-        if (telechoice4 != null) telechoice4.setChecked(false);
-        if (telechoice5 != null) telechoice5.setChecked(false);
-        if (telechoice6 != null) telechoice6.setChecked(false);
-        if (telechoice7 != null) telechoice7.setChecked(false);
-        if (telechoice8 != null) telechoice8.setChecked(false);
-        if (telechoice9 != null) telechoice9.setChecked(false);
-        if (telechoice10 != null) telechoice10.setChecked(false);
-        if (telechoice11 != null) telechoice11.setChecked(false);
-        if (telechoice12 != null) telechoice12.setChecked(false);
-        if (telechoice13 != null) telechoice13.setChecked(false);
-        if (telechoice14 != null) telechoice14.setChecked(false);
-        if (telechoice15 != null) telechoice15.setChecked(false);
-        if (telechoice16 != null) telechoice16.setChecked(false);
-        if (telechoice17 != null) telechoice17.setChecked(false);
-        if (telechoice18 != null) telechoice18.setChecked(false);
-        RecordsActivity.Info.telegrup1="";
-        RecordsActivity.Info.telegrup2="";
-        RecordsActivity.Info.telegrup3="";
-        RecordsActivity.Info.telegrup4="";
-        RecordsActivity.Info.telegrup5="";
-        RecordsActivity.Info.telegrup6="";
-        RecordsActivity.Info.telegrup7="";
-        RecordsActivity.Info.telegrup8="";
-        RecordsActivity.Info.telegrup9="";
-        RecordsActivity.Info.telegrup10="";
-        RecordsActivity.Info.telegrup11="";
-        RecordsActivity.Info.telegrup12="";
-        RecordsActivity.Info.telegrup13="";
-        RecordsActivity.Info.telegrup14="";
-        RecordsActivity.Info.telegrup15="";
-        RecordsActivity.Info.telegrup16="";
-        RecordsActivity.Info.telegrup17="";
-        RecordsActivity.Info.telegrup18="";
+        
+        // save the finished 18-variable selection
+        allRuns.add(currentSelection.clone());
+        
+        // wipe the temporary selection
+        currentSelection = new String[9];
+        
+        // uncheck all checkboxes
+        for (int i = 0; i < 9; i++) {
+            upperCheckBox[i].setChecked(false);
+            lowerCheckBox[i].setChecked(false);
+        }
+        
+        
+//        if (telechoice1 != null) telechoice1.setChecked(false);
+//        if (telechoice2 != null) telechoice2.setChecked(false);
+//        if (telechoice3 != null) telechoice3.setChecked(false);
+//        if (telechoice4 != null) telechoice4.setChecked(false);
+//        if (telechoice5 != null) telechoice5.setChecked(false);
+//        if (telechoice6 != null) telechoice6.setChecked(false);
+//        if (telechoice7 != null) telechoice7.setChecked(false);
+//        if (telechoice8 != null) telechoice8.setChecked(false);
+//        if (telechoice9 != null) telechoice9.setChecked(false);
+//        if (telechoice10 != null) telechoice10.setChecked(false);
+//        if (telechoice11 != null) telechoice11.setChecked(false);
+//        if (telechoice12 != null) telechoice12.setChecked(false);
+//        if (telechoice13 != null) telechoice13.setChecked(false);
+//        if (telechoice14 != null) telechoice14.setChecked(false);
+//        if (telechoice15 != null) telechoice15.setChecked(false);
+//        if (telechoice16 != null) telechoice16.setChecked(false);
+//        if (telechoice17 != null) telechoice17.setChecked(false);
+//        if (telechoice18 != null) telechoice18.setChecked(false);
+//        RecordsActivity.Info.telegrup1="";
+//        RecordsActivity.Info.telegrup2="";
+//        RecordsActivity.Info.telegrup3="";
+//        RecordsActivity.Info.telegrup4="";
+//        RecordsActivity.Info.telegrup5="";
+//        RecordsActivity.Info.telegrup6="";
+//        RecordsActivity.Info.telegrup7="";
+//        RecordsActivity.Info.telegrup8="";
+//        RecordsActivity.Info.telegrup9="";
+//        RecordsActivity.Info.telegrup10="";
+//        RecordsActivity.Info.telegrup11="";
+//        RecordsActivity.Info.telegrup12="";
+//        RecordsActivity.Info.telegrup13="";
+//        RecordsActivity.Info.telegrup14="";
+//        RecordsActivity.Info.telegrup15="";
+//        RecordsActivity.Info.telegrup16="";
+//        RecordsActivity.Info.telegrup17="";
+//        RecordsActivity.Info.telegrup18="";
     }
 
     public void OverallpointsDecres(View view){

@@ -38,6 +38,7 @@ public class QrActivity extends AppCompatActivity {
     private TextView resetbut;
     private String qrString;
     private Bitmap Qrbmp;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,37 +66,82 @@ public class QrActivity extends AppCompatActivity {
         json += (" \t"+ RecordsActivity.Info.AutoOverallpoint);
         json += (" \t " + RecordsActivity.Info.parkedAuto);
         json += (" \t " + RecordsActivity.Info.ppggpppgp);
-        json += (" \t " + RecordsActivity.Info.autogrup1);
-        json += (" \t " + RecordsActivity.Info.autogrup2);
-        json += (" \t " + RecordsActivity.Info.autogrup3);
-        json += (" \t " + RecordsActivity.Info.autogrup5);
-        json += (" \t " + RecordsActivity.Info.autogrup6);
-        json += (" \t " + RecordsActivity.Info.autogrup7);
-        json += (" \t " + RecordsActivity.Info.autogrup8);
-        json += (" \t " + RecordsActivity.Info.autogrup9);
+        // ======== AUTO GRID VALUES ========
+        
+        json += "\t AUTO_CURRENT_variables:";
+        for (int i = 0; i < RecordsActivity.Info.autoGrids.length; i++) {
+            String v = RecordsActivity.Info.autoGrids[i];
+            json += (v == null ? "-" : v);
+            if (i < RecordsActivity.Info.autoGrids.length - 1) json += ",";
+        }
+        
+        json += "\t AUTO_PAST:[";
+        
+        for (int r = 0; r < RecordsActivity.Info.autoRuns.size(); r++) {
+            String[] run = RecordsActivity.Info.autoRuns.get(r);
+            json += "[";
+            for (int i = 0; i < run.length; i++) {
+                json += (run[i] == null ? "-" : run[i]);
+                if (i < run.length - 1) json += ",";
+            }
+            json += "]";
+            if (r < RecordsActivity.Info.autoRuns.size() - 1) json += ",";
+        }
+        
+        json += "]";
+//        json += (" \t " + RecordsActivity.Info.autogrup1);
+//        json += (" \t " + RecordsActivity.Info.autogrup2);
+//        json += (" \t " + RecordsActivity.Info.autogrup3);
+//        json += (" \t " + RecordsActivity.Info.autogrup5);
+//        json += (" \t " + RecordsActivity.Info.autogrup6);
+//        json += (" \t " + RecordsActivity.Info.autogrup7);
+//        json += (" \t " + RecordsActivity.Info.autogrup8);
+//        json += (" \t " + RecordsActivity.Info.autogrup9);
 
         // Tele
         json += (" \t " + RecordsActivity.Info.overflowtxtTely);
         json += (" \t "+ RecordsActivity.Info.teleOverallpoint);
         json += (" \t " + RecordsActivity.Info.telyparked);
-        json += (" \t " + RecordsActivity.Info.telegrup1);
-        json += (" \t " + RecordsActivity.Info.telegrup2);
-        json += (" \t " + RecordsActivity.Info.telegrup3);
-        json += (" \t " + RecordsActivity.Info.telegrup4);
-        json += (" \t " + RecordsActivity.Info.telegrup5);
-        json += (" \t " + RecordsActivity.Info.telegrup6);
-        json += (" \t " + RecordsActivity.Info.telegrup7);
-        json += (" \t " + RecordsActivity.Info.telegrup8);
-        json += (" \t " + RecordsActivity.Info.telegrup9);
-        json += (" \t " + RecordsActivity.Info.telegrup10);
-        json += (" \t " + RecordsActivity.Info.telegrup11);
-        json += (" \t " + RecordsActivity.Info.telegrup12);
-        json += (" \t " + RecordsActivity.Info.telegrup13);
-        json += (" \t " + RecordsActivity.Info.telegrup14);
-        json += (" \t " + RecordsActivity.Info.telegrup15);
-        json += (" \t " + RecordsActivity.Info.telegrup16);
-        json += (" \t " + RecordsActivity.Info.telegrup17);
-        json += (" \t " + RecordsActivity.Info.telegrup18);
+        
+        json += "\t TELE_CURRENT_variables:";
+        for (int i = 0; i < RecordsActivity.Info.teleGrids.length; i++) {
+            String v = RecordsActivity.Info.teleGrids[i];
+            json += (v == null ? "-" : v);
+            if (i < RecordsActivity.Info.teleGrids.length - 1) json += ",";
+        }
+        
+        json += "\t TELE_Past:[";
+        
+        for (int r = 0; r < RecordsActivity.Info.teleRuns.size(); r++) {
+            String[] run = RecordsActivity.Info.teleRuns.get(r);
+            json += "[";
+            for (int i = 0; i < run.length; i++) {
+                json += (run[i] == null ? "-" : run[i]);
+                if (i < run.length - 1) json += ",";
+            }
+            json += "]";
+            if (r < RecordsActivity.Info.teleRuns.size() - 1) json += ",";
+        }
+        
+        json += "]";
+//        json += (" \t " + RecordsActivity.Info.telegrup1);
+//        json += (" \t " + RecordsActivity.Info.telegrup2);
+//        json += (" \t " + RecordsActivity.Info.telegrup3);
+//        json += (" \t " + RecordsActivity.Info.telegrup4);
+//        json += (" \t " + RecordsActivity.Info.telegrup5);
+//        json += (" \t " + RecordsActivity.Info.telegrup6);
+//        json += (" \t " + RecordsActivity.Info.telegrup7);
+//        json += (" \t " + RecordsActivity.Info.telegrup8);
+//        json += (" \t " + RecordsActivity.Info.telegrup9);
+//        json += (" \t " + RecordsActivity.Info.telegrup10);
+//        json += (" \t " + RecordsActivity.Info.telegrup11);
+//        json += (" \t " + RecordsActivity.Info.telegrup12);
+//        json += (" \t " + RecordsActivity.Info.telegrup13);
+//        json += (" \t " + RecordsActivity.Info.telegrup14);
+//        json += (" \t " + RecordsActivity.Info.telegrup15);
+//        json += (" \t " + RecordsActivity.Info.telegrup16);
+//        json += (" \t " + RecordsActivity.Info.telegrup17);
+//        json += (" \t " + RecordsActivity.Info.telegrup18);
 
         // Match notes
         json += (" \t " + RecordsActivity.Info.tipped);
@@ -107,9 +153,14 @@ public class QrActivity extends AppCompatActivity {
         json += (" \t " + RecordsActivity.Info.MajorFoul);
         json += (" \t " + RecordsActivity.Info.endCommitBox);
 
+
+        
+        
+
         Log.d("rAjson", json);
         qrString = json;
         generateQRCode(qrString);
+        generateQRCode(json);
     }
 
     private void checkStoragePermission() {
@@ -202,16 +253,37 @@ public class QrActivity extends AppCompatActivity {
 
         return saved;
     }
-
+    
+    public void resetAllData() {
+        
+        // Clear Auto Grid
+        RecordsActivity.Info.autoGrids = new String[9];
+        
+        // Clear Auto Runs
+        if (RecordsActivity.Info.autoRuns != null)
+            RecordsActivity.Info.autoRuns.clear();
+        
+        // If you later store tele data:
+        // RecordsActivity.Info.teleGrids = new String[18];
+        // RecordsActivity.Info.teleRuns.clear();
+        
+        Toast.makeText(this, "All scouting data cleared.", Toast.LENGTH_SHORT).show();
+    }
+    
+    
     public void clear(View view) {
         Log.d("qAClr", "Clear Called");
         Intent news = new Intent(this, preGameInfo.class);
+        
+        resetAllData();
+        
 
         try {
             RecordsActivity.Info.matchNumber = Integer.toString(Integer.parseInt(RecordsActivity.Info.matchNumber) + 1);
         } catch (Exception e) {
             RecordsActivity.Info.matchNumber = "1";
         }
+        //currentSelection = new String[9];
 
         RecordsActivity.Info.teamNumber = "";
         //RecordsActivity.Info.preload = "";

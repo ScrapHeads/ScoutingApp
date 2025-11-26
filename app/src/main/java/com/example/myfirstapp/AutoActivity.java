@@ -28,7 +28,6 @@ public class AutoActivity<pri> extends AppCompatActivity {
     private Switch hasAuto;
     private CheckBox[] upperCheckBox = new CheckBox[9];
     private CheckBox[] lowerCheckBox = new CheckBox[9];
-    
     private String[] currentSelection = new String[9];
     private boolean doWeHaveAuto;
     @Override
@@ -138,6 +137,11 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
     public void toSpecimen(View view) {
         Intent next = new Intent(this, Tele.class);
+        // Save currentSelection into the global store
+        RecordsActivity.Info.autoGrids = currentSelection.clone();
+
+// Save all runs too
+        RecordsActivity.Info.autoRuns = new ArrayList<>(allRuns);
         saveData();
         startActivity(next);
     }
@@ -275,23 +279,43 @@ public class AutoActivity<pri> extends AppCompatActivity {
             pgp.setChecked(true);
             gpp.setChecked(false);
             ppg.setChecked(false);
-            text1.setText("p");
-            text2.setText("g");
-            text3.setText("p");
-            text4.setText("p");
-            text5.setText("g");
-            text6.setText("p");
-            text7.setText("p");
+            text1.setText("P");
+            text2.setText("G");
+            text3.setText("P");
+            text4.setText("P");
+            text5.setText("G");
+            text6.setText("P");
+            text7.setText("P");
+            text8.setText("G");
+            text9.setText("P");
         }
         if (pgpppggpp == "ppg") {
             ppg.setChecked(true);
             gpp.setChecked(false);
             pgp.setChecked(false);
+            text1.setText("P");
+            text2.setText("P");
+            text3.setText("G");
+            text4.setText("P");
+            text5.setText("P");
+            text6.setText("G");
+            text7.setText("P");
+            text8.setText("P");
+            text9.setText("G");
         }
         if (pgpppggpp == "gpp") {
             gpp.setChecked(true);
             pgp.setChecked(false);
             ppg.setChecked(false);
+            text1.setText("G");
+            text2.setText("P");
+            text3.setText("P");
+            text4.setText("G");
+            text5.setText("P");
+            text6.setText("P");
+            text7.setText("G");
+            text8.setText("P");
+            text9.setText("P");
         }
         if (autogrup1 == "Green") {
             autochoice1.setChecked(true);
@@ -739,6 +763,15 @@ public class AutoActivity<pri> extends AppCompatActivity {
         ppg.setChecked(true);
         gpp.setChecked(false);
         pgp.setChecked(false);
+        text1.setText("P");
+        text2.setText("P");
+        text3.setText("G");
+        text4.setText("P");
+        text5.setText("P");
+        text6.setText("G");
+        text7.setText("P");
+        text8.setText("P");
+        text9.setText("G");
         pgpppggpp = "ppg";
     }
 
@@ -746,6 +779,15 @@ public class AutoActivity<pri> extends AppCompatActivity {
         pgp.setChecked(true);
         ppg.setChecked(false);
         gpp.setChecked(false);
+        text1.setText("P");
+        text2.setText("G");
+        text3.setText("P");
+        text4.setText("P");
+        text5.setText("G");
+        text6.setText("P");
+        text7.setText("P");
+        text8.setText("G");
+        text9.setText("P");
         pgpppggpp = "pgp";
     }
 
@@ -753,6 +795,15 @@ public class AutoActivity<pri> extends AppCompatActivity {
         gpp.setChecked(true);
         ppg.setChecked(false);
         pgp.setChecked(false);
+        text1.setText("G");
+        text2.setText("P");
+        text3.setText("P");
+        text4.setText("G");
+        text5.setText("P");
+        text6.setText("P");
+        text7.setText("G");
+        text8.setText("P");
+        text9.setText("P");
         pgpppggpp = "gpp";
     }
     
@@ -1237,42 +1288,54 @@ public class AutoActivity<pri> extends AppCompatActivity {
 //        }
 //    }
     public void Autoclear(View view){
-        if (autochoice1 != null) autochoice1.setChecked(false);
-        if (autochoice2 != null) autochoice2.setChecked(false);
-        if (autochoice3 != null) autochoice3.setChecked(false);
-        if (autochoice4 != null) autochoice4.setChecked(false);
-        if (autochoice5 != null) autochoice5.setChecked(false);
-        if (autochoice6 != null) autochoice6.setChecked(false);
-        if (autochoice7 != null) autochoice7.setChecked(false);
-        if (autochoice8 != null) autochoice8.setChecked(false);
-        if (autochoice9 != null) autochoice9.setChecked(false);
-        if (autochoice10 != null) autochoice10.setChecked(false);
-        if (autochoice11 != null) autochoice11.setChecked(false);
-        if (autochoice12 != null) autochoice12.setChecked(false);
-        if (autochoice13 != null) autochoice13.setChecked(false);
-        if (autochoice14 != null) autochoice14.setChecked(false);
-        if (autochoice15 != null) autochoice15.setChecked(false);
-        if (autochoice16 != null) autochoice16.setChecked(false);
-        if (autochoice17 != null) autochoice17.setChecked(false);
-        if (autochoice18 != null) autochoice18.setChecked(false);
-        RecordsActivity.Info.autogrup1="";
-        RecordsActivity.Info.autogrup2="";
-        RecordsActivity.Info.autogrup3="";
-        RecordsActivity.Info.autogrup4="";
-        RecordsActivity.Info.autogrup5="";
-        RecordsActivity.Info.autogrup6="";
-        RecordsActivity.Info.autogrup7="";
-        RecordsActivity.Info.autogrup8="";
-        RecordsActivity.Info.autogrup9="";
-        RecordsActivity.Info.autogrup10="";
-        RecordsActivity.Info.autogrup11="";
-        RecordsActivity.Info.autogrup12="";
-        RecordsActivity.Info.autogrup13="";
-        RecordsActivity.Info.autogrup14="";
-        RecordsActivity.Info.autogrup15="";
-        RecordsActivity.Info.autogrup16="";
-        RecordsActivity.Info.autogrup17="";
-        RecordsActivity.Info.autogrup18="";
+        // save the finished 18-variable selection
+        allRuns.add(currentSelection.clone());
+        
+        // wipe the temporary selection
+        currentSelection = new String[9];
+        
+        // uncheck all checkboxes
+        for (int i = 0; i < 9; i++) {
+            upperCheckBox[i].setChecked(false);
+            lowerCheckBox[i].setChecked(false);
+        }
+    }
+//        if (autochoice1 != null) autochoice1.setChecked(false);
+//        if (autochoice2 != null) autochoice2.setChecked(false);
+//        if (autochoice3 != null) autochoice3.setChecked(false);
+//        if (autochoice4 != null) autochoice4.setChecked(false);
+//        if (autochoice5 != null) autochoice5.setChecked(false);
+//        if (autochoice6 != null) autochoice6.setChecked(false);
+//        if (autochoice7 != null) autochoice7.setChecked(false);
+//        if (autochoice8 != null) autochoice8.setChecked(false);
+//        if (autochoice9 != null) autochoice9.setChecked(false);
+//        if (autochoice10 != null) autochoice10.setChecked(false);
+//        if (autochoice11 != null) autochoice11.setChecked(false);
+//        if (autochoice12 != null) autochoice12.setChecked(false);
+//        if (autochoice13 != null) autochoice13.setChecked(false);
+//        if (autochoice14 != null) autochoice14.setChecked(false);
+//        if (autochoice15 != null) autochoice15.setChecked(false);
+//        if (autochoice16 != null) autochoice16.setChecked(false);
+//        if (autochoice17 != null) autochoice17.setChecked(false);
+//        if (autochoice18 != null) autochoice18.setChecked(false);
+//        RecordsActivity.Info.autogrup1="";
+//        RecordsActivity.Info.autogrup2="";
+//        RecordsActivity.Info.autogrup3="";
+//        RecordsActivity.Info.autogrup4="";
+//        RecordsActivity.Info.autogrup5="";
+//        RecordsActivity.Info.autogrup6="";
+//        RecordsActivity.Info.autogrup7="";
+//        RecordsActivity.Info.autogrup8="";
+//        RecordsActivity.Info.autogrup9="";
+//        RecordsActivity.Info.autogrup10="";
+//        RecordsActivity.Info.autogrup11="";
+//        RecordsActivity.Info.autogrup12="";
+//        RecordsActivity.Info.autogrup13="";
+//        RecordsActivity.Info.autogrup14="";
+//        RecordsActivity.Info.autogrup15="";
+//        RecordsActivity.Info.autogrup16="";
+//        RecordsActivity.Info.autogrup17="";
+//        RecordsActivity.Info.autogrup18="";
 //        autochoice18.setChecked(false);
 //        autochoice17.setChecked(false);
 //        autochoice16.setChecked(false);
@@ -1305,5 +1368,5 @@ public class AutoActivity<pri> extends AppCompatActivity {
 
 
 
-}
+
 
