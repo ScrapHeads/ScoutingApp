@@ -163,7 +163,6 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
-    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/calia/AndroidStudioProjects/25-26stradagy",
     "project.structure.last.edited": "Build Variants",
@@ -384,12 +383,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/Tele.java</url>
-          <line>556</line>
+          <line>602</line>
           <properties class="com.example.myfirstapp.Tele" method="telechoice1">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myfirstapp/AutoActivity.java</url>
+          <line>762</line>
+          <properties class="com.example.myfirstapp.AutoActivity" method="autochoice1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

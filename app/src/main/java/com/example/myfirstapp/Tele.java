@@ -16,6 +16,7 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Tele extends AppCompatActivity {
@@ -24,7 +25,11 @@ public class Tele extends AppCompatActivity {
     byte teleNetZone = 0, teleLowBasket = 0, teleHighBasket = 0,teleHiChamber=0, teleloChamber=0, Overflow=0, Overallpoints=0;
     CheckBox telechoice1, telechoice2, telechoice3, telechoice4, telechoice5, telechoice6, telechoice7, telechoice8, telechoice9, telechoice10, telechoice11, telechoice12, telechoice13, telechoice14, telechoice15, telechoice16, telechoice17, telechoice18;
     String teleBotAscent, parked, autogrup1, autogrup2, autogrup3,autogrup4,autogrup5,autogrup6, autogrup7, autogrup8, autogrup9, autogrup10, autogrup11, autogrup12, autogrup13, autogrup14, autogrup15, autogrup16, autogrup17, autogrup18;
-
+    private CheckBox[] upperCheckBox = new CheckBox[9];
+    private CheckBox[] lowerCheckBox = new CheckBox[9];
+    private String[] currentSelection = new String[9];
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,11 +79,52 @@ public class Tele extends AppCompatActivity {
         text7=findViewById(R.id.textView15);
         text8=findViewById(R.id.textView19);
         text9=findViewById(R.id.textView17);
+        
+        upperCheckBox[0] = findViewById(R.id.telecheckbox1);
+        lowerCheckBox[0] = findViewById(R.id.telecheckbox2);
+        
+        upperCheckBox[1] = findViewById(R.id.telecheckbox3);
+        lowerCheckBox[1] = findViewById(R.id.telecheckbox4);
+        
+        upperCheckBox[2] = findViewById(R.id.telecheckbox5);
+        lowerCheckBox[2] = findViewById(R.id.telecheckbox6);
+        
+        upperCheckBox[3] = findViewById(R.id.telecheckbox7);
+        lowerCheckBox[3] = findViewById(R.id.telecheckbox8);
+        
+        upperCheckBox[4] = findViewById(R.id.telecheckbox9);
+        lowerCheckBox[4] = findViewById(R.id.telecheckbox10);
+        
+        upperCheckBox[5] = findViewById(R.id.telecheckbox11);
+        lowerCheckBox[5] = findViewById(R.id.telecheckbox12);
+        
+        upperCheckBox[6] = findViewById(R.id.telecheckbox13);
+        lowerCheckBox[6] = findViewById(R.id.telecheckbox14);
+        
+        upperCheckBox[7] = findViewById(R.id.telecheckbox15);
+        lowerCheckBox[7] = findViewById(R.id.telecheckbox16);
+        
+        upperCheckBox[8] = findViewById(R.id.telecheckbox17);
+        lowerCheckBox[8] = findViewById(R.id.telecheckbox18);
 
         setPrevious();                                      Log.d("tApre","get I");
     }
-
-
+    private final ArrayList<String[]> allRuns = new ArrayList<>();
+    
+    
+    
+    private void setGreen(int index) {
+        currentSelection[index] = "G";
+        lowerCheckBox[index].setChecked(false);
+    }
+    
+    private void setPurple(int index) {
+        currentSelection[index] = "P";
+        upperCheckBox[index].setChecked(false);
+    }
+    
+    
+    
     public void toend(View view) {
         Intent next = new Intent(this, match_notes_Activity.class);
         saveData();
@@ -555,6 +601,12 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice1(View view) {
+        int index=0;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        } else {
+            currentSelection[index]=null;
+        }
         //telechoice1.setChecked(true);
         //telechoice2.setChecked(false);
         //autogrup1 = "Green";
@@ -567,6 +619,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice2(View view) {
+        
+        int index=0;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice2.setChecked(true);
         //telechoice1.setChecked(false);
         //autogrup1 = "Purple";
@@ -579,6 +639,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice3(View view) {
+        
+        int index=1;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice3.setChecked(true);
         //telechoice4.setChecked(false);
         //autogrup2 = "Green";
@@ -591,6 +659,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice4(View view) {
+        
+        int index=1;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice4.setChecked(true);
         //telechoice3.setChecked(false);
         //autogrup2 = "Purple";
@@ -603,6 +679,15 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice5(View view) {
+        
+        int index = 2;
+        
+        if (((CheckBox)view).isChecked()) {
+            setGreen(index);
+        } else {
+            currentSelection[index] = null;
+        }
+        
         //telechoice5.setChecked(true);
         //telechoice6.setChecked(false);
         //autogrup3 = "Green";
@@ -615,6 +700,16 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice6(View view) {
+        
+        
+        int index = 2;
+        
+        if (((CheckBox)view).isChecked()) {
+            setPurple(index);
+        } else {
+            currentSelection[index] = null;
+        }
+        
         //telechoice6.setChecked(true);
         //telechoice5.setChecked(false);
         //autogrup3 = "Purple";
@@ -627,6 +722,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice7(View view) {
+        
+        int index =3;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice7.setChecked(true);
         //telechoice8.setChecked(false);
         //autogrup4 = "Green";
@@ -639,6 +742,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice8(View view) {
+        
+        int index =3;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice8.setChecked(true);
         //telechoice7.setChecked(false);
         //autogrup4 = "Purple";
@@ -651,6 +762,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice9(View view) {
+        
+        int index =4;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice9.setChecked(true);
         //telechoice10.setChecked(false);
         //autogrup5 = "Green";
@@ -663,6 +782,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice10(View view) {
+        
+        int index =4;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice10.setChecked(true);
         //telechoice9.setChecked(false);
         //autogrup5 = "Purple";
@@ -675,6 +802,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice11(View view) {
+        
+        int index =5;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice11.setChecked(true);
         //telechoice12.setChecked(false);
         //autogrup6 = "Green";
@@ -687,6 +822,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice12(View view) {
+        
+        int index =5;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice12.setChecked(true);
         //telechoice11.setChecked(false);
         //autogrup6 = "Purple";
@@ -699,6 +842,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice13(View view) {
+        
+        int index =6;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice13.setChecked(true);
         //telechoice14.setChecked(false);
         //autogrup7 = "Green";
@@ -711,6 +862,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice14(View view) {
+        
+        int index =6;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice14.setChecked(true);
         //telechoice13.setChecked(false);
         //autogrup7 = "Purple";
@@ -723,6 +882,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice15(View view) {
+        
+        int index =7;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice15.setChecked(true);
         //telechoice16.setChecked(false);
        // autogrup8 = "Green";
@@ -735,6 +902,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice16(View view) {
+        
+        int index =7;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         // telechoice16.setChecked(true);
 //        telechoice15.setChecked(false);
 //        autogrup8 = "Purple";
@@ -747,6 +922,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice17(View view) {
+        
+        int index =8;
+        if (((CheckBox)view).isChecked()){
+            setGreen(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice17.setChecked(true);
         //telechoice18.setChecked(false);
         //autogrup9 = "Green";
@@ -759,6 +942,14 @@ public class Tele extends AppCompatActivity {
     }
 
     public void telechoice18(View view) {
+        
+        int index =8;
+        if (((CheckBox)view).isChecked()){
+            setPurple(index);
+        }else {
+            currentSelection[index]=null;
+        }
+        
         //telechoice18.setChecked(true);
         //telechoice17.setChecked(false);
         //autogrup9 = "Purple";
