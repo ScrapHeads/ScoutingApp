@@ -299,7 +299,7 @@ public class Tele extends AppCompatActivity {
             parkedwithothers.setChecked(false);
             noparked.setChecked(true);
         }
-        if (Objects.equals(parked, "barlyparked")){
+        if (Objects.equals(parked, "barelyparked")){
             fullparked.setChecked(false);
             parkedwithothers.setChecked(false);
             noparked.setChecked(false);
@@ -625,7 +625,7 @@ public class Tele extends AppCompatActivity {
         parkedwithothers.setChecked(false);
         noparked.setChecked(false);
         barlyparked.setChecked(true);
-        parked="barlyparked";
+        parked="barelyparked";
     }
     public void tclickfullparked(View view){
         barlyparked.setChecked(false);

@@ -99,14 +99,14 @@ public class QrActivity extends AppCompatActivity {
         json += ("\t " + RecordsActivity.Info.teleOverallpoint);
         json += ("\t " + RecordsActivity.Info.telyparked);
         
-        json += "\t TELE_CURRENT_variables:";
+        json += "\t ";
         for (int i = 0; i < RecordsActivity.Info.teleGrids.length; i++) {
             String v = RecordsActivity.Info.teleGrids[i];
             json += (v == null ? "-" : v);
             if (i < RecordsActivity.Info.teleGrids.length - 1) json += ",";
         }
         
-        json += "\t TELE_PAST:[";
+        json += "\t ";
         for (int r = 0; r < RecordsActivity.Info.teleRuns.size(); r++) {
             String[] run = RecordsActivity.Info.teleRuns.get(r);
             json += "[";
@@ -120,14 +120,15 @@ public class QrActivity extends AppCompatActivity {
         json += "]";
         
         // Match notes
+        json += ("\t"+RecordsActivity.Info.skillLvl);
         json += ("\t " + RecordsActivity.Info.tipped);
         //json += ("\t " + RecordsActivity.Info.droppedPieces);
         json += ("\t " + RecordsActivity.Info.BotDied);
         //json += ("\t " + RecordsActivity.Info.ArmWorksSlowly);
         json += ("\t " + RecordsActivity.Info.BotMovesSlow);
+        json += ("\t"+RecordsActivity.Info.MakesAGoodAlliancePartener);
         json += ("\t " + RecordsActivity.Info.MinorFoul);
         json += ("\t " + RecordsActivity.Info.MajorFoul);
-        json += ("\t"+RecordsActivity.Info.MakesAGoodAlliancePartener);
         json += ("\t " + RecordsActivity.Info.endCommitBox);
         
         qrString = json;
