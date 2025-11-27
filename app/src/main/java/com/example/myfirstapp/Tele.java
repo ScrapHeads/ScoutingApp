@@ -107,6 +107,7 @@ public class Tele extends AppCompatActivity {
         
         upperCheckBox[8] = findViewById(R.id.telecheckbox17);
         lowerCheckBox[8] = findViewById(R.id.telecheckbox18);
+        pgpppggpp=RecordsActivity.Info.ppggpppgp;
 
         setPrevious();                                      Log.d("tApre","get I");
     }
@@ -226,10 +227,10 @@ public class Tele extends AppCompatActivity {
         if (Overflow > 0){
             findViewById(R.id.overflowMin).setVisibility(VISIBLE);
         }
+        pgpppggpp.equals(RecordsActivity.Info.ppggpppgp);
         
-        pgpppggpp=RecordsActivity.Info.ppggpppgp;
         
-        if (pgpppggpp == "pgp") {
+        if (pgpppggpp == "PGP") {
             text1.setText("P");
             text2.setText("G");
             text3.setText("P");
@@ -240,7 +241,7 @@ public class Tele extends AppCompatActivity {
             text8.setText("G");
             text9.setText("P");
         }
-        if (pgpppggpp == "ppg") {
+        if (pgpppggpp == "PPG") {
             text1.setText("P");
             text2.setText("P");
             text3.setText("G");
@@ -251,7 +252,7 @@ public class Tele extends AppCompatActivity {
             text8.setText("P");
             text9.setText("G");
         }
-        if (pgpppggpp == "gpp") {
+        if (pgpppggpp == "GPP") {
             text1.setText("G");
             text2.setText("P");
             text3.setText("P");
