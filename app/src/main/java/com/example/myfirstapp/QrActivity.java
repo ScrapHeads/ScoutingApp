@@ -299,7 +299,51 @@ public class QrActivity extends AppCompatActivity {
         RecordsActivity.Info.parkedAuto = "";
         RecordsActivity.Info.ppggpppgp = "";
         RecordsActivity.Info.overflowtxtTely = 0;
+        
+        RecordsActivity.Info.AutoOverallpoint=0;
+        RecordsActivity.Info.teleOverallpoint=0;
+        
         RecordsActivity.Info.telyparked = "";
+        RecordsActivity.Info.autogrup1="";
+        RecordsActivity.Info.autogrup2="";
+        RecordsActivity.Info.autogrup3="";
+        RecordsActivity.Info.autogrup4="";
+        RecordsActivity.Info.autogrup5="";
+        RecordsActivity.Info.autogrup6="";
+        RecordsActivity.Info.autogrup7="";
+        RecordsActivity.Info.autogrup8="";
+        RecordsActivity.Info.autogrup9="";
+        RecordsActivity.Info.autogrup10="";
+        RecordsActivity.Info.autogrup11="";
+        RecordsActivity.Info.autogrup12="";
+        RecordsActivity.Info.autogrup13="";
+        RecordsActivity.Info.autogrup14="";
+        RecordsActivity.Info.autogrup15="";
+        RecordsActivity.Info.autogrup16="";
+        RecordsActivity.Info.autogrup17="";
+        RecordsActivity.Info.autogrup18="";
+        //tely
+        RecordsActivity.Info.telegrup1="";
+        RecordsActivity.Info.telegrup2="";
+        RecordsActivity.Info.telegrup3="";
+        RecordsActivity.Info.telegrup4="";
+        RecordsActivity.Info.telegrup5="";
+        RecordsActivity.Info.telegrup6="";
+        RecordsActivity.Info.telegrup7="";
+        RecordsActivity.Info.telegrup8="";
+        RecordsActivity.Info.telegrup9="";
+        RecordsActivity.Info.telegrup10="";
+        RecordsActivity.Info.telegrup11="";
+        RecordsActivity.Info.telegrup12="";
+        RecordsActivity.Info.telegrup13="";
+        RecordsActivity.Info.telegrup14="";
+        RecordsActivity.Info.telegrup15="";
+        RecordsActivity.Info.telegrup16="";
+        RecordsActivity.Info.telegrup17="";
+        RecordsActivity.Info.telegrup18="";
+        
+        
+        
         
         RecordsActivity.Info.skillLvl = 0;
         RecordsActivity.Info.tipped = false;
