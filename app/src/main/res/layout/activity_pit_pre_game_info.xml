@@ -11,6 +11,7 @@
     <RadioGroup
         android:layout_width="186dp"
         android:layout_height="239dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.861"
@@ -80,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/scraphead_blue"
-            android:text="Do you have a auto?"
+            android:text="Do you have an auto?"
             android:textAlignment="center"
             android:textColor="@color/scraphead_yellow"
             android:textSize="24sp" />
@@ -114,6 +115,7 @@
         android:layout_width="235dp"
         android:layout_height="198dp"
         android:layout_marginTop="16dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -173,6 +175,7 @@
         android:id="@+id/radioGroup"
         android:layout_width="253dp"
         android:layout_height="197dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
