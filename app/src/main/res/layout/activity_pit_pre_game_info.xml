@@ -8,26 +8,204 @@
     android:background="@color/background"
     tools:context=".pitPreGameInfo">
 
-    <RadioGroup
-        android:layout_width="186dp"
-        android:layout_height="239dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+    <Button
+        android:id="@+id/topmid3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="196dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="topmid"
+        android:outlineProvider="bounds"
+        android:text="."
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="261dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="376dp"
+        android:rotation="90"
+        android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluetopright3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="272dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bluetopright"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redtopleft3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="redtopleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomright2"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="532dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomright"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/topmid2"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="488dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="topmid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottommid2"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="488dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottommid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluetopright2"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="560dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bluetopright"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottommid3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="204dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottommid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomleft3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="152dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomright3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="248dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomright"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="261dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="84dp"
+        android:rotation="90"
+        android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redtopleft2"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="408dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="redtopleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomleft2"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="444dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="144dp"
+        android:layout_height="169dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238">
 
         <TextView
             android:id="@+id/whatTypeOfAutoDoThayHave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/scraphead_blue"
-            android:text="What type of auto do you have?"
+            android:text="Does the robot lift?"
             android:textAlignment="center"
             android:textColor="@color/scraphead_yellow"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/shuttleAuto"
@@ -36,7 +214,7 @@
             android:background="@color/white"
             android:buttonTint="@color/scraphead_yellow"
             android:onClick="shuttleAutoClick"
-            android:text="Shuttle Auto"
+            android:text="No"
             android:textColor="@color/scraphead_blue"
             android:textSize="20sp" />
 
@@ -47,18 +225,7 @@
             android:background="@color/white"
             android:buttonTint="@color/scraphead_yellow"
             android:onClick="basketAutoClick"
-            android:text="Basket Auto"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/chamberAuto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="chamberAutoClick"
-            android:text="Chamber Auto"
+            android:text="Yes"
             android:textColor="@color/scraphead_blue"
             android:textSize="20sp" />
 
@@ -66,15 +233,14 @@
 
     <RadioGroup
         android:id="@+id/radioGroup3"
-        android:layout_width="237dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -84,7 +250,7 @@
             android:text="Do you have an auto?"
             android:textAlignment="center"
             android:textColor="@color/scraphead_yellow"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/autoYes"
@@ -112,25 +278,27 @@
 
     <RadioGroup
         android:id="@+id/radioGroup2"
-        android:layout_width="235dp"
-        android:layout_height="198dp"
+        android:layout_width="150dp"
+        android:layout_height="158dp"
         android:layout_marginTop="16dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136">
+        app:layout_constraintVertical_bias="0.201">
 
         <TextView
             android:id="@+id/doHaveAutotext"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
+            android:layout_height="wrap_content"
             android:background="@color/scraphead_blue"
-            android:text="Is your bot made for high or low task?"
+            android:text="Is your robot far or short range?"
             android:textAlignment="center"
             android:textColor="@color/scraphead_yellow"
-            android:textSize="24sp" />
+            android:textSize="20sp"
+            tools:visibility="visible" />
 
         <RadioButton
             android:id="@+id/highTask"
@@ -139,7 +307,7 @@
             android:background="@color/white"
             android:buttonTint="@color/scraphead_yellow"
             android:onClick="highTaskclick"
-            android:text="High Task"
+            android:text="Short Range"
             android:textColor="@color/scraphead_blue"
             android:textSize="20sp" />
 
@@ -150,7 +318,7 @@
             android:background="@color/white"
             android:buttonTint="@color/scraphead_yellow"
             android:onClick="lowTaskclick"
-            android:text="Low Task"
+            android:text="Far Range"
             android:textColor="@color/scraphead_blue"
             android:textSize="20sp" />
 
@@ -171,67 +339,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="253dp"
-        android:layout_height="197dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601">
-
-        <TextView
-            android:id="@+id/botTypeText"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:background="@color/scraphead_blue"
-            android:text="What type is your bot?"
-            android:textAlignment="center"
-            android:textColor="@color/scraphead_yellow"
-            android:textSize="24sp" />
-
-        <RadioButton
-            android:id="@+id/shuttleBot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="shuttleBotclick"
-            android:text="Shuttle Bot"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/basketBot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="basketBotclick"
-            android:text="Basket Bot"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/chamberBot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:buttonTint="@color/scraphead_yellow"
-            android:onClick="chamberBotclick"
-            android:text="Chamber Bot"
-            android:textColor="@color/scraphead_blue"
-            android:textSize="20sp" />
-
-    </RadioGroup>
-
     <EditText
         android:id="@+id/pitTeamNumber"
-        android:layout_width="212dp"
-        android:layout_height="62dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:background="@color/scraphead_blue"
         android:ems="10"
         android:hint="Team Number"
@@ -239,13 +350,13 @@
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
         android:textColorHint="@color/scraphead_yellow"
-        android:textSize="24sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189"
+        app:layout_constraintVertical_bias="0.031"
         tools:textColorHint="@color/scraphead_yellow" />
 
     <Button
@@ -262,5 +373,39 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TeleopCyclesAverage"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:hint="Teleop Cycles Average"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textColorHint="@color/scraphead_yellow"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <EditText
+        android:id="@+id/AutoCyclesAverage"
+        android:layout_width="188dp"
+        android:layout_height="61dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:hint="Auto Cycles Average"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textColorHint="@color/scraphead_yellow"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="343dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,16 +18,12 @@ public class pitPreGameInfo extends AppCompatActivity {
         setContentView(R.layout.activity_pit_pre_game_info);
         this.setRequestedOrientation(ActivityInfo. SCREEN_ORIENTATION_LANDSCAPE);
         pitTeamNumber =findViewById(R.id.pitTeamNumber);
-        shuttleBot = findViewById(R.id.shuttleBot);
-        basketBot = findViewById(R.id.basketBot);
-        chamberBot = findViewById(R.id.chamberBot);
         highTask= findViewById(R.id.highTask);
         lowTask= findViewById(R.id.lowTask);
         autoYes= findViewById(R.id.autoYes);
         autoNo= findViewById(R.id.autoNo);
         shuttleAuto= findViewById(R.id.shuttleAuto);
         basketAuto= findViewById(R.id.basketAuto);
-        chamberAuto=findViewById(R.id.chamberAuto);
         setPrevious();
     }
     public void Next(View view){
