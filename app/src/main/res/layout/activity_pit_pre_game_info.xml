@@ -12,21 +12,21 @@
         android:id="@+id/imageView4"
         android:layout_width="261dp"
         android:layout_height="222dp"
-        android:layout_marginTop="328dp"
-        android:layout_marginEnd="516dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="520dp"
         android:rotation="90"
         android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bottomleft2"
+        android:id="@+id/bluetopright2"
         android:layout_width="36dp"
         android:layout_height="46dp"
-        android:layout_marginTop="504dp"
-        android:layout_marginEnd="584dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="704dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bottomleft"
+        android:onClick="bluetopright"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,8 +36,8 @@
         android:id="@+id/bottomright2"
         android:layout_width="36dp"
         android:layout_height="46dp"
-        android:layout_marginTop="504dp"
-        android:layout_marginEnd="672dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="676dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bottomright"
         android:outlineProvider="bounds"
@@ -49,10 +49,23 @@
         android:id="@+id/bottommid2"
         android:layout_width="36dp"
         android:layout_height="46dp"
-        android:layout_marginTop="504dp"
-        android:layout_marginEnd="628dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="632dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bottommid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomleft2"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="588dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomleft"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,8 +75,8 @@
         android:id="@+id/redtopleft2"
         android:layout_width="36dp"
         android:layout_height="46dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="548dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="552dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="redtopleft"
         android:outlineProvider="bounds"
@@ -75,23 +88,10 @@
         android:id="@+id/topmid2"
         android:layout_width="36dp"
         android:layout_height="46dp"
-        android:layout_marginTop="328dp"
-        android:layout_marginEnd="628dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="632dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="topmid"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bluetopright2"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="700dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bluetopright"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,62 +101,10 @@
         android:id="@+id/imageView3"
         android:layout_width="261dp"
         android:layout_height="222dp"
-        android:layout_marginTop="328dp"
-        android:layout_marginEnd="172dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="184dp"
         android:rotation="90"
         android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/redtopleft3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="208dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="redtopleft"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/topmid3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="328dp"
-        android:layout_marginEnd="284dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="topmid"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottomleft3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="504dp"
-        android:layout_marginEnd="240dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bottomleft"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottommid3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="504dp"
-        android:layout_marginEnd="292dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bottommid"
-        android:outlineProvider="bounds"
-        android:text="."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -164,8 +112,8 @@
         android:id="@+id/bottomright3"
         android:layout_width="36dp"
         android:layout_height="46dp"
-        android:layout_marginTop="504dp"
-        android:layout_marginEnd="336dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="348dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bottomright"
         android:outlineProvider="bounds"
@@ -177,10 +125,62 @@
         android:id="@+id/bluetopright3"
         android:layout_width="36dp"
         android:layout_height="46dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="360dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="372dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bluetopright"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redtopleft3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="220dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="redtopleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomleft3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="252dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottommid3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="304dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottommid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/topmid3"
+        android:layout_width="36dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="296dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="topmid"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -195,7 +195,7 @@
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268">
+        app:layout_constraintVertical_bias="0.247">
 
         <TextView
             android:id="@+id/whatTypeOfAutoDoThayHave"
@@ -239,7 +239,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268">
+        app:layout_constraintVertical_bias="0.247">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -286,7 +286,7 @@
         app:layout_constraintHorizontal_bias="0.824"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24">
+        app:layout_constraintVertical_bias="0.219">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -406,5 +406,40 @@
         android:textSize="25sp"
         tools:layout_editor_absoluteX="373dp"
         tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Launch Location"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Auto Location"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
