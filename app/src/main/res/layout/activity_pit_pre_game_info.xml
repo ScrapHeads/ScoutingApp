@@ -10,49 +10,23 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="261dp"
-        android:layout_height="222dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="520dp"
+        android:layout_width="199dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="516dp"
         android:rotation="90"
         android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bluetopright2"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="352dp"
-        android:layout_marginEnd="704dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bluetopright"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/bottomright2"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="676dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="640dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bottomright"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottommid2"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="632dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bottommid"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,10 +34,10 @@
 
     <Button
         android:id="@+id/bottomleft2"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="588dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="552dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bottomleft"
         android:outlineProvider="bounds"
@@ -72,61 +46,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/redtopleft2"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="552dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="redtopleft"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/topmid2"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="632dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="topmid"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="261dp"
-        android:layout_height="222dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="184dp"
-        android:rotation="90"
-        android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottomright3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="348dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bottomright"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bluetopright3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="372dp"
+        android:id="@+id/bluetopright2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="660dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bluetopright"
         android:outlineProvider="bounds"
@@ -135,37 +59,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/redtopleft3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="220dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="redtopleft"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottomleft3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="252dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="bottomleft"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottommid3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="304dp"
+        android:id="@+id/bottommid2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="596dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="bottommid"
         android:outlineProvider="bounds"
@@ -174,13 +72,115 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/topmid3"
-        android:layout_width="36dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="296dp"
+        android:id="@+id/topmid2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="596dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="topmid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redtopleft2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="540dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="redtopleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="199dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="220dp"
+        android:rotation="90"
+        android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redtopleft3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="248dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="redtopleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluetopright3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="360dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bluetopright"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomleft3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="256dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/topmid3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="300dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="topmid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottommid3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="300dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottommid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomright3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="344dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="bottomright"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -189,18 +189,17 @@
     <RadioGroup
         android:layout_width="215dp"
         android:layout_height="160dp"
-        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247">
+        app:layout_constraintVertical_bias="0.260">
 
         <TextView
             android:id="@+id/whatTypeOfAutoDoThayHave"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:background="@color/scraphead_blue"
             android:text="Does the robot lift itself up?"
             android:textAlignment="center"
@@ -208,7 +207,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/shuttleAuto"
+            android:id="@+id/liftNO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -239,7 +238,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247">
+        app:layout_constraintVertical_bias="0.260">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -404,42 +403,56 @@
         android:textColor="@color/scraphead_yellow"
         android:textColorHint="@color/scraphead_yellow"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="373dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
         android:background="@color/scraphead_blue"
         android:ems="10"
-        android:inputType="text"
         android:text="Launch Location"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="imageView4,redtopleft2,bottomright2,bottomleft2,bluetopright2,bottommid2,topmid2" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
         android:background="@color/scraphead_blue"
         android:ems="10"
-        android:inputType="text"
         android:text="Auto Location"
         android:textAlignment="center"
         android:textColor="@color/scraphead_yellow"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.699"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintVertical_bias="0.535" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="bottomright2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

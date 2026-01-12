@@ -10,20 +10,21 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class pitPreGameInfo extends AppCompatActivity {
-    RadioButton shuttleBot, basketBot, chamberBot, highTask, lowTask, autoYes, autoNo, shuttleAuto, basketAuto, chamberAuto;
+    RadioButton shuttleBot, basketBot, chamberBot, highTask, lowTask, autoYes, autoNo, shuttleAuto, basketAuto, chamberAuto, liftNO;
     TextView pitTeamNumber;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pit_pre_game_info);
         this.setRequestedOrientation(ActivityInfo. SCREEN_ORIENTATION_LANDSCAPE);
-        pitTeamNumber =findViewById(R.id.pitTeamNumber);
-        highTask= findViewById(R.id.highTask);
-        lowTask= findViewById(R.id.lowTask);
-        autoYes= findViewById(R.id.autoYes);
-        autoNo= findViewById(R.id.autoNo);
-        shuttleAuto= findViewById(R.id.shuttleAuto);
-        basketAuto= findViewById(R.id.basketAuto);
+        //pitTeamNumber =findViewById(R.id.pitTeamNumber);
+        //highTask= findViewById(R.id.highTask);
+        //lowTask= findViewById(R.id.lowTask);
+        //autoYes= findViewById(R.id.autoYes);
+        //autoNo= findViewById(R.id.autoNo);
+        //shuttleAuto= findViewById(R.id.liftNO);
+        //basketAuto= findViewById(R.id.basketAuto);
+        liftNO= findViewById(R.id.liftNO);
         setPrevious();
     }
     public void Next(View view){
@@ -92,62 +93,67 @@ public class pitPreGameInfo extends AppCompatActivity {
         }
 
     }
-    public void shuttleBotclick(View view){
-        chamberBot.setChecked(false);
-        basketBot.setChecked(false);
-        shuttleBot.setChecked(true);
-        RecordsActivity.Info.pitBotTipe="Shuttle Bot";
+    //public void shuttleBotclick(View view){
+    //    chamberBot.setChecked(false);
+    //    basketBot.setChecked(false);
+    //    shuttleBot.setChecked(true);
+    //    RecordsActivity.Info.pitBotTipe="Shuttle Bot";
+    //}
+    //public void basketBotclick(View view){
+    //    chamberBot.setChecked(false);
+    //    shuttleBot.setChecked(false);
+    //    basketBot.setChecked(true);
+    //    RecordsActivity.Info.pitBotTipe="Basket Bot";
+    //}
+    //public void chamberBotclick(View view){
+    //    basketBot.setChecked(false);
+    //    shuttleBot.setChecked(false);
+    //    chamberBot.setChecked(true);
+    //    RecordsActivity.Info.pitBotTipe="Chamber Bot";
+    //}
+    //public void lowTaskclick(View view){
+    //    highTask.setChecked(false);
+    //    lowTask.setChecked(true);
+    //    RecordsActivity.Info.pitTask="Low Task";
+    //}
+    //public void highTaskclick(View view){
+    //    lowTask.setChecked(false);
+    //    highTask.setChecked(true);
+    //    RecordsActivity.Info.pitTask= "High Task";
+    //}
+    //public void pitYesClick(View view){
+    //    autoNo.setChecked(false);
+    //    autoYes.setChecked(true);
+    //    RecordsActivity.Info.pitAuto="Yes";
+    //}
+    //public void pitNoClick(View view){
+    //    autoYes.setChecked(false);
+    //    autoNo.setChecked(true);
+    //    RecordsActivity.Info.pitAuto="No";
+    //}
+    //public void shuttleAutoClick(View view){
+   //    chamberAuto.setChecked(false);
+   //    basketAuto.setChecked(false);
+   //    shuttleAuto.setChecked(true);
+   //    RecordsActivity.Info.pitAutoTipe= "Shuttle Auto";
+   //}
+   //public void basketAutoClick(View view){
+   //    chamberAuto.setChecked(false);
+   //    shuttleAuto.setChecked(false);
+   //    basketAuto.setChecked(true);
+   //    RecordsActivity.Info.pitAutoTipe="Basket Auto";
+   //}
+   //public void chamberAutoClick (View view){
+   //    basketAuto.setChecked(false);
+   //    shuttleAuto.setChecked(false);
+   //    chamberAuto.setChecked(true);
+   //    RecordsActivity.Info.pitAutoTipe="Chamber Auto";
+   //}
+    public void autoliftNO (View view){
+
     }
-    public void basketBotclick(View view){
-        chamberBot.setChecked(false);
-        shuttleBot.setChecked(false);
-        basketBot.setChecked(true);
-        RecordsActivity.Info.pitBotTipe="Basket Bot";
-    }
-    public void chamberBotclick(View view){
-        basketBot.setChecked(false);
-        shuttleBot.setChecked(false);
-        chamberBot.setChecked(true);
-        RecordsActivity.Info.pitBotTipe="Chamber Bot";
-    }
-    public void lowTaskclick(View view){
-        highTask.setChecked(false);
-        lowTask.setChecked(true);
-        RecordsActivity.Info.pitTask="Low Task";
-    }
-    public void highTaskclick(View view){
-        lowTask.setChecked(false);
-        highTask.setChecked(true);
-        RecordsActivity.Info.pitTask= "High Task";
-    }
-    public void pitYesClick(View view){
-        autoNo.setChecked(false);
-        autoYes.setChecked(true);
-        RecordsActivity.Info.pitAuto="Yes";
-    }
-    public void pitNoClick(View view){
-        autoYes.setChecked(false);
-        autoNo.setChecked(true);
-        RecordsActivity.Info.pitAuto="No";
-    }
-    public void shuttleAutoClick(View view){
-        chamberAuto.setChecked(false);
-        basketAuto.setChecked(false);
-        shuttleAuto.setChecked(true);
-        RecordsActivity.Info.pitAutoTipe= "Shuttle Auto";
-    }
-    public void basketAutoClick(View view){
-        chamberAuto.setChecked(false);
-        shuttleAuto.setChecked(false);
-        basketAuto.setChecked(true);
-        RecordsActivity.Info.pitAutoTipe="Basket Auto";
-    }
-    public void chamberAutoClick (View view){
-        basketAuto.setChecked(false);
-        shuttleAuto.setChecked(false);
-        chamberAuto.setChecked(true);
-        RecordsActivity.Info.pitAutoTipe="Chamber Auto";
-    }
+
+
 
 
 

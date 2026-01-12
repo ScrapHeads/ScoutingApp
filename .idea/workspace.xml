@@ -3,8 +3,16 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="Nexus 7 2013" />
+        <device id="_android_virtual_device_id_Medium_Phone_API_36.0" />
         <device id="_device_class_tablet" />
+        <device id="Nexus 6" />
+        <device id="automotive_1024p_landscape" />
+        <device id="Nexus 7 2013" />
+        <device id="pixel_3" />
+        <device id="Nexus 7" />
+        <device id="Nexus 10" />
+        <device id="pixel_tablet" />
+        <device id="pixel_c" />
       </config>
     </shared>
     <layouts>
@@ -422,12 +430,12 @@
       <map>
         <entry key="com.example.myfirstapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1767380272604" />
+            <CheckInfo lastCheckTimestamp="1768255263365" />
           </value>
         </entry>
         <entry key="com.example.myfirstapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1767380272604" />
+            <CheckInfo lastCheckTimestamp="1768255263365" />
           </value>
         </entry>
       </map>
