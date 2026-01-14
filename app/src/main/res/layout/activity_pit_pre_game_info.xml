@@ -91,7 +91,7 @@
         android:layout_marginTop="276dp"
         android:layout_marginEnd="540dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="redtopleft"
+        android:onClick="PITredtopleft"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -410,7 +410,7 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/launchTextView"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:background="@color/scraphead_blue"
@@ -448,11 +448,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.535" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="bottomright2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

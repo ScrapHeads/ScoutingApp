@@ -3,6 +3,7 @@ package com.example.myfirstapp;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class pitPreGameInfo extends AppCompatActivity {
     RadioButton shuttleBot, basketBot, chamberBot, highTask, lowTask, autoYes, autoNo, shuttleAuto, basketAuto, chamberAuto, liftNO;
     TextView pitTeamNumber;
+    private String fieldPositionNuw;
+    private TextView fealdpos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,10 @@ public class pitPreGameInfo extends AppCompatActivity {
         //autoNo= findViewById(R.id.autoNo);
         //shuttleAuto= findViewById(R.id.liftNO);
         //basketAuto= findViewById(R.id.basketAuto);
+        
+        fealdpos =findViewById(R.id.launchTextView);
+        
+        
         liftNO= findViewById(R.id.liftNO);
         setPrevious();
     }
@@ -149,10 +156,28 @@ public class pitPreGameInfo extends AppCompatActivity {
    //    chamberAuto.setChecked(true);
    //    RecordsActivity.Info.pitAutoTipe="Chamber Auto";
    //}
+    
+    
     public void autoliftNO (View view){
 
+    }//in the xml did you all a group
+    
+    
+    
+    
+    
+    
+    //calian's work
+    public void PITredtopleft (View view){
+    
     }
-
+    
+    
+    private void updateFieldPosition(String position) {
+        fieldPositionNuw = position;
+        fealdpos.setText(position);
+        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to " + position);
+    }
 
 
 
