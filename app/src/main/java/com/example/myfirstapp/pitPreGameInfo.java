@@ -13,8 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class pitPreGameInfo extends AppCompatActivity {
     RadioButton shuttleBot, basketBot, chamberBot, highTask, lowTask, autoYes, autoNo, shuttleAuto, basketAuto, chamberAuto, liftNO;
     TextView pitTeamNumber;
-    private String fieldPositionNuw;
-    private TextView fealdpos;
+    private String launchstring;
+    private TextView launchTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class pitPreGameInfo extends AppCompatActivity {
         //shuttleAuto= findViewById(R.id.liftNO);
         //basketAuto= findViewById(R.id.basketAuto);
         
-        fealdpos =findViewById(R.id.launchTextView);
+        launchTextView =findViewById(R.id.launchTextView);
         
         
         liftNO= findViewById(R.id.liftNO);
@@ -160,7 +160,10 @@ public class pitPreGameInfo extends AppCompatActivity {
     
     public void autoliftNO (View view){
 
-    }//in the xml did you all a group
+    }
+    
+    
+    
     
     
     
@@ -169,16 +172,32 @@ public class pitPreGameInfo extends AppCompatActivity {
     
     //calian's work
     public void PITredtopleft (View view){
-    
+        updatelaunchTextView("PIT red top left");
+    }
+    public void PITtopmid(View view){
+        updatelaunchTextView("PIT top mid");
+    }
+    public void PITbluetopright(View view){
+     updatelaunchTextView("PIT blue top right");
+    }
+    public void PITbottomleft (View view){
+        updatelaunchTextView("PIT bottom left");
+    }
+    public void PITbottommid(View view){
+        updatelaunchTextView("PIT bottom mid");
+    }
+    public void PITbottomright(View view){
+        updatelaunchTextView("PIT bottom right");
     }
     
     
-    private void updateFieldPosition(String position) {
-        fieldPositionNuw = position;
-        fealdpos.setText(position);
-        Log.d("YELLOWBUTTONS", "fieldPositionNuw set to " + position);
+    
+    private void updatelaunchTextView(String position) {
+        launchstring = position;
+        launchTextView.setText(position);
+        Log.d("YELLOWBUTTONS", "launchstring set to " + position);
     }
-
+//calian's work end
 
 
 
