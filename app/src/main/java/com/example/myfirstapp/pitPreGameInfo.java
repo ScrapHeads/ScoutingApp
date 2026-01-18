@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class pitPreGameInfo extends AppCompatActivity {
-    RadioButton shuttleBot, basketBot, chamberBot, highTask, lowTask, autoYes, autoNo, shuttleAuto, basketAuto, chamberAuto, liftNO;
+    RadioButton shuttleBot, basketBot, chamberBot, highTask, lowTask, autoYes, autoNo, shuttleAuto, basketAuto, chamberAuto, liftNO, liftYES, autoYES, autoNO, shortRange, farRange;
     TextView pitTeamNumber;
     private String launchstring;
     private TextView launchTextView;
@@ -31,7 +31,12 @@ public class pitPreGameInfo extends AppCompatActivity {
         launchTextView =findViewById(R.id.launchTextView);
         
         
-        liftNO= findViewById(R.id.liftNO);
+        liftNO =findViewById(R.id.liftNO);
+        liftYES =findViewById(R.id.liftYES);
+        autoNO =findViewById(R.id.autoNO);
+        autoYES =findViewById(R.id.autoYES);
+        shortRange =findViewById(R.id.shortRange);
+        farRange =findViewById(R.id.farRange);
         setPrevious();
     }
     public void Next(View view){
@@ -159,17 +164,31 @@ public class pitPreGameInfo extends AppCompatActivity {
     
     
     public void autoliftNO (View view){
-
+        liftNO.setChecked(true);
+        liftYES.setChecked(false);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    public void autoliftYES (View view){
+        liftNO.setChecked(false);
+        liftYES.setChecked(true);
+    }
+    public void autosetNO (View view){
+        autoNO.setChecked(true);
+        autoYES.setChecked(false);
+    }
+    public void autosetYES (View view){
+        autoNO.setChecked(false);
+        autoYES.setChecked(true);
+    }
+    public void autoshortRange (View view){
+        shortRange.setChecked(true);
+        farRange.setChecked(false);
+    }
+    public void autofarRange (View view){
+        shortRange.setChecked(false);
+        farRange.setChecked(true);
+    }
+
+
     //calian's work
     public void PITredtopleft (View view){
         updatelaunchTextView("PIT red top left");
@@ -189,8 +208,7 @@ public class pitPreGameInfo extends AppCompatActivity {
     public void PITbottomright(View view){
         updatelaunchTextView("PIT bottom right");
     }
-    
-    
+
     
     private void updatelaunchTextView(String position) {
         launchstring = position;
@@ -198,25 +216,5 @@ public class pitPreGameInfo extends AppCompatActivity {
         Log.d("YELLOWBUTTONS", "launchstring set to " + position);
     }
 //calian's work end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

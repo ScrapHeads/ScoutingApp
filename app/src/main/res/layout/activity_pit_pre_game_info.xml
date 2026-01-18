@@ -218,7 +218,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/basketAuto"
+            android:id="@+id/liftYES"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -251,7 +251,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/autoYes"
+            android:id="@+id/autoYES"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -262,7 +262,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/autoNo"
+            android:id="@+id/autoNO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -299,7 +299,7 @@
             tools:visibility="visible" />
 
         <RadioButton
-            android:id="@+id/highTask"
+            android:id="@+id/shortRange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -310,7 +310,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/lowTask"
+            android:id="@+id/farRange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
