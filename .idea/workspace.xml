@@ -3,7 +3,6 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="_android_virtual_device_id_Medium_Phone_API_36.0" />
         <device id="_device_class_tablet" />
         <device id="Nexus 6" />
         <device id="automotive_1024p_landscape" />
@@ -84,7 +83,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\naomi\.android\avd\Medium_Phone.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\calia\.android\avd\fixed.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -430,12 +429,12 @@
       <map>
         <entry key="com.example.myfirstapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1768255263365" />
+            <CheckInfo lastCheckTimestamp="1770071789200" />
           </value>
         </entry>
         <entry key="com.example.myfirstapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1768255263365" />
+            <CheckInfo lastCheckTimestamp="1770071789200" />
           </value>
         </entry>
       </map>

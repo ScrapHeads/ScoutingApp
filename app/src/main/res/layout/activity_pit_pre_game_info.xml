@@ -8,12 +8,40 @@
     android:background="@color/background"
     tools:context=".pitPreGameInfo">
 
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="199dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:gravity="center_horizontal"
+        android:text="Tele Cycles Aveg"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toTopOf="@+id/textView30"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="199dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center_horizontal"
+        android:text="Auto Cycles Avg."
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView28"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/textView28"
+        app:layout_constraintVertical_bias="0.0" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="199dp"
         android:layout_height="176dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="516dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="396dp"
         android:rotation="90"
         android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,8 +51,8 @@
         android:id="@+id/bottomright2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="640dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="544dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottomright"
         android:outlineProvider="bounds"
@@ -36,8 +64,8 @@
         android:id="@+id/bottomleft2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="552dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="420dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottomleft"
         android:outlineProvider="bounds"
@@ -49,8 +77,8 @@
         android:id="@+id/bluetopright2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="276dp"
-        android:layout_marginEnd="660dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="544dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbluetopright"
         android:outlineProvider="bounds"
@@ -62,8 +90,8 @@
         android:id="@+id/bottommid2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="596dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="484dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottommid"
         android:outlineProvider="bounds"
@@ -75,8 +103,8 @@
         android:id="@+id/topmid2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="596dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="484dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITtopmid"
         android:outlineProvider="bounds"
@@ -88,8 +116,8 @@
         android:id="@+id/redtopleft2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="276dp"
-        android:layout_marginEnd="540dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="420dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITredtopleft"
         android:outlineProvider="bounds"
@@ -101,8 +129,8 @@
         android:id="@+id/imageView3"
         android:layout_width="199dp"
         android:layout_height="176dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="220dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="396dp"
         android:rotation="90"
         android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,8 +140,8 @@
         android:id="@+id/redtopleft3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="276dp"
-        android:layout_marginEnd="248dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="420dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITredtopleft1"
         android:outlineProvider="bounds"
@@ -125,8 +153,8 @@
         android:id="@+id/bluetopright3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="276dp"
-        android:layout_marginEnd="360dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="544dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbluetopright1"
         android:outlineProvider="bounds"
@@ -138,8 +166,8 @@
         android:id="@+id/bottomleft3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="256dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="420dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottomleft1"
         android:outlineProvider="bounds"
@@ -151,8 +179,8 @@
         android:id="@+id/topmid3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="300dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="476dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITtopmid1"
         android:outlineProvider="bounds"
@@ -164,8 +192,8 @@
         android:id="@+id/bottommid3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="300dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="476dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottommid1"
         android:outlineProvider="bounds"
@@ -177,8 +205,8 @@
         android:id="@+id/bottomright3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="344dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="544dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottomright1"
         android:outlineProvider="bounds"
@@ -191,10 +219,10 @@
         android:layout_height="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.260">
+        app:layout_constraintVertical_bias="0.979">
 
         <TextView
             android:id="@+id/whatTypeOfAutoDoThayHave"
@@ -236,9 +264,10 @@
         android:layout_height="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.260">
+        app:layout_constraintVertical_bias="0.371">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -276,16 +305,16 @@
 
     <RadioGroup
         android:id="@+id/radioGroup2"
-        android:layout_width="215dp"
-        android:layout_height="160dp"
+        android:layout_width="232dp"
+        android:layout_height="173dp"
         android:layout_marginTop="16dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintHorizontal_bias="0.813"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219">
+        app:layout_constraintVertical_bias="0.779">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -337,26 +366,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/pitTeamNumber"
-        android:layout_width="215dp"
-        android:layout_height="60dp"
-        android:background="@color/scraphead_blue"
-        android:ems="10"
-        android:hint="Team Number"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textColor="@color/scraphead_yellow"
-        android:textColorHint="@color/scraphead_yellow"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
-        tools:textColorHint="@color/scraphead_yellow" />
-
     <Button
         android:id="@+id/pitPreGameInfoNext"
         android:layout_width="107dp"
@@ -386,10 +395,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintHorizontal_bias="0.795"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <EditText
         android:id="@+id/AutoCyclesAverage"
@@ -405,9 +414,10 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <TextView
         android:id="@+id/launchTextView"
@@ -421,10 +431,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
+        app:layout_constraintVertical_bias="0.304" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -444,9 +454,44 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
+        app:layout_constraintVertical_bias="0.704" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="199dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:text="Team View"
+        android:textColor="@color/scraphead_yellow"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/pitTeamNumber"
+        app:layout_constraintEnd_toEndOf="@+id/pitTeamNumber"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/pitTeamNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
+
+    <EditText
+        android:id="@+id/pitTeamNumber"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:background="@color/scraphead_blue"
+        android:ems="10"
+        android:hint="Team Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/scraphead_yellow"
+        android:textColorHint="@color/scraphead_yellow"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+        tools:textColorHint="@color/scraphead_yellow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
