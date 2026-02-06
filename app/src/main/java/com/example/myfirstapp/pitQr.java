@@ -36,21 +36,10 @@ public class pitQr extends AppCompatActivity {
 
         {
             String json = (RecordsActivity.Info.pitTeamNumber);
-            json += ("\t"+RecordsActivity.Info.TeleopCyclesAverage);
-            json += ("\t"+RecordsActivity.Info.AutoCyclesAverage);
-            json +=("\t"+RecordsActivity.Info.autolift);
-            json +=("\t"+RecordsActivity.Info.DoHaveAuto);
-            json +=("\t"+RecordsActivity.Info.range);
-            json +=("\t"+RecordsActivity.Info.launchstring);
-            json+=("\t"+RecordsActivity.Info.atostring);
-            //json += ("\t " + RecordsActivity.Info.pitBotTipe);
-            //json += ("\t " + RecordsActivity.Info.pitTask);
-            //json += ("\t " + RecordsActivity.Info.pitAuto);
-            //json += ("\t " + RecordsActivity.Info.pitAutoTipe);
-            
-            
-            
-            
+            json += ("\t " + RecordsActivity.Info.pitBotTipe);
+            json += ("\t " + RecordsActivity.Info.pitTask);
+            json += ("\t " + RecordsActivity.Info.pitAuto);
+            json += ("\t " + RecordsActivity.Info.pitAutoTipe);
             json += ("\r"+"\b"+"\b"+"\b"+"\b"+"\b");
            /* json+=("\t"+RecordsActivity.Info.matchNumber );
             json += ("\t "+ RecordsActivity.Info.alliance);
@@ -148,18 +137,10 @@ public class pitQr extends AppCompatActivity {
         RecordsActivity.Info.MajorFoul = 0;
         RecordsActivity.Info.endCommitBox = "";
         RecordsActivity.Info.pitTeamNumber="";
-        
-        RecordsActivity.Info.TeleopCyclesAverage="";
-        RecordsActivity.Info.AutoCyclesAverage="";
-        RecordsActivity.Info.autolift= "";
-        RecordsActivity.Info.DoHaveAuto= "";
-        RecordsActivity.Info.range= "";
-        RecordsActivity.Info.atostring="Auto Location";
-        RecordsActivity.Info.launchstring="Launch Location";
-        //RecordsActivity.Info.pitBotTipe="";
-        //RecordsActivity.Info.pitTask="";
-        //RecordsActivity.Info.pitAuto="";
-        //RecordsActivity.Info.pitAutoTipe="";
+        RecordsActivity.Info.pitBotTipe="";
+        RecordsActivity.Info.pitTask="";
+        RecordsActivity.Info.pitAuto="";
+        RecordsActivity.Info.pitAutoTipe="";
 
         Log.d("qAClr","Done Reseting Notes Vars");
         startActivity(news);                                                                    Log.d("qAClr","Load Main Activity");
