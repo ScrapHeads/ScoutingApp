@@ -92,10 +92,17 @@ public class RecordsActivity {
         static String endCommitBox = "";
         //pit
         static String pitTeamNumber="";
-        static String pitBotTipe="";
-        static String pitTask="";
-        static String pitAuto="";
-        static String pitAutoTipe="";
+        //static String pitBotTipe="";
+        //static String pitTask="";
+        //static String pitAuto="";
+        //static String pitAutoTipe="";
+        static String TeleopCyclesAverage="";
+        static String AutoCyclesAverage="";
+        static String autolift= "";
+        static String DoHaveAuto= "";
+        static String range= "";
+        static String launchstring ="Launch Location";
+        static String atostring ="Auto Location";
 
 
         /*
