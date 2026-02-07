@@ -36,13 +36,14 @@ public class pitQr extends AppCompatActivity {
 
         {
             String json = (RecordsActivity.Info.pitTeamNumber);
-            json += ("\t"+RecordsActivity.Info.TeleopCyclesAverage);
             json += ("\t"+RecordsActivity.Info.AutoCyclesAverage);
-            json +=("\t"+RecordsActivity.Info.autolift);
+            json += ("\t"+RecordsActivity.Info.TeleopCyclesAverage);
             json +=("\t"+RecordsActivity.Info.DoHaveAuto);
+            json +=("\t"+RecordsActivity.Info.autolift);
             json +=("\t"+RecordsActivity.Info.range);
-            json +=("\t"+RecordsActivity.Info.launchstring);
             json+=("\t"+RecordsActivity.Info.atostring);
+            json +=("\t"+RecordsActivity.Info.launchstring);
+            
             //json += ("\t " + RecordsActivity.Info.pitBotTipe);
             //json += ("\t " + RecordsActivity.Info.pitTask);
             //json += ("\t " + RecordsActivity.Info.pitAuto);

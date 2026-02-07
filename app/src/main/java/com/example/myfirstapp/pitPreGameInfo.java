@@ -244,17 +244,17 @@ public class pitPreGameInfo extends AppCompatActivity {
 
 
     //calian's work
-    public void PITredtopleft (View view){
+    public void PITbluetopleft(View view){
         
-        updatelaunchTextView("launch red top left");
+        updatelaunchTextView("launch blue top left");
     }
     public void PITtopmid(View view){
         
         updatelaunchTextView("launch top mid");
     }
-    public void PITbluetopright(View view){
+    public void PITredtopright(View view){
      
-        updatelaunchTextView("launch blue top right");
+        updatelaunchTextView("launch red top right");
     }
     public void PITbottomleft (View view){
         
@@ -280,17 +280,17 @@ public class pitPreGameInfo extends AppCompatActivity {
         atotextvew.setText(position);
         Log.d("YELLOWBUTTONS", "launchstring set to " + position);
     }
-    public void PITredtopleft1 (View view){
+    public void PITbluetopleft1(View view){
         
-        updateAtoTextView("auto red top left");
+        updateAtoTextView("auto blue top left");
     }
     public void PITtopmid1(View view){
         
         updateAtoTextView("auto top mid");
     }
-    public void PITbluetopright1(View view){
+    public void PITredtopright1(View view){
         
-        updateAtoTextView("auto blue top right");
+        updateAtoTextView("auto red top right");
     }
     public void PITbottomleft1 (View view){
         

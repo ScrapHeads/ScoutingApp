@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".pitPreGameInfo">
+    tools:context=".pitPreGameInfo"
+    tools:layout_editor_absoluteX="-9dp"
+    tools:layout_editor_absoluteY="120dp">
 
     <TextView
         android:id="@+id/textView31"
@@ -40,49 +42,10 @@
         android:id="@+id/imageView4"
         android:layout_width="199dp"
         android:layout_height="176dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="396dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="408dp"
         android:rotation="90"
         android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottomright2"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginEnd="544dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITbottomright"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottomleft2"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginEnd="420dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITbottomleft"
-        android:outlineProvider="bounds"
-        android:text="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bluetopright2"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="544dp"
-        android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITbluetopright"
-        android:outlineProvider="bounds"
-        android:text="."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,8 +53,8 @@
         android:id="@+id/bottommid2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="484dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="276dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottommid"
         android:outlineProvider="bounds"
@@ -103,10 +66,49 @@
         android:id="@+id/topmid2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="484dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="496dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITtopmid"
+        android:onClick="PITtopmid1"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluetopright4"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="556dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="PITbottomleft1"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomleft2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="220dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="PITbottomright"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomright2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="556dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="PITbottomleft1"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,10 +118,10 @@
         android:id="@+id/redtopleft2"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="420dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="432dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITredtopleft"
+        android:onClick="PITredtopright1"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,45 +131,45 @@
         android:id="@+id/imageView3"
         android:layout_width="199dp"
         android:layout_height="176dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="396dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="196dp"
         android:rotation="90"
         android:src="@drawable/decode_custom_field_images_meepmeep_compatible_printer_v0_9m6dg4eqoonf1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/redtopleft3"
+        android:id="@+id/bottomleft4"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="420dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="432dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITredtopleft1"
+        android:onClick="PITbottomright1"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bluetopright3"
+        android:id="@+id/redtopleft4"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="544dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="432dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITbluetopright1"
+        android:onClick="PITredtopright1"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bottomleft3"
+        android:id="@+id/bottomright4"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="472dp"
-        android:layout_marginEnd="420dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="556dp"
         android:backgroundTint="@color/scraphead_yellow"
         android:onClick="PITbottomleft1"
         android:outlineProvider="bounds"
@@ -176,26 +178,39 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/topmid3"
+        android:id="@+id/bluetopright5"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="476dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="556dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITtopmid1"
+        android:onClick="PITbluetopleft1"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bottommid3"
+        android:id="@+id/topmid4"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="468dp"
-        android:layout_marginEnd="476dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="276dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITbottommid1"
+        android:onClick="PITtopmid"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redtopleft3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="220dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="PITredtopright"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -205,10 +220,49 @@
         android:id="@+id/bottomright3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginTop="472dp"
-        android:layout_marginEnd="544dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="344dp"
         android:backgroundTint="@color/scraphead_yellow"
-        android:onClick="PITbottomright1"
+        android:onClick="PITbottomleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluetopright3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="344dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="PITbluetopleft"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottommid3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginEnd="496dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="PITbottommid1"
+        android:outlineProvider="bounds"
+        android:text="."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/topmid3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="276dp"
+        android:backgroundTint="@color/scraphead_yellow"
+        android:onClick="PITtopmid"
         android:outlineProvider="bounds"
         android:text="."
         app:layout_constraintEnd_toEndOf="parent"
@@ -219,10 +273,10 @@
         android:layout_height="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979">
+        app:layout_constraintVertical_bias="0.975">
 
         <TextView
             android:id="@+id/whatTypeOfAutoDoThayHave"
@@ -264,10 +318,10 @@
         android:layout_height="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371">
+        app:layout_constraintVertical_bias="0.412">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -311,10 +365,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.779">
+        app:layout_constraintVertical_bias="0.364">
 
         <TextView
             android:id="@+id/doHaveAutotext"
@@ -431,16 +485,16 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="imageView4,redtopleft2,bottomright2,bottomleft2,bluetopright2,bottommid2,topmid2" />
+        app:constraint_referenced_ids="imageView4,redtopleft2,bottomright2,bottomleft2,bottommid2,topmid2" />
 
     <TextView
         android:id="@+id/textView29"
@@ -454,17 +508,17 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintVertical_bias="0.602" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="199dp"
         android:layout_height="35dp"
         android:gravity="center_horizontal"
-        android:text="Team View"
+        android:text="Team Num#"
         android:textColor="@color/scraphead_yellow"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/pitTeamNumber"
