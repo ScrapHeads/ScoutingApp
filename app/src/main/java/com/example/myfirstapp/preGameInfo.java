@@ -179,7 +179,7 @@ public class preGameInfo extends AppCompatActivity {
     }
 
     // --- Field Position Buttons ---
-    public void bluetopright1(View view) {
+    public void bluetopright(View view) {
         updateFieldPosition("Blue GOAL");
     }
 
